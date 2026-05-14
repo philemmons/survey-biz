@@ -14,7 +14,7 @@ $posts = [
     'excerpt' => 'When survey response rates disappoint, teams typically reach for the same set of remedies: shorter questionnaires, more compelling subject lines, or a bigger incentive. These tactics are not wrong, but they all assume that the barrier is motivation. Often, the real barrier is access.',
     'read_time' => '5 min',
     'date' => '2026-05-13',
-    'content' => require_once __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
   ],
   [
@@ -25,7 +25,7 @@ $posts = [
     'excerpt' => 'A practical deployment workflow for translation QA, launch sequencing, and rapid multi-country field readiness.',
     'read_time' => '6 min',
     'date' => '2026-02-20',
-    'content' => require_once __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
   ],
   [
@@ -36,7 +36,7 @@ $posts = [
     'excerpt' => 'Common mobile UX issues that hurt response quality and the design patterns that keep respondents moving.',
     'read_time' => '4 min',
     'date' => '2026-01-30',
-    'content' => require_once __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
@@ -48,7 +48,7 @@ $posts = [
     'excerpt' => 'A delivery-focused comparison of platform strengths, logic flexibility, and export readiness.',
     'read_time' => '7 min',
     'date' => '2025-12-10',
-    'content' => require_once __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_4.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
@@ -60,7 +60,7 @@ $posts = [
     'excerpt' => 'A checklist for evaluating technical quality, communication style, and operational reliability before hiring.',
     'read_time' => '5 min',
     'date' => '2025-11-18',
-    'content' => require_once __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
@@ -122,8 +122,13 @@ include __DIR__ . '/includes/header.php';
         </p>
 
         <div class="stack-4 mt-4">
-          <p><a class="btn-secondary" href="<?= sanitize_input($selected_post['pdf_filepath']); ?> target=_blank">Read the PDF</a></p>
-          <?= sanitize_input($selected_post['content']); ?>
+          <p><a class="btn-secondary" href="<?= sanitize_input($selected_post['pdf_filepath']); ?>" target="_blank">Read the PDF</a></p>
+          <?php
+          $content_filepath = $selected_post['content_filepath'] ?? '';
+          if (is_string($content_filepath) && $content_filepath !== '' && is_file($content_filepath)) {
+            include $content_filepath;
+          }
+          ?>
 
         </div>
       </div>
