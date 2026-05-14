@@ -1,0 +1,119 @@
+/* Canonical brand tokens extracted from survey-programming.html */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../assets/fonts/DMSerifDisplay-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --ink: #0f1923;
+  --ink-muted: #3d5166;
+  --surface: #f7f5f0;
+  --white: #ffffff;
+  --accent: #1a5c9e;
+  --accent-lt: #e8f1fa;
+  --rule: #d6d0c6;
+  --stat-bg: #0f1923;
+  --stat-text: #f7f5f0;
+  --tag-bg: #e8f1fa;
+  --tag-text: #1a5c9e;
+  --footer-bg: #080e15;
+  --header-link: #9bbfe0;
+  --hero-sub: #b8cfe3;
+  --proof-border: #1e2f40;
+  --proof-num: #5ba4e0;
+  --proof-label: #8aafc9;
+
+  --serif: "DM Serif Display", Georgia, serif;
+  --sans: "DM Sans", system-ui, sans-serif;
+
+  --fs-75: 0.75rem;
+  --fs-80: 0.8rem;
+  --fs-87: 0.875rem;
+  --fs-90: 0.9rem;
+  --fs-95: 0.95rem;
+  --fs-100: 1rem;
+  --fs-108: 1.08rem;
+  --fs-110: 1.1rem;
+  --fs-125: 1.25rem;
+  --fs-160: 1.6rem;
+  --fs-165: 1.65rem;
+  --fs-200: 2rem;
+
+  --lh-tight: 1.15;
+  --lh-heading: 1.25;
+  --lh-base: 1.7;
+  --lh-copy: 1.65;
+  --lh-loose: 1.75;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-18: 4.5rem;
+
+  --radius-1: 3px;
+  --radius-2: 4px;
+  --radius-3: 6px;
+
+  --shadow-card: 0 1px 0 rgba(15, 25, 35, 0.02);
+  --shadow-lift: 0 10px 24px rgba(15, 25, 35, 0.12);
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+
+  --container: 860px;
+  --measure: 700px;
+  --break-md: 900px;
+  --break-sm: 560px;
+}

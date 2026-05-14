@@ -1,0 +1,126 @@
+/* Layout and rhythm */
+.container {
+  margin: 0 auto;
+  max-width: var(--container);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.section {
+  padding: var(--space-14) 0;
+}
+
+.section + .section {
+  border-top: 1px solid transparent;
+  position: relative;
+}
+
+.section + .section::before {
+  background: linear-gradient(90deg, transparent, #c9c2b7 10%, #ddd6cc 50%, #c9c2b7 90%, transparent);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.section-head {
+  margin-bottom: var(--space-7);
+}
+
+.section-number {
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: var(--fs-75);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.section-number::after {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background: rgba(26, 92, 158, 0.4);
+}
+
+.section-deck {
+  color: var(--ink-muted);
+  font-size: var(--fs-95);
+  margin-top: var(--space-2);
+  max-width: 600px;
+}
+
+.measure {
+  max-width: var(--measure);
+}
+
+.split {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stack-3 > * + * {
+  margin-top: var(--space-3);
+}
+
+.stack-4 > * + * {
+  margin-top: var(--space-4);
+}
+
+.stack-5 > * + * {
+  margin-top: var(--space-5);
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .split,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  .split,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,131 @@
+<?php
+declare(strict_types=1);
+
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/functions.php';
+
+$posts = [
+    [
+        'id' => 1,
+        'slug' => 'wcag-survey-response-rates',
+        'title' => 'Why WCAG 2.1 Compliance Matters for Survey Response Rates',
+        'category' => 'Accessibility',
+        'excerpt' => 'Accessible survey design improves completion rates by reducing friction for keyboard and assistive-technology users.',
+        'read_time' => '5 min',
+        'date' => '2026-03-15',
+    ],
+    [
+        'id' => 2,
+        'slug' => 'multilingual-turnaround',
+        'title' => 'How to Cut Multilingual Survey Turnaround from Weeks to Days',
+        'category' => 'Deployment',
+        'excerpt' => 'A practical deployment workflow for translation QA, launch sequencing, and rapid multi-country field readiness.',
+        'read_time' => '6 min',
+        'date' => '2026-02-20',
+    ],
+    [
+        'id' => 3,
+        'slug' => 'mobile-first-survey-design',
+        'title' => 'Mobile-First Survey Design: What Researchers Get Wrong',
+        'category' => 'Design',
+        'excerpt' => 'Common mobile UX issues that hurt response quality and the design patterns that keep respondents moving.',
+        'read_time' => '4 min',
+        'date' => '2026-01-30',
+    ],
+    [
+        'id' => 4,
+        'slug' => 'limesurvey-platform-comparison',
+        'title' => 'LimeSurvey vs. Other Platforms: A Programmer\'s Perspective',
+        'category' => 'Research Ops',
+        'excerpt' => 'A delivery-focused comparison of platform strengths, logic flexibility, and export readiness.',
+        'read_time' => '7 min',
+        'date' => '2025-12-10',
+    ],
+    [
+        'id' => 5,
+        'slug' => 'hiring-survey-programmer',
+        'title' => 'What to Look for When Hiring a Freelance Survey Programmer',
+        'category' => 'Research Ops',
+        'excerpt' => 'A checklist for evaluating technical quality, communication style, and operational reliability before hiring.',
+        'read_time' => '5 min',
+        'date' => '2025-11-18',
+    ],
+];
+
+$categories = ['All', 'Accessibility', 'Deployment', 'Design', 'Research Ops'];
+$active_category = sanitize_input($_GET['cat'] ?? 'All');
+if (!in_array($active_category, $categories, true)) {
+    $active_category = 'All';
+}
+
+$filtered_posts = array_values(array_filter($posts, static function (array $post) use ($active_category): bool {
+    return $active_category === 'All' || $post['category'] === $active_category;
+}));
+
+$page_title = 'Resources & Insights';
+$meta_description = 'Practical guidance on survey programming, accessibility, and field research operations from Phillip Emmons.';
+$current_page = basename(__FILE__);
+
+include __DIR__ . '/includes/head.php';
+include __DIR__ . '/includes/header.php';
+?>
+<main id="main-content">
+  <section class="hero" aria-labelledby="blog-heading">
+    <div class="container">
+      <p class="hero-eyebrow" aria-hidden="true">Insights</p>
+      <h1 id="blog-heading">Resources and insights</h1>
+      <p class="hero-sub">Practical guidance on survey programming, accessibility, and research operations from real delivery work.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section" data-reveal>
+      <p class="section-number" aria-hidden="true">Browse by Category</p>
+      <ul class="tag-list" aria-label="Filter posts by category">
+        <?php foreach ($categories as $category): ?>
+          <?php $is_active_category = $active_category === $category; ?>
+          <li><a href="blog.php?cat=<?= urlencode($category); ?>" class="tag" <?= $is_active_category ? 'aria-current="page"' : ''; ?>><?= sanitize_input($category); ?></a></li>
+        <?php endforeach; ?>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="posts-heading" data-reveal>
+      <h2 id="posts-heading" class="sr-only">Articles</h2>
+      <?php if ($filtered_posts !== []): ?>
+        <div class="post-grid">
+          <?php foreach ($filtered_posts as $post): ?>
+            <article class="post-card" aria-labelledby="post-<?= (int) $post['id']; ?>-title">
+              <ul class="tag-list" aria-label="Post metadata">
+                <li><span class="tag"><?= sanitize_input($post['category']); ?></span></li>
+                <li><span class="tag">
+                  <time datetime="<?= sanitize_input($post['date']); ?>">
+                    <?php
+                    $published_date = date_create($post['date']);
+                    echo $published_date ? sanitize_input($published_date->format('F j, Y')) : sanitize_input($post['date']);
+                    ?>
+                  </time>
+                </span></li>
+              </ul>
+              <h3 id="post-<?= (int) $post['id']; ?>-title" class="mt-4 mb-3"><?= sanitize_input($post['title']); ?></h3>
+              <p class="card-body-text"><?= sanitize_input($post['excerpt']); ?></p>
+              <p class="section-deck"><?= sanitize_input($post['read_time']); ?> read</p>
+              <p class="mt-4"><a class="btn-secondary" href="blog-post.php?slug=<?= urlencode($post['slug']); ?>">Read Article</a></p>
+            </article>
+          <?php endforeach; ?>
+        </div>
+      <?php else: ?>
+        <div class="alert alert-info" role="status">No articles found in this category yet.</div>
+      <?php endif; ?>
+    </section>
+
+    <section class="section" aria-labelledby="author-heading" data-reveal>
+      <div class="panel measure">
+        <p class="section-number" aria-hidden="true">About Phillip</p>
+        <h2 id="author-heading">Freelance survey programmer</h2>
+        <p class="card-body-text">Focused on accessible, multilingual, and enterprise-ready deployment workflows.</p>
+        <p class="mt-4"><a href="inquiry.php" class="btn-primary">Work With Me</a></p>
+      </div>
+    </section>
+  </div>
+</main>
+<?php include __DIR__ . '/includes/footer.php'; ?>

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /vendor/
+Disallow: /logs/
+Disallow: /.git/
+Disallow: /config.php
+Disallow: /assets/
+
+Sitemap: https://survey.philemmons.net/sitemap.xml
