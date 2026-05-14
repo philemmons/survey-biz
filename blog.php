@@ -8,11 +8,11 @@ $posts = [
     [
         'id' => 1,
         'slug' => 'wcag-survey-response-rates',
-        'title' => 'Why WCAG 2.1 Compliance Matters for Survey Response Rates',
+        'title' => 'Why Accessibility Boosts Participation, Data Quality, and User Trust',
         'category' => 'Accessibility',
-        'excerpt' => 'Accessible survey design improves completion rates by reducing friction for keyboard and assistive-technology users.',
+        'excerpt' => 'When survey response rates disappoint, teams typically reach for the same set of remedies: shorter questionnaires, more compelling subject lines, or a bigger incentive. These tactics are not wrong, but they all assume that the barrier is motivation. Often, the real barrier is access.',
         'read_time' => '5 min',
-        'date' => '2026-03-15',
+        'date' => '2026-05-13',
     ],
     [
         'id' => 2,
