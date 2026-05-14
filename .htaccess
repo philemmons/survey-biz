@@ -1,0 +1,280 @@
+# ============================================================
+# Baseline Server Behavior
+# ============================================================
+
+# ------------------------------------------------------------
+# Purpose: Disable automatic directory listings.
+# Why: Prevents accidental exposure of file names when no index
+#      file exists in a directory.
+# ------------------------------------------------------------
+Options -Indexes
+
+# ------------------------------------------------------------
+# Purpose: Hide Apache version/signature on generated server pages.
+# Why: Reduces server fingerprinting during opportunistic scanning.
+# ------------------------------------------------------------
+ServerSignature Off
+
+# ------------------------------------------------------------
+# Purpose: Disable inode-based ETag generation.
+# Why: Avoids unstable ETag values on shared hosting/CDN clusters
+#      where inode/device IDs differ between nodes.
+# ------------------------------------------------------------
+FileETag None
+
+# ============================================================
+# Security
+# ============================================================
+
+# ------------------------------------------------------------
+# Purpose: Deny direct access to hidden files, environment files,
+#          package/build metadata, and common backup artifacts.
+# Why: These files can reveal credentials, dependency versions,
+#      source internals, or deploy history.
+# Notes: The pattern intentionally blocks dotfiles and sensitive
+#        extensions often left behind during maintenance.
+# ------------------------------------------------------------
+<FilesMatch "(^\.|composer\.(json|lock)$|package(-lock)?\.json$|yarn\.lock$|pnpm-lock\.yaml$|\.env(\..*)?$|\.gitignore$|\.cpanel\.yml$|phpunit\.xml(\.dist)?$|\.editorconfig$|\.htaccess$|\.htpasswd$|.*\.(sql|bak|old|dist|ini|log|sh|ps1)$)">
+  Require all denied
+</FilesMatch>
+
+# ------------------------------------------------------------
+# Purpose: Block direct web access to the main configuration file.
+# Why: Prevents source/config disclosure if PHP handling fails or
+#      hosting is misconfigured.
+# ------------------------------------------------------------
+<Files "config.php">
+  Require all denied
+</Files>
+
+# ============================================================
+# Redirects / Canonicalization
+# ============================================================
+
+# ------------------------------------------------------------
+# Purpose: Normalize protocol and hostname to one canonical URL.
+# Why: Improves SEO canonical consistency, prevents mixed protocol
+#      duplicates, and ensures secure transport by default.
+# Notes: Rule ordering matters; this redirect runs before content
+#        routing so all downstream logic runs on canonical URLs.
+# ------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  # Enable rewrite processing for all rule blocks below.
+  RewriteEngine On
+
+  # Set rewrite base for relative substitutions at site root.
+  RewriteBase /
+
+  # Block direct requests for Git metadata directories.
+  # This denies access even if a Git folder is accidentally deployed.
+  RewriteRule "^\.git(?:/|$)" - [F,L,NC]
+
+  # Redirect any non-HTTPS request or non-canonical host request.
+  # The OR condition means either mismatch triggers one 301 redirect.
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} !^survey\.philemmons\.net$ [NC]
+  RewriteRule ^ https://survey.philemmons.net%{REQUEST_URI} [R=301,L]
+
+  # Deny direct web requests to internal code/dependency folders.
+  # Reduces attack surface and blocks source browsing.
+  RewriteRule ^(?:includes|vendor)/ - [F,L,NC]
+
+  # Redirect explicit /index or /index.php requests to /.
+  # THE_REQUEST ensures this only affects client-visible URLs,
+  # preventing rewrite loops on internal file mapping.
+  RewriteCond %{THE_REQUEST} \s/+index(?:\.php)?[\s?] [NC]
+  RewriteRule ^index(?:\.php)?$ / [R=301,L]
+
+  # Redirect direct .php URLs to extensionless canonical paths.
+  # This keeps one public URL per page and avoids duplicate indexing.
+  # 404.php is excluded so internal error routing remains stable.
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+  RewriteCond %1 !^404$ [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # Internally map extensionless URLs to existing .php files.
+  # Condition order avoids rewriting real directories.
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteRule ^(.+?)/?$ $1.php [L,QSA]
+
+  # Route unresolved paths to the custom 404 handler.
+  # Conditions prevent overriding real files and directories.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /404.php [L]
+</IfModule>
+
+# ============================================================
+# Headers
+# ============================================================
+
+# ------------------------------------------------------------
+# Purpose: Set browser security and cross-origin policy headers.
+# Why: Mitigates common web attacks (MIME sniffing, clickjacking,
+#      policy overreach) and documents expected browser behavior.
+# Notes: Wrapped in mod_headers guard for shared-host compatibility.
+# ------------------------------------------------------------
+<IfModule mod_headers.c>
+  # Disable MIME type sniffing to reduce script/style confusion attacks.
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Restrict framing to same-origin to mitigate clickjacking.
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Send limited referrer detail cross-origin while keeping full
+  # referrer within the same origin for analytics/debugging value.
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Disable high-risk browser APIs not needed by this application.
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+
+  # Isolate top-level browsing context while still allowing popup
+  # flows that require opener linkage.
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+
+  # Restrict cross-origin resource consumption to same-site context.
+  Header always set Cross-Origin-Resource-Policy "same-site"
+
+  # Block legacy Adobe cross-domain policy files.
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+
+  # Enable HSTS only on HTTPS responses.
+  # Instructs browsers to prefer HTTPS on future visits.
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+  # CSP is now enforced; non-compliant resources are blocked.
+  #Header always set Content-Security-Policy-Report-Only "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; upgrade-insecure-requests"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; upgrade-insecure-requests"
+
+  # Ensure caches differentiate compressed vs uncompressed variants.
+  Header append Vary "Accept-Encoding"
+</IfModule>
+
+# ============================================================
+# Performance / Caching
+# ============================================================
+
+# ------------------------------------------------------------
+# Purpose: Apply cache directives by resource type.
+# Why: Improves repeat-load speed and lowers bandwidth for static
+#      assets while keeping HTML/PHP responses non-cacheable.
+# Notes: Assumes static asset names change when content changes.
+# ------------------------------------------------------------
+<IfModule mod_headers.c>
+  # Cache styles and scripts for 30 days.
+  <FilesMatch "\.(?:css|js|mjs)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+
+  # Cache images for 90 days and mark immutable for faster revalidation.
+  <FilesMatch "\.(?:png|jpe?g|gif|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=7776000, immutable"
+  </FilesMatch>
+
+  # Cache fonts for 90 days and mark immutable.
+  <FilesMatch "\.(?:woff2?|ttf|otf|eot)$">
+    Header set Cache-Control "public, max-age=7776000, immutable"
+  </FilesMatch>
+
+  # Disable caching for dynamic and HTML responses.
+  <FilesMatch "\.(?:html|php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
+# ------------------------------------------------------------
+# Purpose: Register MIME types for modern web asset formats.
+# Why: Ensures correct Content-Type values on hosts with older
+#      default MIME maps, improving browser compatibility.
+# ------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType text/javascript .js .mjs
+  AddType application/manifest+json .webmanifest
+  AddType application/json .json
+  AddType image/avif .avif
+  AddType image/webp .webp
+  AddType image/svg+xml .svg .svgz
+  AddType font/woff2 .woff2
+  AddType application/wasm .wasm
+</IfModule>
+
+# ------------------------------------------------------------
+# Purpose: Emit Expires headers for cache-aware clients/CDNs.
+# Why: Provides explicit freshness lifetimes per content type to
+#      reduce re-requests and improve load performance.
+# Notes: Complements Cache-Control settings above.
+# ------------------------------------------------------------
+<IfModule mod_expires.c>
+  # Enable Expires header generation.
+  ExpiresActive On
+
+  # Fallback for unclassified content types.
+  ExpiresDefault "access plus 1 hour"
+
+  # HTML should be revalidated immediately.
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # Static text assets: 1 month.
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/json "access plus 1 day"
+
+  # Images: 3 months.
+  ExpiresByType image/jpeg "access plus 3 months"
+  ExpiresByType image/png "access plus 3 months"
+  ExpiresByType image/gif "access plus 3 months"
+  ExpiresByType image/webp "access plus 3 months"
+  ExpiresByType image/avif "access plus 3 months"
+  ExpiresByType image/svg+xml "access plus 3 months"
+  ExpiresByType image/x-icon "access plus 3 months"
+
+  # Fonts: 3 months.
+  ExpiresByType font/woff2 "access plus 3 months"
+  ExpiresByType font/woff "access plus 3 months"
+  ExpiresByType application/font-woff2 "access plus 3 months"
+</IfModule>
+
+# ------------------------------------------------------------
+# Purpose: Enable gzip compression for text-based responses.
+# Why: Reduces transfer size and speeds delivery on slower links.
+# Notes: Safe fallback if Brotli is unavailable.
+# ------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css
+  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/ld+json application/manifest+json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ------------------------------------------------------------
+# Purpose: Enable Brotli compression for supported clients.
+# Why: Typically provides better compression ratios than gzip.
+# Notes: Runs alongside gzip; client Accept-Encoding negotiates
+#        which encoding is served.
+# ------------------------------------------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/plain text/html text/xml text/css
+  AddOutputFilterByType BROTLI_COMPRESS application/xml application/xhtml+xml application/rss+xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript text/javascript
+  AddOutputFilterByType BROTLI_COMPRESS application/json application/ld+json application/manifest+json
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# ============================================================
+# Error Handling
+# ============================================================
+
+# ------------------------------------------------------------
+# Purpose: Route 404 and 403 errors to a branded error page.
+# Why: Maintains consistent UX and avoids exposing default server
+#      error pages that may leak stack/server details.
+# Notes: 403 shares the 404 page intentionally for less endpoint
+#        disclosure during probing.
+# ------------------------------------------------------------
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
