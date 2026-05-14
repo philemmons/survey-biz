@@ -85,6 +85,9 @@ $meta_description = $selected_post['excerpt'];
 $canonical_url = rtrim(SITE_URL, '/') . '/blog-post?slug=' . urlencode((string) $selected_post['slug']);
 $current_page = 'blog.php';
 
+$published_date = date_create($selected_post['date']);
+$content_filepath = $selected_post['content_filepath'] ?? '';
+
 include __DIR__ . '/includes/head.php';
 include __DIR__ . '/includes/header.php';
 ?>
@@ -114,7 +117,6 @@ include __DIR__ . '/includes/header.php';
         <p class="form-help mt-3">
           <time datetime="<?= sanitize_input($selected_post['date']); ?>">
             <?php
-            $published_date = date_create($selected_post['date']);
             echo $published_date ? sanitize_input($published_date->format('F j, Y')) : sanitize_input($selected_post['date']);
             ?>
           </time>
@@ -124,7 +126,6 @@ include __DIR__ . '/includes/header.php';
         <div class="stack-4 mt-4">
           <p><a class="btn-secondary" href="<?= sanitize_input($selected_post['pdf_filepath']); ?>" target="_blank">Read the PDF</a></p>
           <?php
-          $content_filepath = $selected_post['content_filepath'] ?? '';
           if (is_string($content_filepath) && $content_filepath !== '' && is_file($content_filepath)) {
             include $content_filepath;
           }
