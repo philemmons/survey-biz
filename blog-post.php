@@ -25,8 +25,8 @@ $posts = [
     'excerpt' => 'A practical deployment workflow for translation QA, launch sequencing, and rapid multi-country field readiness.',
     'read_time' => '6 min',
     'date' => '2026-02-20',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
-    'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_2.php',
+    'pdf_filepath' => './pdf/Multilingual_Survey_Turnaround_2026.pdf',
   ],
   [
     'id' => 3,
@@ -87,6 +87,9 @@ $current_page = 'blog.php';
 $page_stylesheets = [];
 if ((int) ($selected_post['id'] ?? 0) === 1) {
   $page_stylesheets[] = 'css/whitepaper-id-1.css';
+}
+if ((int) ($selected_post['id'] ?? 0) === 2) {
+  $page_stylesheets[] = 'css/whitepaper-id-2.css';
 }
 
 $published_date = date_create($selected_post['date']);

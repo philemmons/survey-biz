@@ -1,0 +1,209 @@
+﻿.wp2-paper {
+  --wp2-bg: #ffffff;
+  --wp2-text: #1a2b3c;
+  --wp2-muted: #41586f;
+  --wp2-border: #c8d8e8;
+  --wp2-accent: #1a5c9e;
+  --wp2-note-bg: #f2f8fe;
+  --wp2-note-border: #83b5df;
+
+  background: var(--wp2-bg);
+  color: var(--wp2-text);
+  margin: 0 auto;
+  max-width: 76ch;
+}
+
+.wp2-paper__header {
+  border-bottom: 1px solid var(--wp2-border);
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.wp2-paper__kicker {
+  color: var(--wp2-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.wp2-paper__header h2 {
+  color: #0f263b;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+}
+
+.wp2-paper__subtitle {
+  color: var(--wp2-muted);
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.wp2-paper__section {
+  margin-bottom: 2rem;
+}
+
+.wp2-paper__section h3 {
+  border-left: 3px solid var(--wp2-accent);
+  color: #12385a;
+  font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.45rem);
+  line-height: 1.35;
+  margin: 0 0 0.9rem;
+  padding-left: 0.75rem;
+}
+
+.wp2-paper p,
+.wp2-paper li,
+.wp2-paper blockquote {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.wp2-paper p {
+  color: var(--wp2-text);
+  margin: 0 0 1rem;
+}
+
+.wp2-paper a {
+  color: #114a82;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+.wp2-paper a:hover {
+  color: #0d3963;
+}
+
+.wp2-paper a:focus-visible {
+  outline: 3px solid #f2ab2d;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.wp2-checklist {
+  background: #f9fbfd;
+  border: 1px solid var(--wp2-border);
+  border-radius: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.wp2-checklist li {
+  margin-bottom: 0.7rem;
+}
+
+.wp2-checklist li:last-child {
+  margin-bottom: 0;
+}
+
+.wp2-callout {
+  border-left: 4px solid var(--wp2-note-border);
+  border-radius: 0.5rem;
+  background: var(--wp2-note-bg);
+  margin: 1.35rem 0;
+  padding: 1rem 1rem 0.95rem;
+}
+
+.wp2-callout h3 {
+  border-left: 0;
+  font-size: 1rem;
+  margin: 0 0 0.55rem;
+  padding-left: 0;
+}
+
+.wp2-callout p {
+  margin-bottom: 0;
+}
+
+.wp2-pull-quote {
+  border-left: 4px solid var(--wp2-accent);
+  color: #153f65;
+  margin: 1.35rem 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.wp2-pull-quote p {
+  font-size: 1.03rem;
+  margin: 0;
+}
+
+.wp2-paper__footer {
+  border-top: 1px solid var(--wp2-border);
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
+}
+
+.wp2-paper__footer h3 {
+  margin-bottom: 0.85rem;
+}
+
+.wp2-works-cited-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wp2-works-cited-list li {
+  font-size: 0.96rem;
+  margin: 0 0 0.95rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+.wp2-works-cited-list li:last-child {
+  margin-bottom: 0;
+}
+
+.wp2-paper table {
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  width: 100%;
+}
+
+.wp2-paper th,
+.wp2-paper td {
+  border: 1px solid var(--wp2-border);
+  padding: 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wp2-paper th {
+  background: #f1f6fb;
+  font-weight: 600;
+}
+
+.wp2-paper .wp2-table-wrap {
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  .wp2-paper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .wp2-paper__section {
+    margin-bottom: 1.6rem;
+  }
+
+  .wp2-paper p,
+  .wp2-paper li,
+  .wp2-paper blockquote {
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .wp2-checklist {
+    padding: 0.9rem 0.9rem 0.9rem 1.35rem;
+  }
+
+  .wp2-works-cited-list li {
+    font-size: 0.93rem;
+  }
+}

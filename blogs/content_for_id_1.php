@@ -161,15 +161,6 @@
       and each inaccessible one is a potential source of legal exposure.
     </p>
 
-    <!-- Callouts -->
-    <aside class="wp1-callout wp1-callout--warning" aria-labelledby="wp1-warning-title">
-      <h3 id="wp1-warning-title">Warning</h3>
-      <p>
-        An inaccessible survey can create immediate legal exposure and long-tail trust damage, even
-        when the field period is short.
-      </p>
-    </aside>
-
     <p>
       Reputational risk is harder to quantify but equally real. An inaccessible survey signals,
       whether intentionally or not, that the perspectives of people with disabilities were not
