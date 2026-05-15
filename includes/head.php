@@ -40,5 +40,14 @@ if (!isset($canonical_url)) {
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/accessibility.css">
+  <?php
+  if (isset($page_stylesheets) && is_array($page_stylesheets)) {
+      foreach ($page_stylesheets as $stylesheet) {
+          if (is_string($stylesheet) && $stylesheet !== '') {
+              echo '  <link rel="stylesheet" href="' . htmlspecialchars($stylesheet, ENT_QUOTES, 'UTF-8') . '">' . PHP_EOL;
+          }
+      }
+  }
+  ?>
 </head>
 <body>

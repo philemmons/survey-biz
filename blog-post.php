@@ -84,6 +84,10 @@ $page_title = $selected_post['title'];
 $meta_description = $selected_post['excerpt'];
 $canonical_url = rtrim(SITE_URL, '/') . '/blog-post?slug=' . urlencode((string) $selected_post['slug']);
 $current_page = 'blog.php';
+$page_stylesheets = [];
+if ((int) ($selected_post['id'] ?? 0) === 1) {
+  $page_stylesheets[] = 'css/whitepaper-id-1.css';
+}
 
 $published_date = date_create($selected_post['date']);
 $content_filepath = $selected_post['content_filepath'] ?? '';
