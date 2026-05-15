@@ -21,7 +21,7 @@ $posts = [
         'category' => 'Deployment',
         'excerpt' => 'Multilingual surveys often slow down because translation, programming, and quality assurance are treated as separate stages instead of a coordinated deployment workflow. Teams may have a stable questionnaire and experienced translators, yet still lose days to missing language strings, broken logic, inconsistent terminology, and repeated correction cycles. In large multi-country studies, those delays compound quickly.',
         'read_time' => '6 min',
-        'date' => '2026-02-20',
+        'date' => '2026-05-15',
     ],
     [
         'id' => 3,
