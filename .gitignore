@@ -45,6 +45,7 @@ temp/
 *.save
 *.swp
 *.swo
+archive/
 
 # Dependency folders
 vendor/
