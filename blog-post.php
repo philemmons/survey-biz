@@ -105,7 +105,7 @@ include __DIR__ . '/includes/header.php';
   </section>
 
   <div class="container">
-    <section class="section" data-reveal>
+    <section class="section">
       <nav aria-label="Breadcrumb">
         <ol class="breadcrumb">
           <li><a href="index.php">Home</a></li>
@@ -139,7 +139,7 @@ include __DIR__ . '/includes/header.php';
       </div>
     </section>
 
-    <section class="section" aria-label="Work with Phillip" data-reveal>
+    <section class="section" aria-label="Work with Phillip">
       <div class="notice-box">
         <h2>Ready to put this into practice?</h2>
         <p class="section-deck">If you want help applying this approach to your next study, I can support programming, deployment, and launch QA end to end.</p>
