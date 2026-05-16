@@ -45,234 +45,37 @@ include __DIR__ . '/includes/header.php';
   </section>
 
   <div class="container">
-
     <section class="section" aria-labelledby="factors-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Quote Inputs</p>
       <h2 id="factors-heading">What affects your quote</h2>
-      <p class="section-deck intro-text">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work — scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
-    </section>
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h3 id="s1-heading">Question Count &amp; Section Depth</h3>
-
-      <div class="feature-list" aria-label="Survey programming services">
-        <div class="feature-card">
-
-          <p class="feature-body">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth — how questions are organized into blocks, rotations, or randomized sets — multiplies that work. A 20-question survey with flat structure and a 20-question survey with block randomization, carry-forward answer pipes, and custom display templates are very different builds.</p>
-        </div>
-      </div>
-      <div class="intro-text">
-        Market context: Agency-produced online surveys with 400 respondents start around $5,000-$15,000 — and professional programming labor typically represents the largest time component of that cost before fieldwork begins.
-      </div>
-
-    </section>
-
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
-      <ul class="feature-list" aria-label="Survey programming services">
-        <li class="feature-card">
-          <p class="feature-title">Advanced Branching & Skip Logic</p>
-          <p class="feature-body">Respondents see only the questions relevant to them. Conditional routing keeps surveys focused, reduces fatigue, and protects data integrity across complex, multi-path instruments.</p>
+      <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work — scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
+      <ul class="icon-grid" aria-label="Pricing factors">
+        <li class="icon-card">
+          <h3>Question Count</h3>
+          <p class="card-body-text">Total questionnaire length and section depth influence scripting and QA time.</p>
         </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
+        <li class="icon-card">
+          <h3>Logic Complexity</h3>
+          <p class="card-body-text">Branching, piping, quota logic, and custom validations affect implementation scope.</p>
         </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
+        <li class="icon-card">
+          <h3>Languages Required</h3>
+          <p class="card-body-text">Number of languages and localization QA requirements shape deployment effort.</p>
         </li>
-        <li class="feature-card">
-          <p class="feature-title">Custom Branding & Visual Design</p>
-          <p class="feature-body">Survey layouts styled to match your organization's colors, typography, and brand identity - so respondents experience a consistent, professional presence from invitation to completion.</p>
+        <li class="icon-card">
+          <h3>Deployment and Outreach Scope</h3>
+          <p class="card-body-text">Email campaign setup, list segmentation, and invite workflows add operational tasks.</p>
         </li>
-      </ul>
-      <ul class="tag-list" aria-label="Survey logic tags">
-        <li><span class="tag">LimeSurvey</span></li>
-        <li><span class="tag">Conditional Logic</span></li>
-        <li><span class="tag">Skip Logic</span></li>
-        <li><span class="tag">Likert Scales</span></li>
-        <li><span class="tag">Matrix Questions</span></li>
-        <li><span class="tag">Open-Ended Response</span></li>
+        <li class="icon-card">
+          <h3>Reporting and Dashboard Setup</h3>
+          <p class="card-body-text">Progress reporting needs and dashboard complexity impact post-launch support.</p>
+        </li>
+        <li class="icon-card">
+          <h3>Timeline and Turnaround</h3>
+          <p class="card-body-text">Delivery speed, revision windows, and launch deadlines influence scheduling.</p>
+        </li>
       </ul>
     </section>
-
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
-      <ul class="feature-list" aria-label="Survey programming services">
-        <li class="feature-card">
-          <p class="feature-title">Advanced Branching & Skip Logic</p>
-          <p class="feature-body">Respondents see only the questions relevant to them. Conditional routing keeps surveys focused, reduces fatigue, and protects data integrity across complex, multi-path instruments.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Custom Branding & Visual Design</p>
-          <p class="feature-body">Survey layouts styled to match your organization's colors, typography, and brand identity - so respondents experience a consistent, professional presence from invitation to completion.</p>
-        </li>
-      </ul>
-      <ul class="tag-list" aria-label="Survey logic tags">
-        <li><span class="tag">LimeSurvey</span></li>
-        <li><span class="tag">Conditional Logic</span></li>
-        <li><span class="tag">Skip Logic</span></li>
-        <li><span class="tag">Likert Scales</span></li>
-        <li><span class="tag">Matrix Questions</span></li>
-        <li><span class="tag">Open-Ended Response</span></li>
-      </ul>
-    </section>
-
-
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
-      <ul class="feature-list" aria-label="Survey programming services">
-        <li class="feature-card">
-          <p class="feature-title">Advanced Branching & Skip Logic</p>
-          <p class="feature-body">Respondents see only the questions relevant to them. Conditional routing keeps surveys focused, reduces fatigue, and protects data integrity across complex, multi-path instruments.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Custom Branding & Visual Design</p>
-          <p class="feature-body">Survey layouts styled to match your organization's colors, typography, and brand identity - so respondents experience a consistent, professional presence from invitation to completion.</p>
-        </li>
-      </ul>
-      <ul class="tag-list" aria-label="Survey logic tags">
-        <li><span class="tag">LimeSurvey</span></li>
-        <li><span class="tag">Conditional Logic</span></li>
-        <li><span class="tag">Skip Logic</span></li>
-        <li><span class="tag">Likert Scales</span></li>
-        <li><span class="tag">Matrix Questions</span></li>
-        <li><span class="tag">Open-Ended Response</span></li>
-      </ul>
-    </section>
-
-
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
-      <ul class="feature-list" aria-label="Survey programming services">
-        <li class="feature-card">
-          <p class="feature-title">Advanced Branching & Skip Logic</p>
-          <p class="feature-body">Respondents see only the questions relevant to them. Conditional routing keeps surveys focused, reduces fatigue, and protects data integrity across complex, multi-path instruments.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Custom Branding & Visual Design</p>
-          <p class="feature-body">Survey layouts styled to match your organization's colors, typography, and brand identity - so respondents experience a consistent, professional presence from invitation to completion.</p>
-        </li>
-      </ul>
-      <ul class="tag-list" aria-label="Survey logic tags">
-        <li><span class="tag">LimeSurvey</span></li>
-        <li><span class="tag">Conditional Logic</span></li>
-        <li><span class="tag">Skip Logic</span></li>
-        <li><span class="tag">Likert Scales</span></li>
-        <li><span class="tag">Matrix Questions</span></li>
-        <li><span class="tag">Open-Ended Response</span></li>
-      </ul>
-    </section>
-
-
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
-      <ul class="feature-list" aria-label="Survey programming services">
-        <li class="feature-card">
-          <p class="feature-title">Advanced Branching & Skip Logic</p>
-          <p class="feature-body">Respondents see only the questions relevant to them. Conditional routing keeps surveys focused, reduces fatigue, and protects data integrity across complex, multi-path instruments.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Custom Branding & Visual Design</p>
-          <p class="feature-body">Survey layouts styled to match your organization's colors, typography, and brand identity - so respondents experience a consistent, professional presence from invitation to completion.</p>
-        </li>
-      </ul>
-      <ul class="tag-list" aria-label="Survey logic tags">
-        <li><span class="tag">LimeSurvey</span></li>
-        <li><span class="tag">Conditional Logic</span></li>
-        <li><span class="tag">Skip Logic</span></li>
-        <li><span class="tag">Likert Scales</span></li>
-        <li><span class="tag">Matrix Questions</span></li>
-        <li><span class="tag">Open-Ended Response</span></li>
-      </ul>
-    </section>
-
-
-
-    <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
-      <ul class="feature-list" aria-label="Survey programming services">
-        <li class="feature-card">
-          <p class="feature-title">Advanced Branching & Skip Logic</p>
-          <p class="feature-body">Respondents see only the questions relevant to them. Conditional routing keeps surveys focused, reduces fatigue, and protects data integrity across complex, multi-path instruments.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
-        </li>
-        <li class="feature-card">
-          <p class="feature-title">Custom Branding & Visual Design</p>
-          <p class="feature-body">Survey layouts styled to match your organization's colors, typography, and brand identity - so respondents experience a consistent, professional presence from invitation to completion.</p>
-        </li>
-      </ul>
-      <ul class="tag-list" aria-label="Survey logic tags">
-        <li><span class="tag">LimeSurvey</span></li>
-        <li><span class="tag">Conditional Logic</span></li>
-        <li><span class="tag">Skip Logic</span></li>
-        <li><span class="tag">Likert Scales</span></li>
-        <li><span class="tag">Matrix Questions</span></li>
-        <li><span class="tag">Open-Ended Response</span></li>
-      </ul>
-    </section>
-
-
-
-
 
     <section class="section" aria-labelledby="included-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Competitive</p>
