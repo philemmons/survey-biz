@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
           <ul class="tag-list" aria-label="International tags">
             <li><span class="tag">80+ Countries</span></li>
             <li><span class="tag">Multilingual Deployment</span></li>
-            <li><span class="tag">3-Day Turnaround</span></li>
+            <li><span class="tag">3-Day Translation Turnaround</span></li>
             <li><span class="tag">Regional Tracking</span></li>
           </ul>
         </article>

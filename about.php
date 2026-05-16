@@ -32,7 +32,7 @@ include __DIR__ . '/includes/header.php';
           <dd class="proof-num" data-count-to="5">5</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-label">Turnaround</dt>
+          <dt class="proof-label">Translation Turnaround</dt>
           <dd class="proof-num">3-Week to 3-Day</dd>
         </div>
       </dl>
