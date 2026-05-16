@@ -70,10 +70,10 @@ include __DIR__ . '/includes/head.php';
 include __DIR__ . '/includes/header.php';
 ?>
 <main id="main-content">
-  <section class="hero" aria-labelledby="blog-heading">
+  <section class="hero" aria-labelledby="insight-heading">
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Insights</p>
-      <h1 id="blog-heading">Resources and insights</h1>
+      <h1 id="insight-heading">Resources and insights</h1>
       <p class="hero-sub">Practical guidance on survey programming, accessibility, and research operations from real delivery work.</p>
     </div>
   </section>
