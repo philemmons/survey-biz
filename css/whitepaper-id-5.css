@@ -1,0 +1,213 @@
+﻿.wp5-paper {
+  --wp5-bg: #ffffff;
+  --wp5-text: #1a2b3c;
+  --wp5-muted: #42586d;
+  --wp5-border: #c8d8e7;
+  --wp5-accent: #1a5c9e;
+  --wp5-note-bg: #f1f7fd;
+  --wp5-note-border: #7fb0dd;
+
+  background: var(--wp5-bg);
+  color: var(--wp5-text);
+  margin: 0 auto;
+  max-width: 76ch;
+}
+
+.wp5-paper__header {
+  border-bottom: 1px solid var(--wp5-border);
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.wp5-paper__kicker {
+  color: var(--wp5-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.wp5-paper__header h2 {
+  color: #0f263b;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+}
+
+.wp5-paper__subtitle {
+  color: var(--wp5-muted);
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.wp5-paper__section {
+  margin-bottom: 2rem;
+}
+
+.wp5-paper__section h3 {
+  border-left: 3px solid var(--wp5-accent);
+  color: #12385a;
+  font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.45rem);
+  line-height: 1.35;
+  margin: 0 0 0.9rem;
+  padding-left: 0.75rem;
+}
+
+.wp5-paper p,
+.wp5-paper li,
+.wp5-paper blockquote {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.wp5-paper p {
+  color: var(--wp5-text);
+  margin: 0 0 1rem;
+}
+
+.wp5-paper a {
+  color: #114a82;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+.wp5-paper a:hover {
+  color: #0d3963;
+}
+
+.wp5-paper a:focus-visible {
+  outline: 3px solid #f2ab2d;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.wp5-checklist,
+.wp5-question-list {
+  background: #f9fbfd;
+  border: 1px solid var(--wp5-border);
+  border-radius: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.wp5-checklist li,
+.wp5-question-list li {
+  margin-bottom: 0.75rem;
+}
+
+.wp5-checklist li:last-child,
+.wp5-question-list li:last-child {
+  margin-bottom: 0;
+}
+
+.wp5-callout {
+  border-left: 4px solid var(--wp5-note-border);
+  border-radius: 0.5rem;
+  background: var(--wp5-note-bg);
+  margin: 1.35rem 0;
+  padding: 1rem 1rem 0.95rem;
+}
+
+.wp5-callout h3 {
+  border-left: 0;
+  font-size: 1rem;
+  margin: 0 0 0.55rem;
+  padding-left: 0;
+}
+
+.wp5-callout p {
+  margin-bottom: 0;
+}
+
+.wp5-pull-quote {
+  border-left: 4px solid var(--wp5-accent);
+  color: #153f65;
+  margin: 1.35rem 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.wp5-pull-quote p {
+  font-size: 1.03rem;
+  margin: 0;
+}
+
+.wp5-paper__footer {
+  border-top: 1px solid var(--wp5-border);
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
+}
+
+.wp5-paper__footer h3 {
+  margin-bottom: 0.85rem;
+}
+
+.wp5-works-cited-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wp5-works-cited-list li {
+  font-size: 0.96rem;
+  margin: 0 0 0.95rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+.wp5-works-cited-list li:last-child {
+  margin-bottom: 0;
+}
+
+.wp5-paper table {
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  width: 100%;
+}
+
+.wp5-paper th,
+.wp5-paper td {
+  border: 1px solid var(--wp5-border);
+  padding: 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wp5-paper th {
+  background: #f1f6fb;
+  font-weight: 600;
+}
+
+.wp5-paper .wp5-table-wrap {
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  .wp5-paper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .wp5-paper__section {
+    margin-bottom: 1.6rem;
+  }
+
+  .wp5-paper p,
+  .wp5-paper li,
+  .wp5-paper blockquote {
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .wp5-checklist,
+  .wp5-question-list {
+    padding: 0.9rem 0.9rem 0.9rem 1.35rem;
+  }
+
+  .wp5-works-cited-list li {
+    font-size: 0.93rem;
+  }
+}

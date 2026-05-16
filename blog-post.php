@@ -22,9 +22,9 @@ $posts = [
     'slug' => 'multilingual-turnaround',
     'title' => 'How to Cut Multilingual Survey Turnaround from Weeks to Days',
     'category' => 'Deployment',
-    'excerpt' => 'A practical deployment workflow for translation QA, launch sequencing, and rapid multi-country field readiness.',
-    'read_time' => '6 min',
-    'date' => '2026-02-20',
+    'excerpt' => 'Multilingual surveys often slow down because translation, programming, and quality assurance are treated as separate stages instead of a coordinated deployment workflow. Teams may have a stable questionnaire and experienced translators, yet still lose days to missing language strings, broken logic, inconsistent terminology, and repeated correction cycles. In large multi-country studies, those delays compound quickly.',
+    'read_time' => '5 min',
+    'date' => '2026-05-15',
     'content_filepath' => __DIR__ . '/blogs/content_for_id_2.php',
     'pdf_filepath' => './pdf/Multilingual_Survey_Turnaround_2026.pdf',
   ],
@@ -36,7 +36,7 @@ $posts = [
     'excerpt' => 'Common mobile UX issues that hurt response quality and the design patterns that keep respondents moving.',
     'read_time' => '4 min',
     'date' => '2026-01-30',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_3.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
@@ -55,13 +55,13 @@ $posts = [
   [
     'id' => 5,
     'slug' => 'hiring-survey-programmer',
-    'title' => 'What to Look for When Hiring a Freelance Survey Programmer',
+    'title' => 'What It Is, Why It Matters, and How to Evaluate It',
     'category' => 'Research Ops',
-    'excerpt' => 'A checklist for evaluating technical quality, communication style, and operational reliability before hiring.',
-    'read_time' => '5 min',
-    'date' => '2025-11-18',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
-    'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
+    'excerpt' => 'Somewhere in the middle of a research cycle, after the questionnaire has been finalized, the sample sourced, and the launch window locked in, and a survey programmer sits down and begins turning that questionnaire into a live instrument. What happens in those hours matters more than most research teams realize.',
+    'read_time' => '15 min',
+    'date' => '2026-05-15',
+    'content_filepath' => __DIR__ . '/blogs/content_for_id_5.php',
+    'pdf_filepath' => './pdf/Survey_Programming_Data_Quality_Discipline_2026.pdf',
 
   ],
 ];
@@ -90,6 +90,9 @@ if ((int) ($selected_post['id'] ?? 0) === 1) {
 }
 if ((int) ($selected_post['id'] ?? 0) === 2) {
   $page_stylesheets[] = 'css/whitepaper-id-2.css';
+}
+if ((int) ($selected_post['id'] ?? 0) === 5) {
+  $page_stylesheets[] = 'css/whitepaper-id-5.css';
 }
 
 $published_date = date_create($selected_post['date']);
