@@ -7,12 +7,40 @@ $current_page = basename(__FILE__);
 include __DIR__ . '/includes/head.php';
 include __DIR__ . '/includes/header.php';
 ?>
+
 <main id="main-content">
   <section class="hero" aria-labelledby="pricing-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">Pricing</p>
       <h1 id="pricing-hero-heading">Transparent, project-based pricing</h1>
-      <p class="hero-sub">No retainers. No agency markup. A custom quote based on exactly what your study needs.</p>
+      <p class="hero-sub">No retainers. No agency markup. A custom quote based on exactly what your study needs.
+        <br><br>
+        <strong>Survey programming</strong> sits at the intersection of research design and technical execution. The cost of a project reflects genuine scope — not package tiers built around the average project, and not hourly uncertainty that expands without limit.
+      </p>
+    </div>
+  </section>
+
+  <section class="proof-strip" aria-label="Key pricing metrics">
+    <div class="container">
+      <dl class="proof-grid">
+        <div class="proof-item">
+
+          <dt class="proof-num">$30-$80</dt>
+          <dd class="proof-label">Typical hourly range for Qualtrics / platform specialists on Upwork in 2026</dd>
+        </div>
+        <div class="proof-item">
+          <dt class="proof-num">$5K-$15K</dt>
+          <dd class="proof-label">Baseline cost of a basic online survey project through a full-service agency</dd>
+        </div>
+        <div class="proof-item">
+          <dt class="proof-num">20-50%</dt>
+          <dd class="proof-label">Added overhead when routing through a research agency vs. a direct programmer</dd>
+        </div>
+        <div class="proof-item">
+          <dt class="proof-num">3-5 days</dt>
+          <dd class="proof-label">Typical turnaround for clearly-scoped studies without enterprise queues</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
@@ -20,7 +48,7 @@ include __DIR__ . '/includes/header.php';
     <section class="section" aria-labelledby="factors-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Quote Inputs</p>
       <h2 id="factors-heading">What affects your quote</h2>
-      <p class="section-deck">Scope is priced from delivery reality, not package tiers.</p>
+      <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work — scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
       <ul class="icon-grid" aria-label="Pricing factors">
         <li class="icon-card">
           <h3>Question Count</h3>
