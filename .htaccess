@@ -85,6 +85,11 @@ FileETag None
   RewriteCond %{THE_REQUEST} \s/+index(?:\.php)?[\s?] [NC]
   RewriteRule ^index(?:\.php)?$ / [R=301,L]
 
+  # Redirect legacy blog URLs to the renamed insights page.
+  # Preserves old links after blog.php was renamed.
+  RewriteCond %{THE_REQUEST} \s/+blog(?:\.php)?[\s?] [NC]
+  RewriteRule ^blog(?:\.php)?$ /insights [R=301,L]
+
   # Redirect direct .php URLs to extensionless canonical paths.
   # This keeps one public URL per page and avoids duplicate indexing.
   # 404.php is excluded so internal error routing remains stable.

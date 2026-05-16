@@ -14,7 +14,7 @@ $posts = [
     'excerpt' => 'When survey response rates disappoint, teams typically reach for the same set of remedies: shorter questionnaires, more compelling subject lines, or a bigger incentive. These tactics are not wrong, but they all assume that the barrier is motivation. Often, the real barrier is access.',
     'read_time' => '5 min',
     'date' => '2026-05-13',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_1.php',
+    'content_filepath' => __DIR__ . '/white_papers/content_for_id_1.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
   ],
   [
@@ -25,7 +25,7 @@ $posts = [
     'excerpt' => 'Multilingual surveys often slow down because translation, programming, and quality assurance are treated as separate stages instead of a coordinated deployment workflow. Teams may have a stable questionnaire and experienced translators, yet still lose days to missing language strings, broken logic, inconsistent terminology, and repeated correction cycles. In large multi-country studies, those delays compound quickly.',
     'read_time' => '5 min',
     'date' => '2026-05-15',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_2.php',
+    'content_filepath' => __DIR__ . '/white_papers/content_for_id_2.php',
     'pdf_filepath' => './pdf/Multilingual_Survey_Turnaround_2026.pdf',
   ],
   [
@@ -36,7 +36,7 @@ $posts = [
     'excerpt' => 'Common mobile UX issues that hurt response quality and the design patterns that keep respondents moving.',
     'read_time' => '4 min',
     'date' => '2026-01-30',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_3.php',
+    'content_filepath' => __DIR__ . '/white_papers/content_for_id_3.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
@@ -48,7 +48,7 @@ $posts = [
     'excerpt' => 'A delivery-focused comparison of platform strengths, logic flexibility, and export readiness.',
     'read_time' => '7 min',
     'date' => '2025-12-10',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_4.php',
+    'content_filepath' => __DIR__ . '/white_papers/content_for_id_4.php',
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
@@ -60,7 +60,7 @@ $posts = [
     'excerpt' => 'Somewhere in the middle of a research cycle, after the questionnaire has been finalized, the sample sourced, and the launch window locked in, and a survey programmer sits down and begins turning that questionnaire into a live instrument. What happens in those hours matters more than most research teams realize.',
     'read_time' => '15 min',
     'date' => '2026-05-15',
-    'content_filepath' => __DIR__ . '/blogs/content_for_id_5.php',
+    'content_filepath' => __DIR__ . '/white_papers/content_for_id_5.php',
     'pdf_filepath' => './pdf/Survey_Programming_Data_Quality_Discipline_2026.pdf',
 
   ],
@@ -83,7 +83,7 @@ if ($selected_post === null) {
 $page_title = $selected_post['title'];
 $meta_description = $selected_post['excerpt'];
 $canonical_url = rtrim(SITE_URL, '/') . '/blog-post?slug=' . urlencode((string) $selected_post['slug']);
-$current_page = 'blog.php';
+$current_page = 'insights.php';
 $page_stylesheets = [];
 if ((int) ($selected_post['id'] ?? 0) === 1) {
   $page_stylesheets[] = 'css/whitepaper-id-1.css';
@@ -115,7 +115,7 @@ include __DIR__ . '/includes/header.php';
       <nav aria-label="Breadcrumb">
         <ol class="breadcrumb">
           <li><a href="index.php">Home</a></li>
-          <li><a href="blog.php">Resources and Insights</a></li>
+          <li><a href="insights.php">Resources and Insights</a></li>
           <li aria-current="page"><?= sanitize_input($selected_post['title']); ?></li>
         </ol>
       </nav>

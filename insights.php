@@ -84,7 +84,7 @@ include __DIR__ . '/includes/header.php';
       <ul class="tag-list" aria-label="Filter posts by category">
         <?php foreach ($categories as $category): ?>
           <?php $is_active_category = $active_category === $category; ?>
-          <li><a href="blog.php?cat=<?= urlencode($category); ?>" class="tag" <?= $is_active_category ? 'aria-current="page"' : ''; ?>><?= sanitize_input($category); ?></a></li>
+          <li><a href="insights.php?cat=<?= urlencode($category); ?>" class="tag" <?= $is_active_category ? 'aria-current="page"' : ''; ?>><?= sanitize_input($category); ?></a></li>
         <?php endforeach; ?>
       </ul>
     </section>
