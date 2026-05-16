@@ -82,7 +82,7 @@ if ($selected_post === null) {
 
 $page_title = $selected_post['title'];
 $meta_description = $selected_post['excerpt'];
-$canonical_url = rtrim(SITE_URL, '/') . '/blog-post?slug=' . urlencode((string) $selected_post['slug']);
+$canonical_url = rtrim(SITE_URL, '/') . '/insight-post?slug=' . urlencode((string) $selected_post['slug']);
 $current_page = 'insights.php';
 $page_stylesheets = [];
 if ((int) ($selected_post['id'] ?? 0) === 1) {

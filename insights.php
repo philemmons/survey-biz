@@ -109,7 +109,7 @@ include __DIR__ . '/includes/header.php';
               <h3 id="post-<?= (int) $post['id']; ?>-title" class="mt-4 mb-3"><?= sanitize_input($post['title']); ?></h3>
               <p class="card-body-text"><?= sanitize_input($post['excerpt']); ?></p>
               <p class="section-deck"><?= sanitize_input($post['read_time']); ?> read</p>
-              <p class="mt-4"><a class="btn-secondary" href="blog-post.php?slug=<?= urlencode($post['slug']); ?>">Read Article</a></p>
+              <p class="mt-4"><a class="btn-secondary" href="insight-post.php?slug=<?= urlencode($post['slug']); ?>">Read Article</a></p>
             </article>
           <?php endforeach; ?>
         </div>
