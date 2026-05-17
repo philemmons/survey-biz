@@ -518,8 +518,9 @@
   border-color: #274766;
 }
 
-.is-featured + section-number::after{
+.is-featured section-number::after {
   background: var(--white) !important;
+  border-color: var(--white);
 }
 
 .pricing-compare-card.is-featured h4,
