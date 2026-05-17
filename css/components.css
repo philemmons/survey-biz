@@ -451,6 +451,7 @@
   border-radius: var(--radius-1);
   font-size: var(--fs-95);
   padding: var(--space-3);
+  color: var(--black);
 }
 
 .pricing-range {
