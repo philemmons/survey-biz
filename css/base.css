@@ -15,7 +15,11 @@ html {
 body {
   background-color: var(--surface);
   background-image:
-    radial-gradient(circle at 10% -20%, rgba(15, 25, 35, 0.03), transparent 45%),
+    radial-gradient(
+      circle at 10% -20%,
+      rgba(15, 25, 35, 0.03),
+      transparent 45%
+    ),
     linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
   color: var(--ink);
   font-family: var(--sans);

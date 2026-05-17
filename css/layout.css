@@ -16,7 +16,14 @@
 }
 
 .section + .section::before {
-  background: linear-gradient(90deg, transparent, #c9c2b7 10%, #ddd6cc 50%, #c9c2b7 90%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c9c2b7 10%,
+    #ddd6cc 50%,
+    #c9c2b7 90%,
+    transparent
+  );
   content: "";
   height: 1px;
   left: 0;

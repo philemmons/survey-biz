@@ -911,6 +911,8 @@ legend.form-label {
 }
 
 .faq-item {
+  --faq-pad-x: var(--space-5);
+  --faq-pad-y: var(--space-4);
   background: var(--white);
   border: 1px solid var(--rule);
   border-radius: var(--radius-3);
@@ -928,7 +930,7 @@ legend.form-label {
   justify-content: space-between;
   list-style: none;
   min-height: 44px;
-  padding: var(--space-4) var(--space-5);
+  padding: var(--faq-pad-y) var(--faq-pad-x);
   transition: background var(--transition-base);
 }
 
@@ -968,20 +970,22 @@ legend.form-label {
   line-height: 1.6;
   max-height: 0;
   overflow: hidden;
-  padding: 0 var(--space-5);
-  transition: max-height 0.95s ease-in-out, padding 0.7s ease-in-out;
+  padding: 0 var(--faq-pad-x);
+  transition:
+    max-height 0.95s ease-in-out,
+    padding 0.7s ease-in-out;
 }
 
 .faq-item[open] .faq-answer {
   max-height: none;
-  padding: var(--space-4) var(--space-5);
+  padding: var(--faq-pad-y) var(--faq-pad-x);
 }
 
 .faq-answer p + p {
   margin-top: var(--space-3);
 }
 
-.faq-note { 
+.faq-note {
   margin-top: var(--space-2);
   padding: var(--space-2) var(--space-3);
   background: var(--accent-lt);

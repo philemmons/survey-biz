@@ -52,37 +52,32 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <section class="section">
-      <div class="pricing-factor-list mt-4" aria-labelledby="s1-heading" data-reveal>
 
+      <div class="pricing-factor-list mt-4" aria-labelledby="s1-heading" data-reveal>
         <div class="panel pricing-factor" aria-labelledby="s1-heading">
           <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
           <p class="feature-title" id='s1-heading'>Question Count & Section Depth</p>
           <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth — how questions are organized into blocks, rotations, or randomized sets — multiplies that work. A 20 question survey with flat structure and a 20 question survey with block randomization, carry forward answer pipes, and custom display templates are very different builds.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Agency-produced online surveys with 400 respondents start around $5,000 to $15,000 and professional programming labor typically represents the largest time component of that cost before fieldwork begins.</p>
         </div>
-
       </div>
 
       <div class="pricing-factor-list mt-4" aria-labelledby="s2-heading" data-reveal>
-
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">02</p>
           <p class="feature-title" id='s2-heading'>Logic Complexity</p>
           <p class="card-body-text">Branching, skip patterns, display logic, piping, quota management, and custom JavaScript or CSS validations each add implementation and testing scope. A simple linear survey scripts in hours. A study with nested quota logic, conditional question text, mid-survey redirects, and custom end-page routing can require days of structured QA alone. Logic errors in deployed surveys corrupt data and require re-contact — the cost of getting it wrong far exceeds the cost of getting it right the first time.</p>
           <p class="pricing-factor-note"><strong>Why it matters:</strong> Platform specialists on the open market charge specifically for this expertise because Qualtrics and LimeSurvey both require deep familiarity with logic sequencing and platform specific edge cases that generic developers don't carry.</p>
         </div>
-
       </div>
 
       <div class="pricing-factor-list mt-4" aria-labelledby="s3-heading" data-reveal>
-
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
           <p class="feature-title" id='s3-heading'>Languages Required</p>
           <p class="card-body-text">Each additional language multiplies deployment effort in three ways: locale setup within the platform, translation integration (mapping translated strings to question IDs accurately), and QA across every language variant to confirm display, encoding, and skip logic parity. Right-to-left language support and character encoding for non-Latin scripts add further technical considerations. A three language study is not three times the work of a single-language study, but it is meaningfully more.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Multi-market research studies running across several countries can run $150,000 or more, at the agency level — localization and field logistics account for a large share of that premium. Direct programming dramatically reduces this overhead.</p>
         </div>
-
       </div>
 
       <div class="pricing-factor-list mt-4" aria-labelledby="s4-heading" data-reveal>
@@ -92,7 +87,6 @@ include __DIR__ . '/includes/header.php';
           <p class="card-body-text">Survey programming ends at the script. Deployment begins there. Email campaign setup, contact list segmentation and upload, invite and reminder scheduling, unsubscribe and opt-out handling, and token-based respondent tracking are distinct operational tasks that extend total project scope. Studies that require double-opt-in flows, unique survey links per respondent, or integrations with CRM or panel providers add additional configuration and testing before a single response arrives.</p>
           <p class="pricing-factor-note"><strong>What this covers:</strong> LimeSurvey's token-based participant management, email queue setup, bounce handling, and outreach timing workflows — tasks that are often underestimated when clients receive platform-only quotes.</p>
         </div>
-
       </div>
 
       <div class="pricing-factor-list mt-4" aria-labelledby="s5-heading" data-reveal>
@@ -102,7 +96,6 @@ include __DIR__ . '/includes/header.php';
           <p class="card-body-text">ata collection is the means; insight is the end. Real-time progress dashboards, response-rate monitoring, automated cross-tab outputs, and stakeholder-facing reporting views are not defaults — they are configured. The complexity of what you need to see during and after field shapes post-launch support requirements significantly. Simple CSV export is trivial. A live dashboard with filtered views by segment, wave, or quota status is a separate scope item.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Strategic reports with visualizations and recommendations from research agencies run $3,000 to $10,000+ as a standalone deliverable. Building clarity into the platform from the start reduces that downstream cost.</p>
         </div>
-
       </div>
 
       <div class="pricing-factor-list mt-4" aria-labelledby="s6-heading" data-reveal>
@@ -112,11 +105,9 @@ include __DIR__ . '/includes/header.php';
           <p class="card-body-text">Delivery speed is a real resource constraint, not a filler factor. A study with clear specifications, no mid-build revisions, and a reasonable runway can often be delivered within a few business days. Compressed timelines — same-day or next-day launches, weekend fielding windows, or concurrent builds across multiple studies — require schedule prioritization that affects other commitments. Revision windows during QA also influence scheduling: one round of consolidated feedback is faster and cheaper to address than iterative single-item change requests.</p>
           <p class="pricing-factor-note"><strong>Practical note:</strong> Providing a complete questionnaire document with finalized wording, agreed logic, and confirmed sample targets before programming begins is the single highest-leverage thing a client can do to reduce total cost and turnaround time.</p>
         </div>
-
       </div>
+
     </section>
-
-
 
 
     <section class="section" aria-labelledby="included-heading" data-reveal>
@@ -180,6 +171,7 @@ include __DIR__ . '/includes/header.php';
       </div>
       <p class="pricing-limesurvey-note mt-4"><strong>LimeSurvey as the primary platform</strong> offers a meaningful cost advantage: the platform itself is open-source, with no per response licensing fees and no enterprise contract requirements. This keeps the per project cost focused on programming expertise and delivery quality rather than platform rent. </p>
     </section>
+
 
     <section class="section" aria-labelledby="faq-heading" data-reveal>
       <p class="section-number" aria-hidden="true">FAQ</p>
@@ -249,6 +241,7 @@ include __DIR__ . '/includes/header.php';
     </section>
   </div>
 
+
   <section class="cta-band" aria-labelledby="pricing-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
@@ -258,5 +251,6 @@ include __DIR__ . '/includes/header.php';
       <a class="btn-primary" href="inquiry.php">Get a Custom Quote</a>
     </div>
   </section>
+
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
