@@ -306,7 +306,8 @@
   transition: transform var(--transition-fast), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
-.feature-card {
+.feature-card, 
+.panel {
   border-left: 3px solid var(--accent);
 }
 
