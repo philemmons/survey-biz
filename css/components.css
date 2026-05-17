@@ -460,8 +460,8 @@
 }
 
 .pricing-range-item {
-  background: var(--white);
-  border: 1px solid var(--rule);
+  background: var(--ink);
+  border: 1px solid var(--accent);
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-card);
   padding: var(--space-4);
