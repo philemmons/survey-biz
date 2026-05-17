@@ -51,7 +51,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--ink);
+  color: var(--black);
   font-family: var(--serif);
   line-height: var(--lh-heading);
   text-wrap: balance;
