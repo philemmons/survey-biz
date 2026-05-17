@@ -519,7 +519,7 @@
 }
 
 .pricing-compare-card.is-featured::after{
-  background: var(--white);
+  background: var(--white) !important;
 }
 
 .pricing-compare-card.is-featured h4,
