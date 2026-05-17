@@ -51,52 +51,40 @@ include __DIR__ . '/includes/header.php';
       <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work: scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
       <ol class="pricing-factor-list mt-4" aria-label="Expanded pricing factors">
         <li class="panel pricing-factor">
-          <p class="pricing-factor-number" aria-hidden="true">01</p>
-          <div>
-            <h3>Question count and section depth</h3>
-            <p>Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth and advanced structures such as randomization or carry-forward logic multiply that work.</p>
-            <p class="pricing-factor-note"><strong>Market context:</strong> Basic agency-led survey projects often start around $5K-$15K, with programming and QA as major pre-fieldwork cost drivers.</p>
-          </div>
+          <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
+          <p class="feature-title">Question count and section depth</p>
+          <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth and advanced structures such as randomization or carry-forward logic multiply that work.</p>
+          <p class="pricing-factor-note"><strong>Market context:</strong> Basic agency-led survey projects often start around $5K-$15K, with programming and QA as major pre-fieldwork cost drivers.</p>
         </li>
         <li class="panel pricing-factor">
-          <p class="pricing-factor-number" aria-hidden="true">02</p>
-          <div>
-            <h3>Logic complexity</h3>
-            <p>Branching, skip patterns, display logic, piping, quota management, and custom validations each add implementation and test scope. Complex logic can require dedicated QA cycles to protect data quality before launch.</p>
-            <p class="pricing-factor-note"><strong>Why it matters:</strong> Logic errors are expensive after fielding begins, so pricing reflects preventive QA effort up front.</p>
-          </div>
+          <p class="section-number pricing-factor-number" aria-hidden="true">02</p>
+          <p class="feature-title">Logic complexity</p>
+          <p class="card-body-text">Branching, skip patterns, display logic, piping, quota management, and custom validations each add implementation and test scope. Complex logic can require dedicated QA cycles to protect data quality before launch.</p>
+          <p class="pricing-factor-note"><strong>Why it matters:</strong> Logic errors are expensive after fielding begins, so pricing reflects preventive QA effort up front.</p>
         </li>
         <li class="panel pricing-factor">
-          <p class="pricing-factor-number" aria-hidden="true">03</p>
-          <div>
-            <h3>Languages required</h3>
-            <p>Additional languages increase effort through locale setup, translation integration, and QA across each variant for display, encoding, and logic parity. Right-to-left and non-Latin support can add technical complexity.</p>
-            <p class="pricing-factor-note"><strong>Market context:</strong> Multilingual and multi-market projects command premium pricing at agency level; direct programming keeps scope-focused costs clearer.</p>
-          </div>
+          <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
+          <p class="feature-title">Languages required</p>
+          <p class="card-body-text">Additional languages increase effort through locale setup, translation integration, and QA across each variant for display, encoding, and logic parity. Right-to-left and non-Latin support can add technical complexity.</p>
+          <p class="pricing-factor-note"><strong>Market context:</strong> Multilingual and multi-market projects command premium pricing at agency level; direct programming keeps scope-focused costs clearer.</p>
         </li>
         <li class="panel pricing-factor">
-          <p class="pricing-factor-number" aria-hidden="true">04</p>
-          <div>
-            <h3>Deployment and outreach scope</h3>
-            <p>Programming and deployment are different scopes. Contact upload, segmentation, invite/reminder workflows, token handling, and operational setup can significantly expand project effort.</p>
-            <p class="pricing-factor-note"><strong>What this covers:</strong> Participant management and outreach workflows are scoped explicitly so launch operations are predictable.</p>
-          </div>
+          <p class="section-number pricing-factor-number" aria-hidden="true">04</p>
+          <p class="feature-title">Deployment and outreach scope</p>
+          <p class="card-body-text">Programming and deployment are different scopes. Contact upload, segmentation, invite/reminder workflows, token handling, and operational setup can significantly expand project effort.</p>
+          <p class="pricing-factor-note"><strong>What this covers:</strong> Participant management and outreach workflows are scoped explicitly so launch operations are predictable.</p>
         </li>
         <li class="panel pricing-factor">
-          <p class="pricing-factor-number" aria-hidden="true">05</p>
-          <div>
-            <h3>Reporting and dashboard setup</h3>
-            <p>Live progress tracking, stakeholder dashboards, and tailored exports are configured deliverables, not automatic defaults. Reporting needs influence both build scope and post-launch support.</p>
-            <p class="pricing-factor-note"><strong>Market context:</strong> Clear reporting architecture during build reduces downstream rework and external reporting costs.</p>
-          </div>
+          <p class="section-number pricing-factor-number" aria-hidden="true">05</p>
+          <p class="feature-title">Reporting and dashboard setup</p>
+          <p class="card-body-text">Live progress tracking, stakeholder dashboards, and tailored exports are configured deliverables, not automatic defaults. Reporting needs influence both build scope and post-launch support.</p>
+          <p class="pricing-factor-note"><strong>Market context:</strong> Clear reporting architecture during build reduces downstream rework and external reporting costs.</p>
         </li>
         <li class="panel pricing-factor">
-          <p class="pricing-factor-number" aria-hidden="true">06</p>
-          <div>
-            <h3>Timeline and turnaround</h3>
-            <p>Compressed windows, weekend launches, and multiple concurrent studies require schedule prioritization. A finalized questionnaire and consolidated feedback cycle typically lowers both timeline risk and cost.</p>
-            <p class="pricing-factor-note"><strong>Practical note:</strong> The fastest path is complete specs at kickoff: finalized wording, logic rules, sample targets, and launch constraints.</p>
-          </div>
+          <p class="section-number pricing-factor-number" aria-hidden="true">06</p>
+          <p class="feature-title">Timeline and turnaround</p>
+          <p class="card-body-text">Compressed windows, weekend launches, and multiple concurrent studies require schedule prioritization. A finalized questionnaire and consolidated feedback cycle typically lowers both timeline risk and cost.</p>
+          <p class="pricing-factor-note"><strong>Practical note:</strong> The fastest path is complete specs at kickoff: finalized wording, logic rules, sample targets, and launch constraints.</p>
         </li>
       </ol>
     </section>

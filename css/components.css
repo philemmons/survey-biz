@@ -411,32 +411,11 @@
 }
 
 .pricing-factor {
-  display: grid;
-  gap: var(--space-4);
-  grid-template-columns: auto 1fr;
+  display: block;
 }
 
 .pricing-factor-number {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: var(--fs-80);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  margin: 0.2rem 0 0;
-}
-
-.pricing-factor h3 {
-  font-size: var(--fs-110);
-  margin-bottom: 0.5rem;
-}
-
-.pricing-factor > div > p {
-  color: var(--ink-muted);
-  font-size: var(--fs-95);
-}
-
-.pricing-factor > div > p + p {
-  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
 }
 
 .pricing-factor-note {
@@ -995,10 +974,6 @@ section[id] {
   }
 
   .pricing-compare-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-factor {
     grid-template-columns: 1fr;
   }
 }
