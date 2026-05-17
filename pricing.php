@@ -51,10 +51,10 @@ include __DIR__ . '/includes/header.php';
       <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work: scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
     </section>
 
-    <section class="section" aria-labelledby="s1-heading" data-reveal>
+    <section class="section">
       <div class="pricing-factor-list mt-4">
 
-        <div class="panel pricing-factor">
+        <div class="panel pricing-factor" aria-labelledby="s1-heading" data-reveal>
           <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
           <p class="feature-title" id='s1-heading'>Question count and section depth</p>
           <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth and advanced structures such as randomization or carry-forward logic multiply that work.</p>
@@ -62,10 +62,8 @@ include __DIR__ . '/includes/header.php';
         </div>
 
       </div>
-    </section>
 
-    <section class="section" aria-labelledby="s2-heading" data-reveal>
-      <div class="pricing-factor-list mt-4">
+      <div class="pricing-factor-list mt-4" aria-labelledby="s2-heading" data-reveal>
 
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">02</p>
@@ -75,12 +73,10 @@ include __DIR__ . '/includes/header.php';
         </div>
 
       </div>
-    </section>
 
-    <section class="section" aria-labelledby="s3-heading" data-reveal>
       <div class="pricing-factor-list mt-4">
 
-        <div class="panel pricing-factor">
+        <div class="pricing-factor-list mt-4" aria-labelledby="s3-heading" data-reveal>
           <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
           <p class="feature-title" id='s3-heading'>Languages required</p>
           <p class="card-body-text">Additional languages increase effort through locale setup, translation integration, and QA across each variant for display, encoding, and logic parity. Right-to-left and non-Latin support can add technical complexity.</p>
@@ -88,12 +84,8 @@ include __DIR__ . '/includes/header.php';
         </div>
 
       </div>
-    </section>
 
-
-    <section class="section" aria-labelledby="s4-heading" data-reveal>
-      <div class="pricing-factor-list mt-4">
-
+      <div class="pricing-factor-list mt-4" aria-labelledby="s4-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">04</p>
           <p class="feature-title" id='s4-heading'>Deployment and outreach scope</p>
@@ -102,12 +94,8 @@ include __DIR__ . '/includes/header.php';
         </div>
 
       </div>
-    </section>
 
-
-    <section class="section" aria-labelledby="s5-heading" data-reveal>
-      <div class="pricing-factor-list mt-4">
-
+      <div class="pricing-factor-list mt-4" aria-labelledby="s5-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">05</p>
           <p class="feature-title" id='s5-heading'>Reporting and dashboard setup</p>
@@ -116,21 +104,20 @@ include __DIR__ . '/includes/header.php';
         </div>
 
       </div>
-    </section>
 
-
-    <section class="section" aria-labelledby="s6-heading" data-reveal>
-      <div class="pricing-factor-list mt-4">
-
+      <div class="pricing-factor-list mt-4" aria-labelledby="s6-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">06</p>
           <p class="feature-title" id='s6-heading'>Timeline and turnaround</p>
           <p class="card-body-text">Compressed windows, weekend launches, and multiple concurrent studies require schedule prioritization. A finalized questionnaire and consolidated feedback cycle typically lowers both timeline risk and cost.</p>
           <p class="pricing-factor-note"><strong>Practical note:</strong> The fastest path is complete specs at kickoff: finalized wording, logic rules, sample targets, and launch constraints.</p>
         </div>
-        
+
       </div>
     </section>
+
+
+
 
     <section class="section" aria-labelledby="included-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Competitive</p>
