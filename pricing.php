@@ -25,19 +25,19 @@ include __DIR__ . '/includes/header.php';
       <dl class="proof-grid">
         <div class="proof-item">
 
-          <dt class="proof-num">$30-$80</dt>
+          <dt class="proof-num">$30—$80</dt>
           <dd class="proof-label">Typical hourly range for Qualtrics / platform specialists on Upwork in 2026</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">$5K-$15K</dt>
+          <dt class="proof-num">$5K—$15K</dt>
           <dd class="proof-label">Baseline cost of a basic online survey project through a full-service agency</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">20-50%</dt>
+          <dt class="proof-num">20—50%</dt>
           <dd class="proof-label">Added overhead when routing through a research agency vs. a direct programmer</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">3-5 days</dt>
+          <dt class="proof-num">3—5 days</dt>
           <dd class="proof-label">Typical turnaround for clearly-scoped studies without enterprise queues</dd>
         </div>
       </dl>
@@ -126,19 +126,19 @@ include __DIR__ . '/includes/header.php';
       <div class="pricing-range mt-4" aria-label="Pricing range comparison">
         <div class="pricing-range-item">
           <p class="pricing-range-label">Freelance platform specialist (hourly)</p>
-          <p class="pricing-range-value">$30-$80 / hr</p>
+          <p class="pricing-range-value">$30—$80 / hr</p>
         </div>
         <div class="pricing-range-item">
           <p class="pricing-range-label">Basic survey project (agency, end-to-end)</p>
-          <p class="pricing-range-value">$5K-$15K</p>
+          <p class="pricing-range-value">$5K—$15K</p>
         </div>
         <div class="pricing-range-item">
           <p class="pricing-range-label">Enterprise platform license (annual)</p>
-          <p class="pricing-range-value">$5K-$100K+</p>
+          <p class="pricing-range-value">$5K—$100K+</p>
         </div>
         <div class="pricing-range-item">
           <p class="pricing-range-label">Typical agency overhead</p>
-          <p class="pricing-range-value">+20-50%</p>
+          <p class="pricing-range-value">+20—50%</p>
         </div>
       </div>
       <h3 id="comparison-cards-heading" class="pricing-subheading mt-4">Comparison cards</h3>
