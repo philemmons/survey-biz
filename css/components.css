@@ -993,6 +993,7 @@ legend.form-label {
   font-size: var(--fs-80);
   color: var(--ink-muted);
   line-height: var(--lh-copy);
+  font-weight: 600;
 }
 
 section[id] {
