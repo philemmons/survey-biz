@@ -518,6 +518,10 @@
   border-color: #274766;
 }
 
+.pricing-compare-card.is-featured::after{
+  background: var(--white);
+}
+
 .pricing-compare-card.is-featured h4,
 .pricing-compare-card.is-featured .pricing-card-label {
   color: var(--white);
