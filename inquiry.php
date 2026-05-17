@@ -167,10 +167,10 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       <h1 id="inquiry-hero-heading">Request a custom survey programming quote</h1>
       <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps and pricing tailored to your actual requirements. Not a package tier built around the average project. </p>
 
-<div class="hero-actions">
-      <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a> 
-      <a href="tel:+18312360849" class="phone-inline" aria-label="Call 831-236-0849">Phone: 831.236.0849</a>
-</div>
+      <div class="hero-actions mt-4">
+        <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
+        <a href="tel:+18312360849" class="phone-inline" aria-label="Call 831-236-0849">Phone: 831.236.0849</a>
+      </div>
     </div>
   </section>
 

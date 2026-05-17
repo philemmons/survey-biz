@@ -223,20 +223,19 @@
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: var(--space-8);
   flex-wrap: wrap;
 }
 
 .phone-inline {
-  font-family: var(--mono);
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  text-decoration: none;
-  transition: color 0.15s;
+    color: var(--header-link);
+    text-decoration: none;
+    transition: color 0.15s;
 }
 
 .phone-inline:hover {
-  color: var(--text);
+  color: var(--white);
+  text-decoration: underline;
 }
 
 /* Proof strip and stats */
