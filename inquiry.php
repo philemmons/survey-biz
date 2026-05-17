@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
@@ -10,125 +11,125 @@ $status = '';
 $status_message = '';
 $errors = [];
 $field_max_length_by_name = [
-    'name' => 120,
-    'email' => 120,
-    'org' => 150,
-    'languages' => 150,
-    'subject' => 160,
-    'description' => 2000,
+  'name' => 120,
+  'email' => 120,
+  'org' => 150,
+  'languages' => 150,
+  'subject' => 160,
+  'description' => 2000,
 ];
 $field_label_by_name = [
-    'name' => 'Name',
-    'email' => 'Email',
-    'org' => 'Organization',
-    'languages' => 'Languages needed',
-    'subject' => 'Subject',
-    'description' => 'Project description',
+  'name' => 'Name',
+  'email' => 'Email',
+  'org' => 'Organization',
+  'languages' => 'Languages needed',
+  'subject' => 'Subject',
+  'description' => 'Project description',
 ];
 $count_text_characters = static function (string $value): int {
-    if (function_exists('mb_strlen')) {
-        return mb_strlen($value, 'UTF-8');
-    }
-    return strlen($value);
+  if (function_exists('mb_strlen')) {
+    return mb_strlen($value, 'UTF-8');
+  }
+  return strlen($value);
 };
 
 generate_csrf_token();
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
-    $submitted_form_values = [
-        'name' => trim((string) ($_POST['name'] ?? '')),
-        'email' => trim((string) ($_POST['email'] ?? '')),
-        'org' => trim((string) ($_POST['org'] ?? '')),
-        'study_type' => trim((string) ($_POST['study_type'] ?? '')),
-        'num_questions' => trim((string) ($_POST['num_questions'] ?? '')),
-        'languages' => trim((string) ($_POST['languages'] ?? '')),
-        'launch_date' => trim((string) ($_POST['launch_date'] ?? '')),
-        'subject' => trim((string) ($_POST['subject'] ?? '')),
-        'description' => trim((string) ($_POST['description'] ?? '')),
-    ];
+  $submitted_form_values = [
+    'name' => trim((string) ($_POST['name'] ?? '')),
+    'email' => trim((string) ($_POST['email'] ?? '')),
+    'org' => trim((string) ($_POST['org'] ?? '')),
+    'study_type' => trim((string) ($_POST['study_type'] ?? '')),
+    'num_questions' => trim((string) ($_POST['num_questions'] ?? '')),
+    'languages' => trim((string) ($_POST['languages'] ?? '')),
+    'launch_date' => trim((string) ($_POST['launch_date'] ?? '')),
+    'subject' => trim((string) ($_POST['subject'] ?? '')),
+    'description' => trim((string) ($_POST['description'] ?? '')),
+  ];
 
-    $submitted_csrf_token = (string) ($_POST['csrf_token'] ?? '');
-    $beeName = trim((string) ($_POST['beeName'] ?? ''));
+  $submitted_csrf_token = (string) ($_POST['csrf_token'] ?? '');
+  $beeName = trim((string) ($_POST['beeName'] ?? ''));
 
-    // Validate token before processing user content.
-    if (!validate_csrf_token($submitted_csrf_token)) {
-        $status = 'error';
-        $status_message = 'Your secure form session expired. Please review your details and submit again.';
+  // Validate token before processing user content.
+  if (!validate_csrf_token($submitted_csrf_token)) {
+    $status = 'error';
+    $status_message = 'Your secure form session expired. Please review your details and submit again.';
     // Honeypot must stay empty for human users.
-    } elseif ($beeName !== '') {
-        $status = 'error';
-        $status_message = 'Your submission could not be accepted. Please try again.';
-    } else {
-        if ($submitted_form_values['name'] === '') {
-            $errors['name'] = 'Please enter your name.';
-        }
-
-        if ($submitted_form_values['email'] === '') {
-            $errors['email'] = 'Please enter your email address.';
-        } elseif (!filter_var($submitted_form_values['email'], FILTER_VALIDATE_EMAIL)) {
-            $errors['email'] = 'Please enter a valid email address.';
-        }
-
-        if ($submitted_form_values['subject'] === '') {
-            $errors['subject'] = 'Please enter a subject.';
-        }
-
-        if ($submitted_form_values['description'] === '') {
-            $errors['description'] = 'Please describe your study goals and requirements.';
-        }
-
-        foreach ($field_max_length_by_name as $field_name => $max_length) {
-            if (isset($errors[$field_name])) {
-                continue;
-            }
-
-            $field_value = (string) ($submitted_form_values[$field_name] ?? '');
-            if ($field_value === '') {
-                continue;
-            }
-
-            if ($count_text_characters($field_value) > $max_length) {
-                $field_label = $field_label_by_name[$field_name] ?? ucfirst(str_replace('_', ' ', $field_name));
-                $errors[$field_name] = $field_label . ' must be ' . $max_length . ' characters or fewer.';
-            }
-        }
-
-        if ($errors !== []) {
-            $status = 'error';
-            $status_message = 'Please correct the highlighted fields and try again.';
-        } else {
-            $sanitized_subject_line = preg_replace('/[\r\n]+/', ' ', $submitted_form_values['subject']);
-            $inquiry_email_subject = 'New Inquiry: ' . trim((string) $sanitized_subject_line);
-
-            $email_payload = [
-                'name' => sanitize_input($submitted_form_values['name']),
-                'email' => sanitize_input($submitted_form_values['email']),
-                'org' => sanitize_input($submitted_form_values['org']),
-                'study_type' => sanitize_input($submitted_form_values['study_type']),
-                'num_questions' => sanitize_input($submitted_form_values['num_questions']),
-                'languages' => sanitize_input($submitted_form_values['languages']),
-                'launch_date' => sanitize_input($submitted_form_values['launch_date']),
-                'subject' => sanitize_input($submitted_form_values['subject']),
-                'description' => sanitize_input($submitted_form_values['description']),
-            ];
-
-            // send_inquiry_email() performs safe From/Reply-To construction and checks mail() result.
-            $mail_was_accepted = send_inquiry_email($submitted_form_values['email'], $inquiry_email_subject, build_inquiry_email($email_payload));
-
-            if ($mail_was_accepted) {
-                $status = 'success';
-                $status_message = 'Thanks for your inquiry. I will get back to you within two business days.';
-                $submitted_form_values = [];
-                $errors = [];
-            } else {
-                $status = 'error';
-                $status_message = 'Your inquiry could not be sent right now. Please try again or call directly.';
-            }
-        }
+  } elseif ($beeName !== '') {
+    $status = 'error';
+    $status_message = 'Your submission could not be accepted. Please try again.';
+  } else {
+    if ($submitted_form_values['name'] === '') {
+      $errors['name'] = 'Please enter your name.';
     }
 
-    // Rotate token after every POST attempt to reduce replay window.
-    rotate_csrf_token();
+    if ($submitted_form_values['email'] === '') {
+      $errors['email'] = 'Please enter your email address.';
+    } elseif (!filter_var($submitted_form_values['email'], FILTER_VALIDATE_EMAIL)) {
+      $errors['email'] = 'Please enter a valid email address.';
+    }
+
+    if ($submitted_form_values['subject'] === '') {
+      $errors['subject'] = 'Please enter a subject.';
+    }
+
+    if ($submitted_form_values['description'] === '') {
+      $errors['description'] = 'Please describe your study goals and requirements.';
+    }
+
+    foreach ($field_max_length_by_name as $field_name => $max_length) {
+      if (isset($errors[$field_name])) {
+        continue;
+      }
+
+      $field_value = (string) ($submitted_form_values[$field_name] ?? '');
+      if ($field_value === '') {
+        continue;
+      }
+
+      if ($count_text_characters($field_value) > $max_length) {
+        $field_label = $field_label_by_name[$field_name] ?? ucfirst(str_replace('_', ' ', $field_name));
+        $errors[$field_name] = $field_label . ' must be ' . $max_length . ' characters or fewer.';
+      }
+    }
+
+    if ($errors !== []) {
+      $status = 'error';
+      $status_message = 'Please correct the highlighted fields and try again.';
+    } else {
+      $sanitized_subject_line = preg_replace('/[\r\n]+/', ' ', $submitted_form_values['subject']);
+      $inquiry_email_subject = 'New Inquiry: ' . trim((string) $sanitized_subject_line);
+
+      $email_payload = [
+        'name' => sanitize_input($submitted_form_values['name']),
+        'email' => sanitize_input($submitted_form_values['email']),
+        'org' => sanitize_input($submitted_form_values['org']),
+        'study_type' => sanitize_input($submitted_form_values['study_type']),
+        'num_questions' => sanitize_input($submitted_form_values['num_questions']),
+        'languages' => sanitize_input($submitted_form_values['languages']),
+        'launch_date' => sanitize_input($submitted_form_values['launch_date']),
+        'subject' => sanitize_input($submitted_form_values['subject']),
+        'description' => sanitize_input($submitted_form_values['description']),
+      ];
+
+      // send_inquiry_email() performs safe From/Reply-To construction and checks mail() result.
+      $mail_was_accepted = send_inquiry_email($submitted_form_values['email'], $inquiry_email_subject, build_inquiry_email($email_payload));
+
+      if ($mail_was_accepted) {
+        $status = 'success';
+        $status_message = 'Thanks for your inquiry, please allow up to two business days for a response.';
+        $submitted_form_values = [];
+        $errors = [];
+      } else {
+        $status = 'error';
+        $status_message = 'Your inquiry could not be sent right now. Please try again or call directly.';
+      }
+    }
+  }
+
+  // Rotate token after every POST attempt to reduce replay window.
+  rotate_csrf_token();
 }
 
 $page_title = 'Inquiry';
@@ -139,24 +140,24 @@ include __DIR__ . '/includes/header.php';
 
 $error_fields_in_display_order = ['name', 'email', 'org', 'languages', 'subject', 'description'];
 $error_field_anchor_by_name = [
-    'name' => 'name',
-    'email' => 'email',
-    'org' => 'org',
-    'languages' => 'languages',
-    'subject' => 'subject',
-    'description' => 'description',
+  'name' => 'name',
+  'email' => 'email',
+  'org' => 'org',
+  'languages' => 'languages',
+  'subject' => 'subject',
+  'description' => 'description',
 ];
 $error_summary_by_field = [];
 foreach ($error_fields_in_display_order as $error_field_name) {
-    if (isset($errors[$error_field_name])) {
-        $error_summary_by_field[$error_field_name] = $errors[$error_field_name];
-    }
+  if (isset($errors[$error_field_name])) {
+    $error_summary_by_field[$error_field_name] = $errors[$error_field_name];
+  }
 }
 $get_submitted_value = static function (string $field_name, array $submitted_form_values): string {
-    return (string) ($submitted_form_values[$field_name] ?? '');
+  return (string) ($submitted_form_values[$field_name] ?? '');
 };
 $get_invalid_attribute = static function (string $field_name, array $errors): string {
-    return isset($errors[$field_name]) ? ' aria-invalid="true"' : '';
+  return isset($errors[$field_name]) ? ' aria-invalid="true"' : '';
 };
 ?>
 <main id="main-content">
@@ -164,10 +165,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Inquiry</p>
       <h1 id="inquiry-hero-heading">Request a custom survey programming quote</h1>
-      <p class="hero-sub">Tell me about your study and I will send back a project-based estimate, usually within two business days.</p>
-      <p class="hero-sub mt-3">You will receive a direct personal response from Phillip Emmons with next steps and pricing tailored to your actual requirements.</p>
-      <p class="mt-4"><a href="#inquiry-form" class="btn-primary">Send an Inquiry</a></p>
-      <p class="mt-2"><a href="tel:+18312360849" class="btn-secondary" aria-label="Call Phillip Emmons at 831-236-0849">Phone: 831.236.0849</a></p>
+      <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps and pricing tailored to your actual requirements.</p>
+      <p class="mt-4"><a href="#inquiry-form" class="btn-primary">Send an Inquiry</a> <a href="tel:+18312360849" aria-label="Call 831-236-0849">Phone: 831.236.0849</a></p>
     </div>
   </section>
 
@@ -195,74 +194,16 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
   </section>
 
   <div class="container">
-    <section class="section" aria-labelledby="how-it-works-heading" data-reveal>
-      <div class="section-head">
-        <p class="section-number">How it works</p>
-        <h2 id="how-it-works-heading">From inquiry to fielded study in three steps</h2>
-        <p class="section-deck">Every project starts with a direct conversation about your requirements. No intake queue, no agency relay, and no account manager layer between you and the person doing the work.</p>
-      </div>
-      <ol class="grid-3" aria-label="How inquiry projects move forward">
-        <li class="panel">
-          <p class="section-number">Step 1</p>
-          <h3 class="card-title">Send an inquiry</h3>
-          <p class="card-body-text">Describe your study in as much or as little detail as you have. Study type, question count, languages, platform preferences, and launch date are all useful, and a rough questionnaire draft is enough to get started.</p>
-        </li>
-        <li class="panel">
-          <p class="section-number">Step 2</p>
-          <h3 class="card-title">Receive a custom quote</h3>
-          <p class="card-body-text">Phillip reviews your requirements directly and responds with a fixed project-based estimate that reflects your actual scope, including programming, QA, deployment configuration, and agreed reporting setup.</p>
-        </li>
-        <li class="panel">
-          <p class="section-number">Step 3</p>
-          <h3 class="card-title">Begin the project</h3>
-          <p class="card-body-text">Once timeline and scope are aligned, programming begins. You get direct access throughout implementation for questions, revisions, and QA sign-off until the study is ready to launch.</p>
-        </li>
-      </ol>
-    </section>
 
     <section class="section" aria-labelledby="pull-quote-heading" data-reveal>
       <div class="panel measure">
-        <h2 id="pull-quote-heading" class="card-title">From Phillip Emmons</h2>
+        <h2 id="pull-quote-heading" class="card-title">Our Goal</h2>
         <blockquote class="card-body-text">
-          Survey systems should be precise, accessible, and operationally dependable from day one. Every inquiry gets full attention, and every quote reflects the actual work your study requires rather than a generic package tier.
+          Survey systems should be precise, accessible, and operationally dependable from day one. Every inquiry gets full attention, and every quote reflects the actual work your study requires rather than a generic package tier. -- Survey Programming Specialist
         </blockquote>
-        <p class="form-help"><strong>Phillip Emmons</strong>, Survey Programming Specialist, Marina, CA</p>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="why-work-heading" data-reveal>
-      <div class="section-head">
-        <p class="section-number">Why work with Phillip</p>
-        <h2 id="why-work-heading">Direct accountability and enterprise-tested experience</h2>
-        <p class="section-deck">You work with the person building and deploying your survey from first inquiry through delivery, with no production handoffs and no communication bottlenecks.</p>
-      </div>
-      <div class="grid-3">
-        <article class="panel">
-          <h3 class="card-title">Direct operator access</h3>
-          <p class="card-body-text">You communicate directly with Phillip for scope, logic implementation, QA, and launch planning.</p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">International panel scale</h3>
-          <p class="card-body-text">Workflows are shaped by enterprise field operations supporting 185,000+ panel members across 80+ countries.</p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">WCAG 2.1 first</h3>
-          <p class="card-body-text">Accessibility is built into survey interaction patterns from the beginning, not retrofitted late in the process.</p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Fixed project pricing</h3>
-          <p class="card-body-text">Quotes are scoped to deliverables so your base project cost is clear before programming begins.</p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Platform flexibility</h3>
-          <p class="card-body-text">LimeSurvey is primary, with support for Qualtrics, SurveyMonkey, Alchemer, and other platform requirements.</p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Fast quote turnaround</h3>
-          <p class="card-body-text">Most inquiries receive a custom estimate within two business days, with clarifying questions only when needed.</p>
-        </article>
-      </div>
-    </section>
 
     <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
       <div class="section-head">
@@ -298,51 +239,6 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       </div>
     </section>
 
-    <section class="section" aria-labelledby="faq-heading" data-reveal>
-      <div class="section-head">
-        <p class="section-number">Common questions</p>
-        <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
-        <p class="section-deck">More pricing and scope guidance is also available on the <a href="pricing.php">Pricing page</a>.</p>
-      </div>
-      <div class="faq-list mt-4">
-        <details class="faq-item">
-          <summary>How quickly can I receive a survey programming quote?</summary>
-          <div class="faq-answer">
-            <p>Most inquiries receive a custom project-based quote within two business days. Complex studies may require clarifying questions before final scoping.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>What survey platforms do you support?</summary>
-          <div class="faq-answer">
-            <p>LimeSurvey is the primary platform. Phillip also supports Qualtrics, SurveyMonkey, Alchemer, and other platforms based on project requirements.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>Do you program multilingual surveys?</summary>
-          <div class="faq-answer">
-            <p>Yes. Multilingual deployment includes locale setup, translation integration, and QA across language variants to confirm consistent logic and display behavior.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>How does project-based pricing compare to hourly billing?</summary>
-          <div class="faq-answer">
-            <p>Project-based pricing ties scope to a clear deliverable and cost, reducing budget uncertainty compared with open-ended hourly billing.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>What information do I need to submit an inquiry?</summary>
-          <div class="faq-answer">
-            <p>A rough questionnaire draft or project outline is enough. Helpful details include study type, estimated question count, languages, launch date, and reporting requirements.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>Are surveys built to WCAG 2.1 accessibility standards?</summary>
-          <div class="faq-answer">
-            <p>Yes. Accessibility is included from the start with keyboard-friendly patterns, screen-reader compatibility, and mobile-responsive behavior.</p>
-          </div>
-        </details>
-      </div>
-    </section>
 
     <section class="section" id="inquiry-form" data-reveal>
       <div class="section-head">
@@ -379,9 +275,9 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
           <input type="hidden" name="csrf_token" value="<?= htmlspecialchars((string) $_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8'); ?>">
 
-          <div class="sr-only">
+          <div class="sr-only" aria-hidden="true">
             <label for="beeName">Sunflower Name</label>
-            <input id="beeName" name="beeName" type="text" tabindex="-1" autocomplete="off" value="">
+            <input id="beeName" name="beeName" type="text" tabindex="-1" autocomplete="off" value="" style="display:none">
           </div>
 
           <fieldset class="form-group">
@@ -456,6 +352,10 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           </fieldset>
 
           <button type="submit" name="submit" value="submit" class="btn-primary w-full">Send Inquiry</button>
+          <button type="reset" id="reset-button" class="btn-secondary w-full mt-2" name="reset" value="reset" onclick="return resetFields();" aria-labelledby="reset-button reset-note">Reset Form</button>
+          <div class="sr-only" id="reset-note" role="alert" aria-live="assertive" aria-atomic="true">
+            <p>(A pop up will confirm your reset form)</p>
+          </div>
           <p class="form-help">Fields marked <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
           <ul class="trust-row trust-row-light" aria-label="Inquiry trust markers">
             <li class="trust-marker">Response within two business days</li>
@@ -478,6 +378,54 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           </ul>
           <p><strong>Phone:</strong> <a href="tel:+18312360849">831.236.0849</a></p>
         </aside>
+
+        <section class="section" aria-labelledby="faq-heading" data-reveal>
+          <div class="section-head">
+            <p class="section-number">Common questions</p>
+            <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
+            <p class="section-deck">More pricing and scope guidance is also available on the <a href="pricing.php">Pricing page</a>.</p>
+          </div>
+          <div class="faq-list mt-4">
+            <details class="faq-item">
+              <summary>How quickly can I receive a survey programming quote?</summary>
+              <div class="faq-answer">
+                <p>Most inquiries receive a custom project-based quote within two business days. Complex studies may require clarifying questions before final scoping.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What survey platforms do you support?</summary>
+              <div class="faq-answer">
+                <p>LimeSurvey is the primary platform. Phillip also supports Qualtrics, SurveyMonkey, Alchemer, and other platforms based on project requirements.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Do you program multilingual surveys?</summary>
+              <div class="faq-answer">
+                <p>Yes. Multilingual deployment includes locale setup, translation integration, and QA across language variants to confirm consistent logic and display behavior.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How does project-based pricing compare to hourly billing?</summary>
+              <div class="faq-answer">
+                <p>Project-based pricing ties scope to a clear deliverable and cost, reducing budget uncertainty compared with open-ended hourly billing.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What information do I need to submit an inquiry?</summary>
+              <div class="faq-answer">
+                <p>A rough questionnaire draft or project outline is enough. Helpful details include study type, estimated question count, languages, launch date, and reporting requirements.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Are surveys built to WCAG 2.1 accessibility standards?</summary>
+              <div class="faq-answer">
+                <p>Yes. Accessibility is included from the start with keyboard-friendly patterns, screen-reader compatibility, and mobile-responsive behavior.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+
       </div>
     </section>
   </div>

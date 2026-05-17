@@ -1,6 +1,14 @@
 "use strict";
 
 /**
+ * Keep reset confirmation global because inquiry.php uses inline onclick.
+ * Returns true to continue native reset behavior, false to cancel.
+ */
+window.resetFields = function () {
+  return window.confirm("Are you sure you want to reset this form?");
+};
+
+/**
  * Purpose:
  * Provide client-side validation UX for the inquiry form.
  *
@@ -141,6 +149,20 @@ document.addEventListener("DOMContentLoaded", function () {
     errorSummary.focus();
   }
 
+  /**
+   * Reset all client-side validation UI so form state matches cleared inputs.
+   */
+  function clearClientValidationState() {
+    Object.keys(fieldConfigByName).forEach(function (fieldName) {
+      setFieldError(fieldName, "");
+    });
+
+    const errorSummary = inquiryForm.querySelector("#form-errors");
+    if (errorSummary) {
+      errorSummary.remove();
+    }
+  }
+
   /*
   |--------------------------------------------------------------------------
   | Live Field Validation
@@ -191,5 +213,12 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       renderClientValidationSummary(submitValidationErrors);
     }
+  });
+
+  inquiryForm.addEventListener("reset", function () {
+    // Wait until browser applies native reset values, then clear UX state.
+    window.setTimeout(function () {
+      clearClientValidationState();
+    }, 0);
   });
 });
