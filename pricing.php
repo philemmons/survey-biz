@@ -145,7 +145,7 @@ include __DIR__ . '/includes/header.php';
       <div class="pricing-compare-grid mt-4" aria-labelledby="comparison-cards-heading">
         <article class="panel pricing-compare-card">
           <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
-          <h4>Hourly platform freelancer</h4>
+          <h4>Hourly Platform Freelancer</h4>
           <ul class="stack-3">
             <li>Hourly variability means scope creep can expand total cost.</li>
             <li>Platform marketplace fees and inconsistent availability are common.</li>
@@ -154,7 +154,7 @@ include __DIR__ . '/includes/header.php';
         </article>
         <article class="panel pricing-compare-card">
           <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
-          <h4>Full-service research agency</h4>
+          <h4>Full-Service Research Agency</h4>
           <ul class="stack-3">
             <li>Overhead and internal layers increase total cost and turnaround.</li>
             <li>Minimum project sizes can exclude pilot or one-off studies.</li>
@@ -163,7 +163,7 @@ include __DIR__ . '/includes/header.php';
         </article>
         <article class="panel pricing-compare-card is-featured">
           <p class="section-number pricing-card-label" aria-hidden="true">This Service</p>
-          <h4>Project-based independent programming</h4>
+          <h4>Project-based Independent</h4>
           <ul class="stack-3">
             <li>Fixed project quotes support budget certainty and scope clarity.</li>
             <li>No retainer requirement and no agency markup layer.</li>
