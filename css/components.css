@@ -969,7 +969,7 @@ legend.form-label {
   max-height: 0;
   overflow: hidden;
   padding: 0 var(--space-5);
-  transition: max-height 0.35s ease, padding 0.25s ease;
+  transition: max-height 0.5s ease, padding 0.35s ease;
 }
 
 .faq-item[open] .faq-answer {
