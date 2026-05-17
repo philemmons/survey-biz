@@ -448,11 +448,10 @@
 }
 
 .pricing-range-value {
-    color: var(--white);
-    font-family: var(--serif);
-    font-size: var(--fs-130);
-    letter-spacing: 0.1rem;
-    margin: 0;
+  color: var(--proof-label);
+  font-family: var(--serif);
+  font-size: var(--fs-130);
+  margin: 0;
 }
 
 .pricing-subheading {
