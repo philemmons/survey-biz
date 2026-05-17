@@ -90,7 +90,7 @@ include __DIR__ . '/includes/header.php';
           <p class="section-number pricing-factor-number" aria-hidden="true">04</p>
           <p class="feature-title" id='s4-heading'>Deployment & Outreach Scope</p>
           <p class="card-body-text">Survey programming ends at the script. Deployment begins there. Email campaign setup, contact list segmentation and upload, invite and reminder scheduling, unsubscribe and opt-out handling, and token-based respondent tracking are distinct operational tasks that extend total project scope. Studies that require double-opt-in flows, unique survey links per respondent, or integrations with CRM or panel providers add additional configuration and testing before a single response arrives.</p>
-          <p class="pricing-factor-note"><strong>What this covers:</strong>  LimeSurvey's token-based participant management, email queue setup, bounce handling, and outreach timing workflows — tasks that are often underestimated when clients receive platform-only quotes.</p>
+          <p class="pricing-factor-note"><strong>What this covers:</strong> LimeSurvey's token-based participant management, email queue setup, bounce handling, and outreach timing workflows — tasks that are often underestimated when clients receive platform-only quotes.</p>
         </div>
 
       </div>
@@ -178,7 +178,7 @@ include __DIR__ . '/includes/header.php';
           </ul>
         </article>
       </div>
-      <p class="pricing-limesurvey-note mt-4"><strong>LimeSurvey as the primary platform</strong>  offers a meaningful cost advantage: the platform itself is open-source, with no per response licensing fees and no enterprise contract requirements. This keeps the per project cost focused on programming expertise and delivery quality rather than platform rent. </p>
+      <p class="pricing-limesurvey-note mt-4"><strong>LimeSurvey as the primary platform</strong> offers a meaningful cost advantage: the platform itself is open-source, with no per response licensing fees and no enterprise contract requirements. This keeps the per project cost focused on programming expertise and delivery quality rather than platform rent. </p>
     </section>
 
     <section class="section" aria-labelledby="faq-heading" data-reveal>
@@ -190,14 +190,14 @@ include __DIR__ . '/includes/header.php';
           <div class="faq-answer">
             <p>Many studies can be delivered within two to three business days when a finalized questionnaire document is provided at the start. The bottleneck in survey programming is rarely the programming itself — it's the specification. Studies that arrive with wording still in flux, logic not yet confirmed, or sample targets undecided require back-and-forth that adds days to any timeline.</p>
             <p>For complex studies (extensive quota logic, multiple languages, custom validation), five to ten business days is a more realistic window, with QA cycles built in. Rush delivery for confirmed specifications within 24 to 48 hours is possible but may carry a scheduling premium.</p>
-<p class="faq-note">For comparison: full-service agencies typically require 2 to 4 weeks for the same scope due to internal handoff queues and approval layers.</p>
+            <p class="faq-note">For comparison: full-service agencies typically require 2 to 4 weeks for the same scope due to internal handoff queues and approval layers.</p>
           </div>
         </details>
         <details class="faq-item">
           <summary>Do you work with small or one-off studies?</summary>
           <div class="faq-answer">
-            <p>Yes — explicitly. Many agencies impose minimum project sizes that price out pilot studies, concept tests, or single-wave qualitative supplements. Small studies, one-off deployments, and internal pulse surveys are supported alongside larger recurring programs. A 15-question employee feedback survey is a legitimate project.</p>
-<p>The quote simply reflects actual scope rather than a minimum billing threshold. If your study is small, the quote will be small.</p>
+            <p>Yes — explicitly! Many agencies impose minimum project sizes that price out pilot studies, concept tests, or single-wave qualitative supplements. Small studies, one-off deployments, and internal pulse surveys are supported alongside larger recurring programs. A 15 question employee feedback survey is a legitimate project.</p>
+            <p>The quote simply reflects actual scope rather than a minimum billing threshold. If your study is small, the quote will be small.</p>
             <p>Quotes reflect actual project scope instead of minimum billing thresholds.</p>
           </div>
         </details>

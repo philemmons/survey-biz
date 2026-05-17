@@ -973,7 +973,7 @@ legend.form-label {
 }
 
 .faq-item[open] .faq-answer {
-  max-height: 600px;
+  max-height: none;
   padding: var(--space-4) var(--space-5);
 }
 

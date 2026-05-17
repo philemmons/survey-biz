@@ -133,21 +133,108 @@ document.addEventListener("DOMContentLoaded", function () {
   |--------------------------------------------------------------------------
   | FAQ Accordion
   |--------------------------------------------------------------------------
-  | Keep native <details>/<summary> semantics while matching single-open
-  | accordion behavior from the expanded pricing reference.
+  | Keep native <details>/<summary> semantics while controlling open/close
+  | timing so both directions animate at the same speed.
   */
   document.querySelectorAll(".faq-list").forEach(function (faqList) {
     const faqItems = faqList.querySelectorAll(".faq-item");
-    faqItems.forEach(function (faqItem) {
-      faqItem.addEventListener("toggle", function () {
-        if (!faqItem.open) {
+
+    const animateFaqClose = function (faqItem) {
+      const faqAnswer = faqItem.querySelector(".faq-answer");
+      if (!faqAnswer || !faqItem.open || faqItem.dataset.faqAnimating === "true") {
+        return;
+      }
+
+      faqItem.dataset.faqAnimating = "true";
+      const openStyles = window.getComputedStyle(faqAnswer);
+      faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+      faqAnswer.style.paddingTop = openStyles.paddingTop;
+      faqAnswer.style.paddingBottom = openStyles.paddingBottom;
+      // Force layout so the browser sees an explicit start state before animating.
+      void faqAnswer.offsetHeight;
+
+      faqAnswer.style.maxHeight = "0px";
+      faqAnswer.style.paddingTop = "0px";
+      faqAnswer.style.paddingBottom = "0px";
+
+      const onCloseEnd = function (event) {
+        if (event.propertyName !== "max-height") {
           return;
         }
+        faqItem.open = false;
+        faqAnswer.style.removeProperty("max-height");
+        faqAnswer.style.removeProperty("padding-top");
+        faqAnswer.style.removeProperty("padding-bottom");
+        faqItem.dataset.faqAnimating = "false";
+        faqAnswer.removeEventListener("transitionend", onCloseEnd);
+      };
+
+      faqAnswer.addEventListener("transitionend", onCloseEnd);
+    };
+
+    const animateFaqOpen = function (faqItem) {
+      const faqAnswer = faqItem.querySelector(".faq-answer");
+      if (!faqAnswer || faqItem.open || faqItem.dataset.faqAnimating === "true") {
+        return;
+      }
+
+      faqItem.dataset.faqAnimating = "true";
+      faqItem.open = true;
+
+      const openStyles = window.getComputedStyle(faqAnswer);
+      const targetPaddingTop = openStyles.paddingTop;
+      const targetPaddingBottom = openStyles.paddingBottom;
+      const targetMaxHeight = faqAnswer.scrollHeight;
+
+      faqAnswer.style.maxHeight = "0px";
+      faqAnswer.style.paddingTop = "0px";
+      faqAnswer.style.paddingBottom = "0px";
+      // Force layout so the browser sees an explicit start state before animating.
+      void faqAnswer.offsetHeight;
+
+      faqAnswer.style.maxHeight = targetMaxHeight + "px";
+      faqAnswer.style.paddingTop = targetPaddingTop;
+      faqAnswer.style.paddingBottom = targetPaddingBottom;
+
+      const onOpenEnd = function (event) {
+        if (event.propertyName !== "max-height") {
+          return;
+        }
+        faqAnswer.style.removeProperty("max-height");
+        faqAnswer.style.removeProperty("padding-top");
+        faqAnswer.style.removeProperty("padding-bottom");
+        faqItem.dataset.faqAnimating = "false";
+        faqAnswer.removeEventListener("transitionend", onOpenEnd);
+      };
+
+      faqAnswer.addEventListener("transitionend", onOpenEnd);
+    };
+
+    faqItems.forEach(function (faqItem) {
+      const summary = faqItem.querySelector("summary");
+      if (!(summary instanceof HTMLElement)) {
+        return;
+      }
+
+      faqItem.dataset.faqAnimating = "false";
+      summary.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        if (faqItem.dataset.faqAnimating === "true") {
+          return;
+        }
+
+        if (faqItem.open) {
+          animateFaqClose(faqItem);
+          return;
+        }
+
         faqItems.forEach(function (otherItem) {
           if (otherItem !== faqItem) {
-            otherItem.open = false;
+            animateFaqClose(otherItem);
           }
         });
+        animateFaqOpen(faqItem);
       });
     });
   });
