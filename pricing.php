@@ -74,9 +74,9 @@ include __DIR__ . '/includes/header.php';
 
       </div>
 
-      <div class="pricing-factor-list mt-4">
+      <div class="pricing-factor-list mt-4" aria-labelledby="s3-heading" data-reveal>
 
-        <div class="pricing-factor-list mt-4" aria-labelledby="s3-heading" data-reveal>
+        <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
           <p class="feature-title" id='s3-heading'>Languages required</p>
           <p class="card-body-text">Additional languages increase effort through locale setup, translation integration, and QA across each variant for display, encoding, and logic parity. Right-to-left and non-Latin support can add technical complexity.</p>
