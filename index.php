@@ -15,7 +15,7 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-sub">I've programmed and deployed surveys to a 185,000-member international research panel across 80+ countries. Every survey I build carries that same operational discipline — accurate, accessible, and ready to perform on day one.</p>
       <p class="mt-5"><a class="btn-primary" href="inquiry.php">Send an Inquiry</a></p>
       <ul class="trust-row" aria-label="Trust markers">
-        <li class="trust-marker">80+ Countries</li>
+        <li class="trust-marker">130+ Countries</li>
         <li class="trust-marker">Direct Operator Access</li>
         <li class="trust-marker">B2B Aligned</li>
       </ul>
@@ -27,11 +27,11 @@ include __DIR__ . '/includes/header.php';
       <dl class="proof-grid">
         <div class="proof-item">
           <dt class="proof-label">Panel Members</dt>
-          <dd class="proof-num" data-count-to="185" data-suffix=",000+">185,000+</dd>
+          <dd class="proof-num" data-count-to="100" data-suffix=",000+">100,000+</dd>
         </div>
         <div class="proof-item">
           <dt class="proof-label">Countries Served</dt>
-          <dd class="proof-num" data-count-to="80" data-suffix="+">80+</dd>
+          <dd class="proof-num" data-count-to="130" data-suffix="+">130+</dd>
         </div>
         <div class="proof-item">
           <dt class="proof-label">Campaigns per Year</dt>

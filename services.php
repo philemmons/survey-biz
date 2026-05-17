@@ -100,7 +100,7 @@ include __DIR__ . '/includes/header.php';
       <ul class="feature-list" aria-label="Deployment and outreach services">
         <li class="feature-card">
           <p class="feature-title">Multilingual Survey Delivery</p>
-          <p class="feature-body">Surveys deployed in respondents' native languages across 80+ countries. I've managed the full translation workflow — from template standardization to final QA — cutting translation turnaround from three weeks to three days.</p>
+          <p class="feature-body">Surveys deployed in respondents' native languages across 130+ countries. I've managed the full translation workflow — from template standardization to final QA — cutting translation turnaround from three weeks to three days.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Email Campaign Management via Mailgun</p>
@@ -118,7 +118,7 @@ include __DIR__ . '/includes/header.php';
       <ul class="tag-list" aria-label="Deployment tags">
         <li><span class="tag">Mailgun API</span></li>
         <li><span class="tag">Multilingual Deployment</span></li>
-        <li><span class="tag">80+ Countries</span></li>
+        <li><span class="tag">130+ Countries</span></li>
         <li><span class="tag">Email Campaign Management</span></li>
         <li><span class="tag">List Segmentation</span></li>
       </ul>

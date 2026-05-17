@@ -61,9 +61,9 @@ include __DIR__ . '/includes/header.php';
         <article class="post-card" aria-labelledby="uc4-heading">
           <p class="tag">International Studies</p>
           <h3 id="uc4-heading" class="mt-3">International Studies</h3>
-          <p class="card-body-text mt-2">Global studies are managed through full-pipeline multilingual deployment across 80+ countries. Translation and QA workflows are coordinated to preserve meaning and survey consistency by locale. Mailgun campaign management supports distributed outreach and reminder sequencing. Regional fulfillment tracking keeps stakeholders informed on pace, coverage, and completion quality.</p>
+          <p class="card-body-text mt-2">Global studies are managed through full-pipeline multilingual deployment across 130+ countries. Translation and QA workflows are coordinated to preserve meaning and survey consistency by locale. Mailgun campaign management supports distributed outreach and reminder sequencing. Regional fulfillment tracking keeps stakeholders informed on pace, coverage, and completion quality.</p>
           <ul class="tag-list" aria-label="International tags">
-            <li><span class="tag">80+ Countries</span></li>
+            <li><span class="tag">130+ Countries</span></li>
             <li><span class="tag">Multilingual Deployment</span></li>
             <li><span class="tag">3-Day Translation Turnaround</span></li>
             <li><span class="tag">Regional Tracking</span></li>

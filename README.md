@@ -21,7 +21,7 @@ It is built for teams that want more than a form builder and need a survey partn
 - Professional survey programming with advanced branching, skip logic, quotas, and validation
 - WCAG 2.1-informed accessibility for inclusive participation and stronger completion rates
 - Mobile-responsive, cross-device survey experiences that reduce respondent drop-off
-- Multilingual deployment workflows for studies across 80+ countries
+- Multilingual deployment workflows for studies across 130+ countries
 - Real-time tracking, segmented performance visibility, and clean data export readiness
 - Secure data practices, respondent privacy support, and dependable handoff workflows
 
