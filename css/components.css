@@ -355,7 +355,7 @@
 .feature-title,
 .card-title {
   color: var(--ink);
-  font-size: var(--fs-90);
+  font-size: var(--fs-110);
   font-weight: 600;
   line-height: 1.35;
   margin-bottom: 0.35rem;
