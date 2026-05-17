@@ -421,7 +421,6 @@
 
 .pricing-factor-note {
   background: var(--accent-lt);
-  border-left: 2px solid var(--accent);
   border-radius: var(--radius-1);
   padding: var(--space-3);
 }

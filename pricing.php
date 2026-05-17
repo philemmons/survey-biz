@@ -52,9 +52,9 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <section class="section">
-      <div class="pricing-factor-list mt-4">
+      <div class="pricing-factor-list mt-4" aria-labelledby="s1-heading" data-reveal>
 
-        <div class="panel pricing-factor" aria-labelledby="s1-heading" data-reveal>
+        <div class="panel pricing-factor" aria-labelledby="s1-heading">
           <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
           <p class="feature-title" id='s1-heading'>Question count and section depth</p>
           <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth and advanced structures such as randomization or carry-forward logic multiply that work.</p>
