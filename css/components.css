@@ -220,6 +220,25 @@
   z-index: 1;
 }
 
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.phone-inline {
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.phone-inline:hover {
+  color: var(--text);
+}
+
 /* Proof strip and stats */
 .proof-strip {
   background: var(--stat-bg);
