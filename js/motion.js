@@ -129,6 +129,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  /*
+  |--------------------------------------------------------------------------
+  | FAQ Accordion
+  |--------------------------------------------------------------------------
+  | Keep native <details>/<summary> semantics while matching single-open
+  | accordion behavior from the expanded pricing reference.
+  */
+  document.querySelectorAll(".faq-list").forEach(function (faqList) {
+    const faqItems = faqList.querySelectorAll(".faq-item");
+    faqItems.forEach(function (faqItem) {
+      faqItem.addEventListener("toggle", function () {
+        if (!faqItem.open) {
+          return;
+        }
+        faqItems.forEach(function (otherItem) {
+          if (otherItem !== faqItem) {
+            otherItem.open = false;
+          }
+        });
+      });
+    });
+  });
+
   const counters = document.querySelectorAll("[data-count-to]");
   if (counters.length === 0) {
     return;
