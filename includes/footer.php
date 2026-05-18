@@ -1,14 +1,13 @@
 <style>
   .site-footer {
     background: var(--ink);
-    overflow-x: hidden;
   }
 
   .site-footer.cta-band {
     padding: var(--space-10) 0 var(--space-6);
   }
 
-  .site-footer .footer-shell {
+  .site-footer .container {
     width: 80%;
     max-width: 80%;
     min-width: 80%;
@@ -83,13 +82,13 @@
   }
 
   @media (max-width: 900px) {
-    .site-footer .footer-shell {
+    .site-footer .container {
       width: 80%;
       max-width: 80%;
       min-width: 80%;
       margin: 0 auto;
-      padding-left: max(1rem, env(safe-area-inset-left));
-      padding-right: max(1rem, env(safe-area-inset-right));
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     .site-footer .footer-top {
@@ -126,13 +125,13 @@
       padding-bottom: var(--space-5);
     }
 
-    .site-footer .footer-shell {
+    .site-footer .container {
       width: 80%;
       max-width: 80%;
       min-width: 80%;
       margin: 0 auto;
-      padding-left: max(1rem, env(safe-area-inset-left));
-      padding-right: max(1rem, env(safe-area-inset-right));
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     .site-footer .footer-top {
@@ -171,7 +170,7 @@
 </style>
 
 <footer class="site-footer cta-band">
-  <div class="footer-shell">
+  <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
         <span class="footer-wordmark">philemmons.net</span>
