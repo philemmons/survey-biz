@@ -8,8 +8,9 @@
   }
 
   .site-footer .container {
-    max-width: 70%;
-    min-width: 70%;
+    width: min(1600px, 94vw);
+    max-width: none;
+    min-width: 0;
     position: relative;
     z-index: 1;
   }
@@ -33,8 +34,7 @@
 
   @media (max-width: 900px) {
     .site-footer .container {
-      max-width: 92%;
-      min-width: 92%;
+      width: 92vw;
     }
   }
 </style>
