@@ -215,7 +215,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           <div class="sr-only" aria-hidden="true">
             <label for="beeName">Sunflower Name</label>
 
-            <input id="beeName" name="beeName" type="text" tabindex="-1" autocomplete="off" value="" style="display:none">
+            <input id="beeName" name="beeName" type="text" tabindex="-1" autocomplete="off" value="">
           </div>
 
           <fieldset class="form-group">
