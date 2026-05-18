@@ -233,10 +233,6 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           <h3 class="card-title">Reporting Needs</h3>
           <p class="card-body-text">Real-time dashboards, cross-tab outputs, and stakeholder-facing reporting views are configured, not provided by default. Knowing what you need to see during and after fieldwork shapes post-launch survey support requirements significantly. </p>
         </article>
-        <article class="panel">
-          <h3 class="card-title">Platform or Panel Preference</h3>
-          <p class="card-body-text">LimeSurvey is the primary survey platform, but if your organization already uses SurveyMonkey, Alchemer, Qualtrics, or another tool, that is worth noting at inquiry. Platform requirements shape scope and may affect overall project cost. </p>
-        </article>
       </div>
     </section>
 
