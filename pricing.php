@@ -9,6 +9,7 @@ include __DIR__ . '/includes/header.php';
 ?>
 
 <main id="main-content">
+
   <section class="hero" aria-labelledby="pricing-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">Pricing</p>
@@ -46,10 +47,94 @@ include __DIR__ . '/includes/header.php';
 
   <div class="container">
     <section class="section" aria-labelledby="factors-heading" data-reveal>
+
       <p class="section-number" aria-hidden="true">Quote Inputs</p>
       <h2 id="factors-heading">What affects your quote</h2>
       <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work: scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
+
+      <div class="panel" style="transition-delay: 0ms;">
+        <p class="card-title">Jump to a section</p>
+        <p class="card-body-text mb-3">Use these anchors to move through each delivery area.</p>
+        <ul class="tag-list">
+          <li><a class="tag" href="#s1-heading">Question Count & Section Depth</a></li>
+          <li><a class="tag" href="#s1-heading"></a>Logic Complexity</li>
+          <li><a class="tag" href="#s3-heading"></a>Languages Required</li>
+          <li><a class="tag" href="#s4-heading"></a>Deployment & Outreach Scope</li>
+          <li><a class="tag" href="#s5-heading"></a>Reporting & Dashboard Setup</li>
+          <li><a class="tag" href="#s6-heading"></a>Timeline & Turnaround</li>
+        </ul>
+      </div>
+
     </section>
+
+
+    <section class="section" aria-labelledby="included-heading" data-reveal>
+
+      <p class="section-number" aria-hidden="true">Competitive</p>
+      <h2 id="included-heading">Transparent pricing and competitive comparison</h2>
+      <p class="section-deck">Understanding where direct project-based programming fits relative to hourly freelancers and full-service agencies helps you choose the right sourcing model for your study.</p>
+      <h3 id="comparison-cards-heading" class="pricing-subheading mt-4">Comparison cards</h3>
+      <div class="pricing-compare-grid mt-4" aria-labelledby="comparison-cards-heading">
+        <article class="panel pricing-compare-card">
+          <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
+          <h4>Hourly Platform Freelancer</h4>
+          <ul class="stack-3">
+            <li>Rate uncertainty — scope creep bills at the same rate</li>
+            <li>Platform fees (Competitors takes 5-10% from client invoices)</li>
+            <li>Varying familiarity with LimeSurvey vs. Proprietary vs. Other tools</li>
+            <li>No fixed-price accountability on delivery</li>
+            <li>Portfolio dependent and quality varies widely at the same rate tier</li>
+          </ul>
+        </article>
+
+        <article class="panel pricing-compare-card">
+          <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
+          <h4>Full-Service Research Agency</h4>
+          <ul class="stack-3">
+            <li>20-50% overhead layered onto every deliverable</li>
+            <li>Retainers required for ongoing access to senior staff</li>
+            <li>Minimum project sizes often exclude smaller or one-off studies</li>
+            <li>Slow internal queues, enterprise timelines, not research timelines</li>
+            <li>Enterprise licenses at $5,000-$100,000+/year passed to clients</li>
+          </ul>
+        </article>
+        <article class="panel pricing-compare-card is-featured">
+          <p class="section-number pricing-card-label" aria-hidden="true">This Service</p>
+          <h4>Project-Based Independent</h4>
+          <ul class="stack-3">
+            <li>Fixed quote per project, no hourly uncertainty, no runaway invoices</li>
+            <li>No retainers, no agency markup, no platform license overhead</li>
+            <li>LimeSurvey expertise with open-source cost advantages for clients</li>
+            <li>Small and one off studies explicitly welcomed</li>
+            <li>Direct access with no account manager layer between you and the programmer</li>
+            <li>2-3 day turnaround on clearly-scoped studies</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="pricing-range mt-4" aria-label="Pricing range comparison">
+        <div class="pricing-range-item">
+          <p class="pricing-range-label">Freelance Platform Specialist (Hourly)</p>
+          <p class="pricing-range-value">$30—$80 / hr</p>
+        </div>
+        <div class="pricing-range-item">
+          <p class="pricing-range-label">Basic Survey Project (Agency, End-to-End)</p>
+          <p class="pricing-range-value">$5K—$15K</p>
+        </div>
+        <div class="pricing-range-item">
+          <p class="pricing-range-label">Enterprise Platform License (Annual)</p>
+          <p class="pricing-range-value">$5K—$100K+</p>
+        </div>
+        <div class="pricing-range-item">
+          <p class="pricing-range-label">Typical Agency Overhead</p>
+          <p class="pricing-range-value">+20—50%</p>
+        </div>
+      </div>
+
+      <p class="pricing-limesurvey-note mt-4"><strong>LimeSurvey as the primary platform</strong> offers a meaningful cost advantage: the platform itself is open-source, with no per response licensing fees and no enterprise contract requirements. This keeps the per project cost focused on programming expertise and delivery quality rather than platform rent. </p>
+
+    </section>
+
 
     <section class="section">
 
@@ -110,73 +195,13 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
-    <section class="section" aria-labelledby="included-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">Competitive</p>
-      <h2 id="included-heading">Transparent pricing and competitive comparison</h2>
-      <p class="section-deck">Understanding where direct project-based programming fits relative to hourly freelancers and full-service agencies helps you choose the right sourcing model for your study.</p>
-      <div class="pricing-range mt-4" aria-label="Pricing range comparison">
-        <div class="pricing-range-item">
-          <p class="pricing-range-label">Freelance Platform Specialist (Hourly)</p>
-          <p class="pricing-range-value">$30—$80 / hr</p>
-        </div>
-        <div class="pricing-range-item">
-          <p class="pricing-range-label">Basic Survey Project (Agency, End-to-End)</p>
-          <p class="pricing-range-value">$5K—$15K</p>
-        </div>
-        <div class="pricing-range-item">
-          <p class="pricing-range-label">Enterprise Platform License (Annual)</p>
-          <p class="pricing-range-value">$5K—$100K+</p>
-        </div>
-        <div class="pricing-range-item">
-          <p class="pricing-range-label">Typical Agency Overhead</p>
-          <p class="pricing-range-value">+20—50%</p>
-        </div>
-      </div>
-      <h3 id="comparison-cards-heading" class="pricing-subheading mt-4">Comparison cards</h3>
-      <div class="pricing-compare-grid mt-4" aria-labelledby="comparison-cards-heading">
-        <article class="panel pricing-compare-card">
-          <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
-          <h4>Hourly Platform Freelancer</h4>
-          <ul class="stack-3">
-            <li>Rate uncertainty — scope creep bills at the same rate</li>
-            <li>Platform fees (Competitors takes 5-10% from client invoices)</li>
-            <li>Varying familiarity with LimeSurvey vs. Proprietary vs. Other tools</li>
-            <li>No fixed-price accountability on delivery</li>
-            <li>Portfolio dependent and quality varies widely at the same rate tier</li>
-          </ul>
-        </article>
-        <article class="panel pricing-compare-card">
-          <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
-          <h4>Full-Service Research Agency</h4>
-          <ul class="stack-3">
-            <li>20-50% overhead layered onto every deliverable</li>
-            <li>Retainers required for ongoing access to senior staff</li>
-            <li>Minimum project sizes often exclude smaller or one-off studies</li>
-            <li>Slow internal queues, enterprise timelines, not research timelines</li>
-            <li>Enterprise licenses at $5,000-$100,000+/year passed to clients</li>
-          </ul>
-        </article>
-        <article class="panel pricing-compare-card is-featured">
-          <p class="section-number pricing-card-label" aria-hidden="true">This Service</p>
-          <h4>Project-Based Independent</h4>
-          <ul class="stack-3">
-            <li>Fixed quote per project, no hourly uncertainty, no runaway invoices</li>
-            <li>No retainers, no agency markup, no platform license overhead</li>
-            <li>LimeSurvey expertise with open-source cost advantages for clients</li>
-            <li>Small and one off studies explicitly welcomed</li>
-            <li>Direct access with no account manager layer between you and the programmer</li>
-            <li>2-3 day turnaround on clearly-scoped studies</li>
-          </ul>
-        </article>
-      </div>
-      <p class="pricing-limesurvey-note mt-4"><strong>LimeSurvey as the primary platform</strong> offers a meaningful cost advantage: the platform itself is open-source, with no per response licensing fees and no enterprise contract requirements. This keeps the per project cost focused on programming expertise and delivery quality rather than platform rent. </p>
-    </section>
-
-
     <section class="section" aria-labelledby="faq-heading" data-reveal>
+
       <p class="section-number" aria-hidden="true">FAQ</p>
       <h2 id="faq-heading">Frequently asked questions</h2>
+
       <div class="faq-list mt-4">
+
         <details class="faq-item">
           <summary>How fast can you turn a project around?</summary>
           <div class="faq-answer">
@@ -185,6 +210,7 @@ include __DIR__ . '/includes/header.php';
             <p class="faq-note">For comparison: full-service agencies typically require 2 to 4 weeks for the same scope due to internal handoff queues and approval layers.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>Do you work with small or one-off studies?</summary>
           <div class="faq-answer">
@@ -193,6 +219,7 @@ include __DIR__ . '/includes/header.php';
             <p>Quotes reflect actual project scope instead of minimum billing thresholds.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>What survey platform do you use, and why?</summary>
           <div class="faq-answer">
@@ -201,6 +228,7 @@ include __DIR__ . '/includes/header.php';
             <p>If your organization already has a preferred platform (SurveyMonkey, Alchemer, Typeform, etc.), that is worth discussing at inquiry. Platform requirements shape what's possible in a given quote.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>Can you handle multilingual surveys?</summary>
           <div class="faq-answer">
@@ -209,6 +237,7 @@ include __DIR__ . '/includes/header.php';
             <p class="faq-note">Multi-market research through agencies can reach $150,000+ for global deployments. Direct programming removes the agency overhead layer without sacrificing technical quality.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>What do you need from me to provide a quote?</summary>
           <div class="faq-answer">
@@ -216,6 +245,7 @@ include __DIR__ . '/includes/header.php';
             <p>You don't need a polished specification, a working draft and a summary of what the study needs to do is sufficient to provide a meaningful estimate. Submit through the inquiry page and include as much of that information as you have.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>How does project-based pricing compare to hourly billing?</summary>
           <div class="faq-answer">
@@ -223,6 +253,7 @@ include __DIR__ . '/includes/header.php';
             <p>A project-based quote defines the deliverable and the price together. Changes to scope can be scoped and quoted as additions — but the base project has a known cost. For research teams with fixed budgets per study, this predictability has direct operational value.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>What happens if I need changes after launch?</summary>
           <div class="faq-answer">
@@ -230,6 +261,7 @@ include __DIR__ . '/includes/header.php';
             <p>The standard practice is to clearly define revision scope before launch, including a designated QA window for consolidated feedback. This minimizes post launch change requests and keeps the study on its intended timeline.</p>
           </div>
         </details>
+
         <details class="faq-item">
           <summary>How does this compare to doing it in-house with a DIY tool?</summary>
           <div class="faq-answer">
@@ -237,8 +269,11 @@ include __DIR__ . '/includes/header.php';
             <p>Professional programming on LimeSurvey or comparable platforms produces cleaner data, more reliable logic execution, and a respondent experience that doesn't break on edge cases. For studies where the data drives actual decisions, the cost of professional programming is typically small relative to the cost of collecting bad data.</p>
           </div>
         </details>
+
       </div>
+
     </section>
+
   </div>
 
 
@@ -254,4 +289,3 @@ include __DIR__ . '/includes/header.php';
 
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
-
