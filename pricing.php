@@ -140,7 +140,7 @@ include __DIR__ . '/includes/header.php';
       <div class="pricing-factor-list mt-4" id='s1-heading' aria-labelledby="s1-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
-          <p class="feature-title">Question Count & Section Depth</p>
+          <p class="feature-title" >Question Count & Section Depth</p>
           <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth — how questions are organized into blocks, rotations, or randomized sets — multiplies that work. A 20 question survey with flat structure and a 20 question survey with block randomization, carry forward answer pipes, and custom display templates are very different builds.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Agency-produced online surveys with 400 respondents start around $5,000 to $15,000 and professional programming labor typically represents the largest time component of that cost before fieldwork begins.</p>
         </div>
@@ -155,7 +155,7 @@ include __DIR__ . '/includes/header.php';
         </div>
       </div>
 
-      <div class="pricing-factor-list mt-4" id='s3-heading' aria-labelledby="s3-heading" data-reveal>
+      <div class="pricing-factor-list mt-4"  id='s3-heading' aria-labelledby="s3-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
           <p class="feature-title">Languages Required</p>
@@ -176,20 +176,18 @@ include __DIR__ . '/includes/header.php';
       <div class="pricing-factor-list mt-4" id='s5-heading' aria-labelledby="s5-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">05</p>
-          <p class="feature-title">Reporting & Dashboard Setup</p>
+          <p class="feature-title" >Reporting & Dashboard Setup</p>
           <p class="card-body-text">ata collection is the means; insight is the end. Real-time progress dashboards, response-rate monitoring, automated cross-tab outputs, and stakeholder-facing reporting views are not defaults — they are configured. The complexity of what you need to see during and after field shapes post-launch support requirements significantly. Simple CSV export is trivial. A live dashboard with filtered views by segment, wave, or quota status is a separate scope item.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Strategic reports with visualizations and recommendations from research agencies run $3,000 to $10,000+ as a standalone deliverable. Building clarity into the platform from the start reduces that downstream cost.</p>
         </div>
       </div>
 
-      <div id='s6-heading'>
-        <div class="pricing-factor-list mt-4" aria-labelledby="s6-heading" data-reveal>
-          <div class="panel pricing-factor">
-            <p class="section-number pricing-factor-number" aria-hidden="true">06</p>
-            <p class="feature-title">Timeline & Turnaround</p>
-            <p class="card-body-text">Delivery speed is a real resource constraint, not a filler factor. A study with clear specifications, no mid-build revisions, and a reasonable runway can often be delivered within a few business days. Compressed timelines — same-day or next-day launches, weekend fielding windows, or concurrent builds across multiple studies — require schedule prioritization that affects other commitments. Revision windows during QA also influence scheduling: one round of consolidated feedback is faster and cheaper to address than iterative single-item change requests.</p>
-            <p class="pricing-factor-note"><strong>Practical note:</strong> Providing a complete questionnaire document with finalized wording, agreed logic, and confirmed sample targets before programming begins is the single highest-leverage thing a client can do to reduce total cost and turnaround time.</p>
-          </div>
+      <div class="pricing-factor-list mt-4" id='s6-heading' aria-labelledby="s6-heading" data-reveal>
+        <div class="panel pricing-factor">
+          <p class="section-number pricing-factor-number" aria-hidden="true">06</p>
+          <p class="feature-title">Timeline & Turnaround</p>
+          <p class="card-body-text">Delivery speed is a real resource constraint, not a filler factor. A study with clear specifications, no mid-build revisions, and a reasonable runway can often be delivered within a few business days. Compressed timelines — same-day or next-day launches, weekend fielding windows, or concurrent builds across multiple studies — require schedule prioritization that affects other commitments. Revision windows during QA also influence scheduling: one round of consolidated feedback is faster and cheaper to address than iterative single-item change requests.</p>
+          <p class="pricing-factor-note"><strong>Practical note:</strong> Providing a complete questionnaire document with finalized wording, agreed logic, and confirmed sample targets before programming begins is the single highest-leverage thing a client can do to reduce total cost and turnaround time.</p>
         </div>
       </div>
 

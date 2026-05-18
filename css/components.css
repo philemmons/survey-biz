@@ -1018,8 +1018,16 @@ legend.form-label {
   font-weight: 600;
 }
 
-section[id] {
-  scroll-margin-top: 6rem;
+:root {
+  --anchor-scroll-offset: 6rem;
+}
+
+html {
+  scroll-padding-top: var(--anchor-scroll-offset);
+}
+
+[id] {
+  scroll-margin-top: var(--anchor-scroll-offset);
 }
 
 /* Reveal motion */
