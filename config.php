@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 
 if (session_status() !== PHP_SESSION_ACTIVE) {
     $is_https_request = (

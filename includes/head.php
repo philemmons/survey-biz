@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 
 require_once __DIR__ . '/../config.php';
 require_once __DIR__ . '/functions.php';

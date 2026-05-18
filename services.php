@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'Services';
 $meta_description = 'Four core service areas: survey programming and logic, accessible high-performance design, multilingual deployment and outreach, and real-time tracking and reporting.';
 $current_page = basename(__FILE__);

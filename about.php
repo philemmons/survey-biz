@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'About';
 $meta_description = 'Phillip Emmons - freelance survey programmer and deployment specialist based in Marina, CA. Enterprise-tested experience across 80+ countries.';
 $current_page = basename(__FILE__);

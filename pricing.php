@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);//BEWARE THE BOM
+declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'Pricing';
 $meta_description = 'Project-based pricing for professional survey programming. Custom quotes - no retainers, no agency markup.';
 $current_page = basename(__FILE__);

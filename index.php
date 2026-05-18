@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'Survey Programming & Deployment';
 $meta_description = 'Professional survey programming and deployment by Phillip Emmons - WCAG 2.1 compliant, mobile-responsive, multilingual. Based in Marina, CA.';
 $current_page = basename(__FILE__);

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 
 require_once BASE_PATH . '/config.php';
 

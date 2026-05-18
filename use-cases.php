@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'Use Cases';
 $meta_description = 'Survey programming use cases for market research firms, academic and institutional research, corporate and HR teams, and international studies.';
 $current_page = basename(__FILE__);
