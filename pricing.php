@@ -61,7 +61,7 @@ include __DIR__ . '/includes/header.php';
           <li><a class="tag" href="#s4-heading">Languages Required</a></li>
           <li><a class="tag" href="#s5-heading">Reporting &amp; Dashboard Setup</a></li>
           <li><a class="tag" href="#s6-heading">Timeline &amp; Turnaround</a></li>
-          <li><a class='tag' href='#faqs-pricing'>FAQ's</a></li>
+          <li><a class='tag' href='#faq-heading'>FAQ's</a></li>
         </ul>
       </div>
 
@@ -195,7 +195,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
-    <section class="section" id='faqs-pricing' aria-labelledby="faq-heading" data-reveal>
+    <section class="section" aria-labelledby="faq-heading" data-reveal>
 
       <p class="section-number" aria-hidden="true">FAQ</p>
       <h2 id="faq-heading">Frequently asked questions</h2>
