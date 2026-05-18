@@ -5,7 +5,7 @@
         <span class="sf-wordmark">philemmons.net</span>
         <p class="sf-descriptor">Survey Programming &amp; Deployment</p>
         <p class="sf-tagline">Cleaner data. More respondents. Built to hold up at scale.</p>
-        <a class="sf-cta" href="/inquiry.php">Send An Inquiry</a>
+        <a class="btn-primary sf-cta" href="/inquiry.php">Send An Inquiry</a>
       </div>
 
       <nav class="sf-nav" aria-label="Footer navigation">
@@ -91,8 +91,8 @@
     </div>
 
     <div class="sf-bottom">
-      <p class="sf-copy">&copy; 2026 survey.philemmons.net All Rights Reserved</p>
-      <p class="sf-copy">survey.philemmons.net</p>
+      <p class="sf-copy">&copy; <?php echo date("Y"); ?> philemmons.net All Rights Reserved.</p>
+      <p class="sf-copy">Survey Programming & Deployment</p>
     </div>
   </div>
 </footer>
@@ -102,4 +102,5 @@
 <script src="js/forms.js"></script>
 <script src="js/footer-nav.js"></script>
 </body>
+
 </html>
