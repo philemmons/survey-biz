@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types=1);//BEWARE THE BOM
 $page_title = 'Pricing';
 $meta_description = 'Project-based pricing for professional survey programming. Custom quotes - no retainers, no agency markup.';
 $current_page = basename(__FILE__);
@@ -15,7 +15,7 @@ include __DIR__ . '/includes/header.php';
       <h1 id="pricing-hero-heading">Transparent, project-based pricing</h1>
       <p class="hero-sub">No retainers. No agency markup. A custom quote based on exactly what your study needs.
         <br><br>
-        <strong>Survey programming</strong> sits at the intersection of research design and technical execution. The cost of a project reflects genuine scope â€” not package tiers built around the average project, and not hourly uncertainty that expands without limit.
+        <strong>Survey programming</strong> sits at the intersection of research design and technical execution. The cost of a project reflects genuine scope — not package tiers built around the average project, and not hourly uncertainty that expands without limit.
       </p>
     </div>
   </section>
@@ -25,19 +25,19 @@ include __DIR__ . '/includes/header.php';
       <dl class="proof-grid">
         <div class="proof-item">
 
-          <dt class="proof-num">$30â€”$80</dt>
+          <dt class="proof-num">$30—$80</dt>
           <dd class="proof-label">Typical hourly range for Qualtrics / platform specialists on Upwork in 2026</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">$5Kâ€”$15K</dt>
+          <dt class="proof-num">$5K—$15K</dt>
           <dd class="proof-label">Baseline cost of a basic online survey project through a full-service agency</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">20â€”50%</dt>
+          <dt class="proof-num">20—50%</dt>
           <dd class="proof-label">Added overhead when routing through a research agency vs. a direct programmer</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">3â€”5 days</dt>
+          <dt class="proof-num">3—5 days</dt>
           <dd class="proof-label">Typical turnaround for clearly-scoped studies without enterprise queues</dd>
         </div>
       </dl>
@@ -57,7 +57,7 @@ include __DIR__ . '/includes/header.php';
         <div class="panel pricing-factor" aria-labelledby="s1-heading">
           <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
           <p class="feature-title" id='s1-heading'>Question Count & Section Depth</p>
-          <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth â€” how questions are organized into blocks, rotations, or randomized sets â€” multiplies that work. A 20 question survey with flat structure and a 20 question survey with block randomization, carry forward answer pipes, and custom display templates are very different builds.</p>
+          <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth — how questions are organized into blocks, rotations, or randomized sets — multiplies that work. A 20 question survey with flat structure and a 20 question survey with block randomization, carry forward answer pipes, and custom display templates are very different builds.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Agency-produced online surveys with 400 respondents start around $5,000 to $15,000 and professional programming labor typically represents the largest time component of that cost before fieldwork begins.</p>
         </div>
       </div>
@@ -66,7 +66,7 @@ include __DIR__ . '/includes/header.php';
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">02</p>
           <p class="feature-title" id='s2-heading'>Logic Complexity</p>
-          <p class="card-body-text">Branching, skip patterns, display logic, piping, quota management, and custom JavaScript or CSS validations each add implementation and testing scope. A simple linear survey scripts in hours. A study with nested quota logic, conditional question text, mid-survey redirects, and custom end-page routing can require days of structured QA alone. Logic errors in deployed surveys corrupt data and require re-contact â€” the cost of getting it wrong far exceeds the cost of getting it right the first time.</p>
+          <p class="card-body-text">Branching, skip patterns, display logic, piping, quota management, and custom JavaScript or CSS validations each add implementation and testing scope. A simple linear survey scripts in hours. A study with nested quota logic, conditional question text, mid-survey redirects, and custom end-page routing can require days of structured QA alone. Logic errors in deployed surveys corrupt data and require re-contact — the cost of getting it wrong far exceeds the cost of getting it right the first time.</p>
           <p class="pricing-factor-note"><strong>Why it matters:</strong> Platform specialists on the open market charge specifically for this expertise because Qualtrics and LimeSurvey both require deep familiarity with logic sequencing and platform specific edge cases that generic developers don't carry.</p>
         </div>
       </div>
@@ -76,7 +76,7 @@ include __DIR__ . '/includes/header.php';
           <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
           <p class="feature-title" id='s3-heading'>Languages Required</p>
           <p class="card-body-text">Each additional language multiplies deployment effort in three ways: locale setup within the platform, translation integration (mapping translated strings to question IDs accurately), and QA across every language variant to confirm display, encoding, and skip logic parity. Right-to-left language support and character encoding for non-Latin scripts add further technical considerations. A three language study is not three times the work of a single-language study, but it is meaningfully more.</p>
-          <p class="pricing-factor-note"><strong>Market context:</strong> Multi-market research studies running across several countries can run $150,000 or more, at the agency level â€” localization and field logistics account for a large share of that premium. Direct programming dramatically reduces this overhead.</p>
+          <p class="pricing-factor-note"><strong>Market context:</strong> Multi-market research studies running across several countries can run $150,000 or more, at the agency level — localization and field logistics account for a large share of that premium. Direct programming dramatically reduces this overhead.</p>
         </div>
       </div>
 
@@ -85,7 +85,7 @@ include __DIR__ . '/includes/header.php';
           <p class="section-number pricing-factor-number" aria-hidden="true">04</p>
           <p class="feature-title" id='s4-heading'>Deployment & Outreach Scope</p>
           <p class="card-body-text">Survey programming ends at the script. Deployment begins there. Email campaign setup, contact list segmentation and upload, invite and reminder scheduling, unsubscribe and opt-out handling, and token-based respondent tracking are distinct operational tasks that extend total project scope. Studies that require double-opt-in flows, unique survey links per respondent, or integrations with CRM or panel providers add additional configuration and testing before a single response arrives.</p>
-          <p class="pricing-factor-note"><strong>What this covers:</strong> LimeSurvey's token-based participant management, email queue setup, bounce handling, and outreach timing workflows â€” tasks that are often underestimated when clients receive platform-only quotes.</p>
+          <p class="pricing-factor-note"><strong>What this covers:</strong> LimeSurvey's token-based participant management, email queue setup, bounce handling, and outreach timing workflows — tasks that are often underestimated when clients receive platform-only quotes.</p>
         </div>
       </div>
 
@@ -93,7 +93,7 @@ include __DIR__ . '/includes/header.php';
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">05</p>
           <p class="feature-title" id='s5-heading'>Reporting & Dashboard Setup</p>
-          <p class="card-body-text">ata collection is the means; insight is the end. Real-time progress dashboards, response-rate monitoring, automated cross-tab outputs, and stakeholder-facing reporting views are not defaults â€” they are configured. The complexity of what you need to see during and after field shapes post-launch support requirements significantly. Simple CSV export is trivial. A live dashboard with filtered views by segment, wave, or quota status is a separate scope item.</p>
+          <p class="card-body-text">ata collection is the means; insight is the end. Real-time progress dashboards, response-rate monitoring, automated cross-tab outputs, and stakeholder-facing reporting views are not defaults — they are configured. The complexity of what you need to see during and after field shapes post-launch support requirements significantly. Simple CSV export is trivial. A live dashboard with filtered views by segment, wave, or quota status is a separate scope item.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Strategic reports with visualizations and recommendations from research agencies run $3,000 to $10,000+ as a standalone deliverable. Building clarity into the platform from the start reduces that downstream cost.</p>
         </div>
       </div>
@@ -102,7 +102,7 @@ include __DIR__ . '/includes/header.php';
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">06</p>
           <p class="feature-title" id='s6-heading'>Timeline & Turnaround</p>
-          <p class="card-body-text">Delivery speed is a real resource constraint, not a filler factor. A study with clear specifications, no mid-build revisions, and a reasonable runway can often be delivered within a few business days. Compressed timelines â€” same-day or next-day launches, weekend fielding windows, or concurrent builds across multiple studies â€” require schedule prioritization that affects other commitments. Revision windows during QA also influence scheduling: one round of consolidated feedback is faster and cheaper to address than iterative single-item change requests.</p>
+          <p class="card-body-text">Delivery speed is a real resource constraint, not a filler factor. A study with clear specifications, no mid-build revisions, and a reasonable runway can often be delivered within a few business days. Compressed timelines — same-day or next-day launches, weekend fielding windows, or concurrent builds across multiple studies — require schedule prioritization that affects other commitments. Revision windows during QA also influence scheduling: one round of consolidated feedback is faster and cheaper to address than iterative single-item change requests.</p>
           <p class="pricing-factor-note"><strong>Practical note:</strong> Providing a complete questionnaire document with finalized wording, agreed logic, and confirmed sample targets before programming begins is the single highest-leverage thing a client can do to reduce total cost and turnaround time.</p>
         </div>
       </div>
@@ -117,19 +117,19 @@ include __DIR__ . '/includes/header.php';
       <div class="pricing-range mt-4" aria-label="Pricing range comparison">
         <div class="pricing-range-item">
           <p class="pricing-range-label">Freelance Platform Specialist (Hourly)</p>
-          <p class="pricing-range-value">$30â€”$80 / hr</p>
+          <p class="pricing-range-value">$30—$80 / hr</p>
         </div>
         <div class="pricing-range-item">
           <p class="pricing-range-label">Basic Survey Project (Agency, End-to-End)</p>
-          <p class="pricing-range-value">$5Kâ€”$15K</p>
+          <p class="pricing-range-value">$5K—$15K</p>
         </div>
         <div class="pricing-range-item">
           <p class="pricing-range-label">Enterprise Platform License (Annual)</p>
-          <p class="pricing-range-value">$5Kâ€”$100K+</p>
+          <p class="pricing-range-value">$5K—$100K+</p>
         </div>
         <div class="pricing-range-item">
           <p class="pricing-range-label">Typical Agency Overhead</p>
-          <p class="pricing-range-value">+20â€”50%</p>
+          <p class="pricing-range-value">+20—50%</p>
         </div>
       </div>
       <h3 id="comparison-cards-heading" class="pricing-subheading mt-4">Comparison cards</h3>
@@ -138,7 +138,7 @@ include __DIR__ . '/includes/header.php';
           <p class="section-number pricing-card-label" aria-hidden="true">Option</p>
           <h4>Hourly Platform Freelancer</h4>
           <ul class="stack-3">
-            <li>Rate uncertainty â€” scope creep bills at the same rate</li>
+            <li>Rate uncertainty — scope creep bills at the same rate</li>
             <li>Platform fees (Competitors takes 5-10% from client invoices)</li>
             <li>Varying familiarity with LimeSurvey vs. Proprietary vs. Other tools</li>
             <li>No fixed-price accountability on delivery</li>
@@ -180,7 +180,7 @@ include __DIR__ . '/includes/header.php';
         <details class="faq-item">
           <summary>How fast can you turn a project around?</summary>
           <div class="faq-answer">
-            <p>Many studies can be delivered within two to three business days when a finalized questionnaire document is provided at the start. The bottleneck in survey programming is rarely the programming itself â€” it's the specification. Studies that arrive with wording still in flux, logic not yet confirmed, or sample targets undecided require back-and-forth that adds days to any timeline.</p>
+            <p>Many studies can be delivered within two to three business days when a finalized questionnaire document is provided at the start. The bottleneck in survey programming is rarely the programming itself — it's the specification. Studies that arrive with wording still in flux, logic not yet confirmed, or sample targets undecided require back-and-forth that adds days to any timeline.</p>
             <p>For complex studies (extensive quota logic, multiple languages, custom validation), five to ten business days is a more realistic window, with QA cycles built in. Rush delivery for confirmed specifications within 24 to 48 hours is possible but may carry a scheduling premium.</p>
             <p class="faq-note">For comparison: full-service agencies typically require 2 to 4 weeks for the same scope due to internal handoff queues and approval layers.</p>
           </div>
@@ -188,7 +188,7 @@ include __DIR__ . '/includes/header.php';
         <details class="faq-item">
           <summary>Do you work with small or one-off studies?</summary>
           <div class="faq-answer">
-            <p>Yes â€” explicitly! Many agencies impose minimum project sizes that price out pilot studies, concept tests, or single-wave qualitative supplements. Small studies, one-off deployments, and internal pulse surveys are supported alongside larger recurring programs. A 15 question employee feedback survey is a legitimate project.</p>
+            <p>Yes — explicitly! Many agencies impose minimum project sizes that price out pilot studies, concept tests, or single-wave qualitative supplements. Small studies, one-off deployments, and internal pulse surveys are supported alongside larger recurring programs. A 15 question employee feedback survey is a legitimate project.</p>
             <p>The quote simply reflects actual scope rather than a minimum billing threshold. If your study is small, the quote will be small.</p>
             <p>Quotes reflect actual project scope instead of minimum billing thresholds.</p>
           </div>
@@ -196,8 +196,8 @@ include __DIR__ . '/includes/header.php';
         <details class="faq-item">
           <summary>What survey platform do you use, and why?</summary>
           <div class="faq-answer">
-            <p>LimeSurvey is the primary platform. It is open-source, self-hostable, and fully-featured â€” supporting advanced branching, piping, quota logic, multilingual deployment, token-based participant management, and custom styling without per-response pricing or enterprise license fees. This keeps client costs focused on expertise, not platform rent.</p>
-            <p>For context: Qualtrics enterprise licensing ranges from a few thousand to over $100,000 per year depending on organizational scale. LimeSurvey Cloud plans run â‚¬29 to â‚¬170/month, and self-hosted instances are license-free. The platform choice has a direct impact on your total project cost.</p>
+            <p>LimeSurvey is the primary platform. It is open-source, self-hostable, and fully-featured — supporting advanced branching, piping, quota logic, multilingual deployment, token-based participant management, and custom styling without per-response pricing or enterprise license fees. This keeps client costs focused on expertise, not platform rent.</p>
+            <p>For context: Qualtrics enterprise licensing ranges from a few thousand to over $100,000 per year depending on organizational scale. LimeSurvey Cloud plans run €29 to €170/month, and self-hosted instances are license-free. The platform choice has a direct impact on your total project cost.</p>
             <p>If your organization already has a preferred platform (SurveyMonkey, Alchemer, Typeform, etc.), that is worth discussing at inquiry. Platform requirements shape what's possible in a given quote.</p>
           </div>
         </details>
@@ -205,7 +205,7 @@ include __DIR__ . '/includes/header.php';
           <summary>Can you handle multilingual surveys?</summary>
           <div class="faq-answer">
             <p>Yes. Multilingual deployment includes locale setup within LimeSurvey, translation string integration, encoding verification for non-Latin scripts, and QA across each language variant to confirm logic parity, display accuracy, and correct skip-pattern behavior in each locale.</p>
-            <p>Translation content is provided by the client or a translation partner â€” this is not a translation service. What this service covers is the technical integration, QA, and deployment of translated content into a working, validated multilingual survey.</p>
+            <p>Translation content is provided by the client or a translation partner — this is not a translation service. What this service covers is the technical integration, QA, and deployment of translated content into a working, validated multilingual survey.</p>
             <p class="faq-note">Multi-market research through agencies can reach $150,000+ for global deployments. Direct programming removes the agency overhead layer without sacrificing technical quality.</p>
           </div>
         </details>
@@ -220,7 +220,7 @@ include __DIR__ . '/includes/header.php';
           <summary>How does project-based pricing compare to hourly billing?</summary>
           <div class="faq-answer">
             <p>Hourly billing transfers scope risk to the client. Every revision, every clarification request, every unexpected platform behavior bills at the same rate with no ceiling. Hourly freelancers on platforms like Upwork also come with platform fees (5-10% added to client invoices) and no fixed accountability on what the final cost will be.</p>
-            <p>A project-based quote defines the deliverable and the price together. Changes to scope can be scoped and quoted as additions â€” but the base project has a known cost. For research teams with fixed budgets per study, this predictability has direct operational value.</p>
+            <p>A project-based quote defines the deliverable and the price together. Changes to scope can be scoped and quoted as additions — but the base project has a known cost. For research teams with fixed budgets per study, this predictability has direct operational value.</p>
           </div>
         </details>
         <details class="faq-item">
@@ -254,3 +254,4 @@ include __DIR__ . '/includes/header.php';
 
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+
