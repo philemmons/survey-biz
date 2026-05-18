@@ -587,6 +587,7 @@
   flex-wrap: wrap;
   gap: var(--space-4);
   justify-content: space-between;
+  padding-inline: var(--space-6);
 }
 
 .cta-text h2 {
