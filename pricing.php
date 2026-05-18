@@ -53,15 +53,14 @@ include __DIR__ . '/includes/header.php';
       <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work: scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
 
       <div class="panel" style="transition-delay: 0ms;">
-        <p class="card-title">Jump to a section</p>
-        <p class="card-body-text mb-3">Use these anchors to move through each delivery area.</p>
+        <p class="card-title mt-4 mb-3">Jump to a Section</p>
         <ul class="tag-list">
           <li><a class="tag" href="#s1-heading">Question Count & Section Depth</a></li>
-          <li><a class="tag" href="#s1-heading"></a>Logic Complexity</li>
-          <li><a class="tag" href="#s3-heading"></a>Languages Required</li>
-          <li><a class="tag" href="#s4-heading"></a>Deployment & Outreach Scope</li>
-          <li><a class="tag" href="#s5-heading"></a>Reporting & Dashboard Setup</li>
-          <li><a class="tag" href="#s6-heading"></a>Timeline & Turnaround</li>
+          <li><a class="tag" href="#s2-heading">Logic Complexity</a></li>
+          <li><a class="tag" href="#s3-heading">Languages Required</a></li>
+          <li><a class="tag" href="#s4-heading">Deployment & Outreach Scope</a></li>
+          <li><a class="tag" href="#s5-heading">Reporting & Dashboard Setup</a></li>
+          <li><a class="tag" href="#s6-heading">Timeline & Turnaround</a></li>
         </ul>
       </div>
 
