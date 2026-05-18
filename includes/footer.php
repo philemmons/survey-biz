@@ -1,9 +1,11 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-inner">
+    <div class="footer-top">
       <div class="footer-brand">
-        <p class="footer-brand-title">Survey Programming &amp; Deployment</p>
-        <p class="footer-summary">Survey programming and deployment built to collect cleaner data, reach more respondents, and hold up at scale.</p>
+        <span class="footer-wordmark">Phil Emmons</span>
+        <p class="footer-descriptor">Survey Programming &amp; Deployment</p>
+        <p class="footer-summary">Cleaner data. More respondents.<br>Built to hold up at scale.</p>
+        <a class="btn-primary footer-cta" href="inquiry.php">Send Inquiry</a>
       </div>
 
       <nav class="footer-nav" aria-label="Footer">
@@ -31,11 +33,11 @@
           </ul>
         </div>
         <div class="footer-group">
-          <p class="footer-group-heading">Trust</p>
+          <p class="footer-group-heading">Legal</p>
           <ul class="footer-links">
             <li><a href="privacy.php">Privacy Policy</a></li>
             <li><a href="terms.php">Terms of Service</a></li>
-            <li><a href="accessibility.php">Accessibility Statement</a></li>
+            <li><a href="accessibility.php">Accessibility</a></li>
           </ul>
         </div>
       </nav>
@@ -43,16 +45,32 @@
       <div class="footer-contact">
         <p class="footer-group-heading">Contact</p>
         <ul class="footer-links footer-contact-links">
-          <li><a href="tel:<?= SITE_TEL; ?>">Call <?= SITE_PHONE; ?></a></li>
-          <li><a href="mailto:<?= CONTACT_EMAIL; ?>">Email <?= CONTACT_EMAIL; ?></a></li>
-          <li><a href="inquiry.php">Go to Inquiry page</a></li>
+          <li>
+            <span class="footer-contact-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </span>
+            <a href="tel:<?= SITE_TEL; ?>"><?= SITE_PHONE; ?></a>
+          </li>
+          <li>
+            <span class="footer-contact-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </span>
+            <a href="mailto:<?= CONTACT_EMAIL; ?>"><?= CONTACT_EMAIL; ?></a>
+          </li>
         </ul>
-        <p class="footer-support-line">Need survey programming, deployment support, or cleaner research data? Send an inquiry.</p>
-        <a class="btn-primary footer-cta" href="inquiry.php">Send Inquiry</a>
+        <p class="footer-support-line">Need survey programming, deployment support, or cleaner research data?</p>
       </div>
     </div>
 
-    <p class="footer-copy">&copy; <?= date('Y'); ?> survey.philemmons.net</p>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <?= date('Y'); ?> survey.philemmons.net</p>
+      <p class="footer-copy">Survey Programming &amp; Deployment</p>
+    </div>
   </div>
 </footer>
 <div id="sr-announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
