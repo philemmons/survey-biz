@@ -12,6 +12,7 @@
     max-width: 80%;
     min-width: 80%;
     margin: 0 auto;
+    box-sizing: border-box;
     padding-left: clamp(1rem, 3vw, 2.5rem);
     padding-right: clamp(1rem, 3vw, 2.5rem);
     position: relative;
@@ -21,11 +22,19 @@
   .site-footer .footer-top {
     align-items: start;
     gap: clamp(1.25rem, 2.4vw, 2.5rem);
-    grid-template-columns: minmax(220px, 1.15fr) minmax(320px, 2fr) minmax(210px, 1fr);
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 2fr) minmax(0, 1fr);
   }
 
   .site-footer .footer-nav {
     gap: 0.75rem 1.5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .site-footer .footer-brand,
+  .site-footer .footer-nav,
+  .site-footer .footer-group,
+  .site-footer .footer-contact {
+    min-width: 0;
   }
 
   .site-footer .footer-wordmark {
@@ -48,7 +57,13 @@
   }
 
   .site-footer .footer-bottom {
+    flex-wrap: wrap;
     gap: 0.6rem 1rem;
+  }
+
+  .site-footer .footer-copy {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   @media (max-width: 1200px) {
@@ -68,9 +83,10 @@
 
   @media (max-width: 900px) {
     .site-footer .footer-shell {
-      width: 92%;
-      max-width: 92%;
-      min-width: 92%;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      margin: 0;
       padding-left: 1rem;
       padding-right: 1rem;
     }
@@ -94,6 +110,13 @@
       flex-direction: column;
       gap: 0.35rem;
     }
+
+    .site-footer .footer-links a,
+    .site-footer .footer-copy,
+    .site-footer .footer-support-line {
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
   }
 
   @media (max-width: 640px) {
@@ -103,11 +126,11 @@
     }
 
     .site-footer .footer-shell {
-      width: 96%;
-      max-width: 96%;
-      min-width: 96%;
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     .site-footer .footer-top {
@@ -125,6 +148,7 @@
 
     .site-footer .footer-links a {
       min-height: 30px;
+      display: inline-block;
     }
 
     .site-footer .footer-cta {
