@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 declare(strict_types=1);
 
@@ -372,7 +372,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           <p class="form-help">Fields marked <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
         </form>
 
-        <aside class="panel stack-4" aria-label="What to expect after submitting">
+        <aside class="panel stack-4 inquiry-sidebar" aria-label="What to expect after submitting">
           <div>
             <h3 class="card-title">What to expect</h3>
             <p class="card-body-text mt-2">After submitting, Phillip reviews your inquiry personally and responds with a tailored estimate based on your actual requirements. This is not an automated system and there is no routing queue between your message and a direct reply.</p>
@@ -396,7 +396,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
         <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
         <p class="section-deck">These are the questions that come up most often before a first inquiry is submitted. More detail on pricing, platforms, and project scope is available on the <a href="pricing.php">Pricing page</a>.</p>
       </div>
-      <div class="faq-list mt-4">
+      <div class="faq-list faq-list--pricing mt-4">
         <details class="faq-item">
           <summary>How quickly can I receive a survey programming quote?</summary>
           <div class="faq-answer">

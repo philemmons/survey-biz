@@ -901,6 +901,15 @@ legend.form-label {
   grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
 }
 
+.inquiry-sidebar,
+.inquiry-sidebar .card-title,
+.inquiry-sidebar .card-body-text,
+.inquiry-sidebar li,
+.inquiry-sidebar p,
+.inquiry-sidebar a {
+  font-size: 12px;
+}
+
 /* Breadcrumb and accordion */
 .breadcrumb {
   align-items: center;
@@ -924,8 +933,19 @@ legend.form-label {
 }
 
 .faq-list {
+  --faq-icon-duration: 0.6s;
+  --faq-answer-height-duration: 0.95s;
+  --faq-answer-padding-duration: 0.7s;
+  --faq-answer-ease: ease-in-out;
   display: grid;
   gap: var(--space-3);
+}
+
+.faq-list--pricing {
+  --faq-icon-duration: 0.6s;
+  --faq-answer-height-duration: 0.95s;
+  --faq-answer-padding-duration: 0.7s;
+  --faq-answer-ease: ease-in-out;
 }
 
 .faq-item {
@@ -962,7 +982,7 @@ legend.form-label {
   flex-shrink: 0;
   font-size: var(--fs-100);
   line-height: 1;
-  transition: transform 0.6s ease;
+  transition: transform var(--faq-icon-duration) ease;
 }
 
 .faq-item summary:hover {
@@ -990,8 +1010,8 @@ legend.form-label {
   overflow: hidden;
   padding: 0 var(--faq-pad-x);
   transition:
-    max-height 0.95s ease-in-out,
-    padding 0.7s ease-in-out;
+    max-height var(--faq-answer-height-duration) var(--faq-answer-ease),
+    padding var(--faq-answer-padding-duration) var(--faq-answer-ease);
 }
 
 .faq-item[open] .faq-answer {
