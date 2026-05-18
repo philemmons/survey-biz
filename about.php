@@ -11,8 +11,9 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="about-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">About</p>
-      <h1 id="about-hero-heading">Built on real research operations</h1>
-      <p class="hero-sub">Hands-on survey programming and deployment experience shaped by enterprise-scale fieldwork demands.</p>
+      <h1 id="about-hero-heading">Ready to plan your next survey?</h1>
+      <p class="hero-sub">Share your timeline and project scope for a direct response. Hands-on survey programming and deployment experience shaped by enterprise-scale fieldwork demands.</p>
+      <a class="btn-primary mt-4" href="inquiry.php">Send an Inquiry</a>
     </div>
   </section>
 
@@ -74,14 +75,5 @@ include __DIR__ . '/includes/header.php';
     </section>
   </div>
 
-  <section class="cta-band" aria-labelledby="about-cta-heading">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h2 id="about-cta-heading">Ready to plan your next survey?</h2>
-        <p>Share your timeline and project scope for a direct response.</p>
-      </div>
-      <a class="btn-primary" href="inquiry.php">Send an Inquiry</a>
-    </div>
-  </section>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>

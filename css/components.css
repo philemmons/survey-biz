@@ -558,8 +558,7 @@
 /* CTA and buttons */
 .cta-band {
   background: var(--ink);
-  margin-top: var(--space-14);
-  padding: var(--space-14) 0;
+  padding: var(--space-5) 0;
   position: relative;
 }
 
@@ -586,7 +585,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-6);
+  gap: var(--space-4);
   justify-content: space-between;
 }
 

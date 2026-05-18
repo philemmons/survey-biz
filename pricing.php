@@ -136,6 +136,17 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
+  <section class="cta-band" aria-labelledby="pricing-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="pricing-cta-heading">Need a survey build for your research audience?</h2>
+        <p>Share study requirements to receive a clear, project-based estimate with no obligation.</p>
+      </div>
+      <a class="btn-primary" href="inquiry.php">Get a Custom Quote</a>
+    </div>
+  </section>
+
+  
     <section class="section">
 
       <div class="pricing-factor-list mt-4" id='s1-heading' aria-labelledby="s1-heading" data-reveal>
@@ -271,21 +282,9 @@ include __DIR__ . '/includes/header.php';
         </details>
 
       </div>
-
     </section>
 
   </div>
-
-
-  <section class="cta-band" aria-labelledby="pricing-cta-heading">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h2 id="pricing-cta-heading">Get a custom quote</h2>
-        <p>Share study requirements to receive a clear, project-based estimate with no obligation.</p>
-      </div>
-      <a class="btn-primary" href="inquiry.php">Get a Custom Quote</a>
-    </div>
-  </section>
-
 </main>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>
