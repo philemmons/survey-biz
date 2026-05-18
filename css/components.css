@@ -932,13 +932,6 @@ legend.form-label {
   gap: var(--space-3);
 }
 
-.faq-list--pricing {
-  --faq-icon-duration: 0.6s;
-  --faq-answer-height-duration: 0.95s;
-  --faq-answer-padding-duration: 0.7s;
-  --faq-answer-ease: ease-in-out;
-}
-
 .faq-item {
   --faq-pad-x: var(--space-5);
   --faq-pad-y: var(--space-4);

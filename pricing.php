@@ -176,7 +176,7 @@ include __DIR__ . '/includes/header.php';
     <section class="section" aria-labelledby="faq-heading" data-reveal>
       <p class="section-number" aria-hidden="true">FAQ</p>
       <h2 id="faq-heading">Frequently asked questions</h2>
-      <div class="faq-list faq-list--pricing mt-4">
+      <div class="faq-list mt-4">
         <details class="faq-item">
           <summary>How fast can you turn a project around?</summary>
           <div class="faq-answer">

@@ -365,7 +365,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
         <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
         <p class="section-deck">These are the questions that come up most often before a first inquiry is submitted. More detail on pricing, platforms, and project scope is available on the <a href="pricing.php">Pricing page</a>.</p>
       </div>
-      <div class="faq-list faq-list--pricing mt-4">
+      <div class="faq-list mt-4">
         <details class="faq-item">
           <summary>How quickly can I receive a survey programming quote?</summary>
           <div class="faq-answer">
