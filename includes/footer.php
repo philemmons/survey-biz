@@ -7,12 +7,25 @@
     padding: var(--space-10) 0 var(--space-6);
   }
 
-  .site-footer .container {
-    width: min(1600px, 94vw);
-    max-width: none;
-    min-width: 0;
+  .site-footer .footer-shell {
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    margin: 0 auto;
+    padding-left: clamp(1rem, 3vw, 2.5rem);
+    padding-right: clamp(1rem, 3vw, 2.5rem);
     position: relative;
     z-index: 1;
+  }
+
+  .site-footer .footer-top {
+    align-items: start;
+    gap: clamp(1.25rem, 2.4vw, 2.5rem);
+    grid-template-columns: minmax(220px, 1.15fr) minmax(320px, 2fr) minmax(210px, 1fr);
+  }
+
+  .site-footer .footer-nav {
+    gap: 0.75rem 1.5rem;
   }
 
   .site-footer .footer-wordmark {
@@ -25,6 +38,8 @@
 
   .site-footer .footer-links a {
     min-height: 34px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
   }
 
   .site-footer .footer-links a:hover,
@@ -32,15 +47,94 @@
     color: var(--white);
   }
 
+  .site-footer .footer-bottom {
+    gap: 0.6rem 1rem;
+  }
+
+  @media (max-width: 1200px) {
+    .site-footer .footer-top {
+      grid-template-columns: 1fr 1.2fr;
+    }
+
+    .site-footer .footer-contact {
+      grid-column: 1 / -1;
+      max-width: 520px;
+    }
+
+    .site-footer .footer-nav {
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+  }
+
   @media (max-width: 900px) {
-    .site-footer .container {
-      width: 92vw;
+    .site-footer .footer-shell {
+      width: 92%;
+      max-width: 92%;
+      min-width: 92%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .site-footer .footer-top {
+      grid-template-columns: 1fr;
+    }
+
+    .site-footer .footer-nav {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem 1rem;
+    }
+
+    .site-footer .footer-contact {
+      grid-column: auto;
+      max-width: none;
+    }
+
+    .site-footer .footer-bottom {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .site-footer.cta-band {
+      padding-top: var(--space-8);
+      padding-bottom: var(--space-5);
+    }
+
+    .site-footer .footer-shell {
+      width: 96%;
+      max-width: 96%;
+      min-width: 96%;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .site-footer .footer-top {
+      gap: 1.25rem;
+    }
+
+    .site-footer .footer-nav {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .site-footer .footer-group-heading {
+      margin-bottom: 0.15rem;
+    }
+
+    .site-footer .footer-links a {
+      min-height: 30px;
+    }
+
+    .site-footer .footer-cta {
+      width: 100%;
     }
   }
 </style>
 
 <footer class="site-footer cta-band">
-  <div class="container">
+  <div class="footer-shell">
     <div class="footer-top">
       <div class="footer-brand">
         <span class="footer-wordmark">philemmons.net</span>
