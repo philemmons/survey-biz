@@ -370,11 +370,6 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
             <p>(A pop up will confirm your reset form)</p>
           </div>
           <p class="form-help">Fields marked <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
-          <ul class="trust-row trust-row-light" aria-label="Inquiry trust markers">
-            <li class="trust-marker">Two business day response</li>
-            <li class="trust-marker">No agency middle layer</li>
-            <li class="trust-marker">Secure direct intake</li>
-          </ul>
         </form>
 
         <aside class="panel stack-4" aria-label="What to expect after submitting">
@@ -391,56 +386,56 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           </ul>
           <p><strong>Phone:</strong> <a href="tel:+18312360849">831.236.0849</a></p>
         </aside>
-
-        <section class="section" aria-labelledby="faq-heading" data-reveal>
-          <div class="section-head">
-            <p class="section-number">Common questions</p>
-            <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
-            <p class="section-deck">These are the questions that come up most often before a first inquiry is submitted. More detail on pricing, platforms, and project scope is available on the <a href="pricing.php">Pricing page</a>.</p>
-          </div>
-          <div class="faq-list mt-4">
-            <details class="faq-item">
-              <summary>How quickly can I receive a survey programming quote?</summary>
-              <div class="faq-answer">
-                <p>Most inquiries receive a custom project-based quote within two business days. Complex studies that require clarifying questions before scoping may take slightly longer. All responses come directly, not an automated system or assistant.</p>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary>What survey platforms do you support?</summary>
-              <div class="faq-answer">
-                <p>LimeSurvey is the primary platform. Other platforms are available depending on client requirements. Because LimeSurvey is open-source, it carries no per-response licensing fees, which directly reduces your project cost compared to enterprise platform alternatives. Platform preferences are best discussed at the inquiry stage so the quote reflects any platform-specific constraints.</p>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary>Do you program multilingual surveys?</summary>
-              <div class="faq-answer">
-                <p>Yes. Multilingual survey deployment includes locale setup, translation string integration, encoding verification for non-Latin scripts, and full QA across each language variant to confirm logic parity, display accuracy, and correct skip-pattern behavior. Translation content is provided by the client or a translation partner. What this service covers is the technical integration, QA, and deployment of translated content into a working, validated multilingual survey.</p>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary>How does project-based pricing compare to hourly billing?</summary>
-              <div class="faq-answer">
-                <p>Hourly billing transfers scope risk to the client. Every revision, clarification, or unexpected platform issue bills at the same rate with no ceiling. A project-based quote defines the deliverable and the price together. Changes to scope after the quote is accepted can be priced separately, but the base project has a known cost from the start. For research teams with fixed budgets per study, this predictability has direct operational value.</p>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary>What do I need to submit an inquiry?</summary>
-              <div class="faq-answer">
-                <p>A rough questionnaire draft or project outline is enough. A polished specification is not required to receive a meaningful estimate. Helpful details include study type, approximate question count, languages needed, whether you need full email deployment and outreach or just the programmed survey link, your target launch date, and any reporting requirements. Include as much of this as you have available when submitting the form.</p>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary>Are surveys built to WCAG 2.1 accessibility standards?</summary>
-              <div class="faq-answer">
-                <p>Yes. WCAG 2.1 compliance is built into every survey from the start rather than added after development is complete. This includes accessible interaction patterns, keyboard navigation, screen reader compatibility, and mobile-responsive layouts. Every survey is tested for accessibility before fielding begins, not just reviewed against a checklist.</p>
-              </div>
-            </details>
-          </div>
-        </section>
-
-
       </div>
     </section>
+
+    
+    <section class="section" aria-labelledby="faq-heading" data-reveal>
+      <div class="section-head">
+        <p class="section-number">Common questions</p>
+        <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
+        <p class="section-deck">These are the questions that come up most often before a first inquiry is submitted. More detail on pricing, platforms, and project scope is available on the <a href="pricing.php">Pricing page</a>.</p>
+      </div>
+      <div class="faq-list mt-4">
+        <details class="faq-item">
+          <summary>How quickly can I receive a survey programming quote?</summary>
+          <div class="faq-answer">
+            <p>Most inquiries receive a custom project-based quote within two business days. Complex studies that require clarifying questions before scoping may take slightly longer. All responses come directly, not an automated system or assistant.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What survey platforms do you support?</summary>
+          <div class="faq-answer">
+            <p>LimeSurvey is the primary platform. Other platforms are available depending on client requirements. Because LimeSurvey is open-source, it carries no per-response licensing fees, which directly reduces your project cost compared to enterprise platform alternatives. Platform preferences are best discussed at the inquiry stage so the quote reflects any platform-specific constraints.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you program multilingual surveys?</summary>
+          <div class="faq-answer">
+            <p>Yes. Multilingual survey deployment includes locale setup, translation string integration, encoding verification for non-Latin scripts, and full QA across each language variant to confirm logic parity, display accuracy, and correct skip-pattern behavior. Translation content is provided by the client or a translation partner. What this service covers is the technical integration, QA, and deployment of translated content into a working, validated multilingual survey.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How does project-based pricing compare to hourly billing?</summary>
+          <div class="faq-answer">
+            <p>Hourly billing transfers scope risk to the client. Every revision, clarification, or unexpected platform issue bills at the same rate with no ceiling. A project-based quote defines the deliverable and the price together. Changes to scope after the quote is accepted can be priced separately, but the base project has a known cost from the start. For research teams with fixed budgets per study, this predictability has direct operational value.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What do I need to submit an inquiry?</summary>
+          <div class="faq-answer">
+            <p>A rough questionnaire draft or project outline is enough. A polished specification is not required to receive a meaningful estimate. Helpful details include study type, approximate question count, languages needed, whether you need full email deployment and outreach or just the programmed survey link, your target launch date, and any reporting requirements. Include as much of this as you have available when submitting the form.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Are surveys built to WCAG 2.1 accessibility standards?</summary>
+          <div class="faq-answer">
+            <p>Yes. WCAG 2.1 compliance is built into every survey from the start rather than added after development is complete. This includes accessible interaction patterns, keyboard navigation, screen reader compatibility, and mobile-responsive layouts. Every survey is tested for accessibility before fielding begins, not just reviewed against a checklist.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
   </div>
 
 </main>
