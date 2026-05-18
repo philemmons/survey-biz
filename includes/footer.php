@@ -87,8 +87,8 @@
       max-width: 100%;
       min-width: 0;
       margin: 0;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: max(1rem, env(safe-area-inset-left));
+      padding-right: max(1rem, env(safe-area-inset-right));
     }
 
     .site-footer .footer-top {
@@ -129,8 +129,8 @@
       width: 100%;
       max-width: 100%;
       min-width: 0;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: max(1rem, env(safe-area-inset-left));
+      padding-right: max(1rem, env(safe-area-inset-right));
     }
 
     .site-footer .footer-top {
@@ -138,8 +138,19 @@
     }
 
     .site-footer .footer-nav {
-      grid-template-columns: 1fr;
-      gap: 0.5rem;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.75rem;
+      grid-template-columns: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 0.2rem;
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .site-footer .footer-group {
+      flex: 0 0 min(42vw, 180px);
     }
 
     .site-footer .footer-group-heading {
