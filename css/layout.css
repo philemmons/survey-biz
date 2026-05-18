@@ -108,9 +108,16 @@
 
 @media (max-width: 900px) {
   .split,
-  .grid-3,
   .grid-4 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-3 > :nth-child(3):last-child {
+    grid-column: 1 / -1;
   }
 }
 

@@ -174,39 +174,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     </div>
   </section>
 
-  
+
   <div class="container">
-
-    <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
-      <div class="section-head">
-        <p class="section-number">Helpful to Include</p>
-        <h2 id="helpful-include-heading">What information makes a strong survey programming inquiry</h2>
-        <p class="section-deck">You do not need a polished specification to submit an inquiry. A working draft and a summary of what the study needs to accomplish is enough to get started. The details below help narrow the estimate significantly when they are available. </p>
-      </div>
-      <div class="grid-3">
-        <article class="panel">
-          <h3 class="card-title">Study Type</h3>
-          <p class="card-body-text">Market research, academic or institutional, corporate or HR, and customer experience are the most common study types. The category shapes assumptions about data handling, reporting structure, and the deployment approach that fits best. </p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Estimated Question Count</h3>
-          <p class="card-body-text">Total questionnaire length is the most direct cost driver, and an estimate is fine. Fewer than 25, 25 to 75, 75 to 150, or 150 and above are all useful brackets for scoping survey programming work. </p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Languages Needed</h3>
-          <p class="card-body-text">Each additional language multiplies multilingual survey deployment effort through locale setup, translation string integration, and full QA across every language variant. Right-to-left scripts and non-Latin character encoding add further technical work. </p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Target Launch Date</h3>
-          <p class="card-body-text">Hard deadlines or target field windows help prioritize scheduling and surface any turnaround risks early. Compressed timelines are possible but may carry a scheduling adjustment that is better discussed before survey programming begins. </p>
-        </article>
-        <article class="panel">
-          <h3 class="card-title">Reporting Needs</h3>
-          <p class="card-body-text">Real-time dashboards, cross-tab outputs, and stakeholder-facing reporting views are configured, not provided by default. Knowing what you need to see during and after fieldwork shapes post-launch survey support requirements significantly. </p>
-        </article>
-      </div>
-    </section>
-
 
     <section class="section" id="inquiry-form" data-reveal>
       <div class="section-head">
@@ -356,7 +325,40 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       </div>
     </section>
 
-    
+
+    <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
+      <div class="section-head">
+        <p class="section-number">Helpful to Include</p>
+        <h2 id="helpful-include-heading">What information makes a strong survey programming inquiry</h2>
+        <p class="section-deck">You do not need a polished specification to submit an inquiry. A working draft and a summary of what the study needs to accomplish is enough to get started. The details below help narrow the estimate significantly when they are available. </p>
+      </div>
+      <div class="grid-3">
+        <article class="panel">
+          <h3 class="card-title">Study Type</h3>
+          <p class="card-body-text">Market research, academic or institutional, corporate or HR, and customer experience are the most common study types. The category shapes assumptions about data handling, reporting structure, and the deployment approach that fits best. </p>
+        </article>
+        <article class="panel">
+          <h3 class="card-title">Estimated Question Count</h3>
+          <p class="card-body-text">Total questionnaire length is the most direct cost driver, and an estimate is fine. Fewer than 25, 25 to 75, 75 to 150, or 150 and above are all useful brackets for scoping survey programming work. </p>
+        </article>
+        <article class="panel">
+          <h3 class="card-title">Languages Needed</h3>
+          <p class="card-body-text">Each additional language multiplies multilingual survey deployment effort through locale setup, translation string integration, and full QA across every language variant. Right-to-left scripts and non-Latin character encoding add further technical work. </p>
+        </article>
+                </div>
+                 <div class="grid-2 mt-2">
+        <article class="panel">
+          <h3 class="card-title">Target Launch Date</h3>
+          <p class="card-body-text">Hard deadlines or target field windows help prioritize scheduling and surface any turnaround risks early. Compressed timelines are possible but may carry a scheduling adjustment that is better discussed before survey programming begins. </p>
+        </article>
+        <article class="panel">
+          <h3 class="card-title">Reporting Needs</h3>
+          <p class="card-body-text">Real-time dashboards, cross-tab outputs, and stakeholder-facing reporting views are configured, not provided by default. Knowing what you need to see during and after fieldwork shapes post-launch survey support requirements significantly. </p>
+        </article>
+      </div>
+    </section>
+
+
     <section class="section" aria-labelledby="faq-heading" data-reveal>
       <div class="section-head">
         <p class="section-number">Common questions</p>
