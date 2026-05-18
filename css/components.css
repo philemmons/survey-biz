@@ -1018,7 +1018,8 @@ legend.form-label {
   font-weight: 600;
 }
 
-section[id] {
+section[id],
+.pricing-factor-list[id] {
   scroll-margin-top: 6rem;
 }
 
