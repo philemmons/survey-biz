@@ -12,7 +12,7 @@ include __DIR__ . '/includes/header.php';
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Survey Programming & Deployment</p>
       <h1 id="hero-heading">Enterprise grade surveys built to collect cleaner data, reach more respondents, and hold up at scale.</h1>
-      <p class="hero-sub">Programmed and deployed surveys to a 100000+ member international research panels across 130+ countries. Every survey built carries the same operational discipline: accuracy, accessible, and gathering critical business data.</p>
+      <p class="hero-sub">Programmed and deployed surveys to a 100000+ member international research panels across 130+ countries. Every survey built carries the same operational discipline: accuracy, accessible, and gathering critical business data for clients.</p>
 
       <div class="hero-actions mt-5">
         <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
@@ -112,7 +112,7 @@ include __DIR__ . '/includes/header.php';
     <div class="container cta-inner">
       <div class="cta-text">
         <h2 id="cta-heading">Ready to launch a better survey experience?</h2>
-        <p>Review your questionnaire, timeline, fielding goals, and business needs.</p>
+        <p>Let's discuss your questionnaire, timeline, fielding goals, and business needs.</p>
       </div>
       <a class="btn-primary" href="inquiry.php">Send an Inquiry</a>
     </div>
