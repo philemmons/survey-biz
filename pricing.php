@@ -52,8 +52,8 @@ include __DIR__ . '/includes/header.php';
       <h2 id="factors-heading">What affects your quote</h2>
       <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work: scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
 
-      <div class="panel" style="transition-delay: 0ms;">
-        <p class="card-title mt-4 mb-3">Jump to a Section</p>
+      <div class="panel mt-4" style="transition-delay: 0ms;">
+        <p class="card-title mb-3">Jump to a Section</p>
         <ul class="tag-list">
           <li><a class="tag" href="#s1-heading">Question Count & Section Depth</a></li>
           <li><a class="tag" href="#s2-heading">Logic Complexity</a></li>
