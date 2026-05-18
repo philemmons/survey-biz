@@ -1,12 +1,15 @@
 <footer class="site-footer cta-band sf-footer">
+
   <div class="container sf-inner">
     <div class="sf-top">
+
       <div class="sf-brand">
         <span class="sf-wordmark">philemmons.net</span>
-        <p class="sf-descriptor">Survey Programming &amp; Deployment</p>
-        <p class="sf-tagline">Cleaner data. More respondents. Built to hold up at scale.</p>
-        <a class="btn-primary sf-cta" href="/inquiry.php">Send An Inquiry</a>
+        <p class="sf-descriptor">Ready to launch a better survey experience?</p>
+        <p class="sf-tagline">Let's discuss your questionnaire, timeline, fielding goals, and business needs.</p>
+        <a class="btn-primary mt-4" href="/inquiry.php">Send An Inquiry</a>
       </div>
+
 
       <nav class="sf-nav" aria-label="Footer navigation">
         <div class="sf-col">
@@ -65,6 +68,7 @@
         </div>
       </nav>
 
+
       <div class="sf-contact">
         <p class="sf-col-head">Contact</p>
         <ul class="sf-contact-list">
@@ -86,7 +90,7 @@
             <a href="mailto:<?= CONTACT_EMAIL; ?>"><?= CONTACT_EMAIL; ?></a>
           </li>
         </ul>
-        <p class="sf-support">Need survey programming, deployment support, or cleaner research data?</p>
+        <p class="sf-support">Cleaner data. More respondents. Built to hold up at scale.</p>
       </div>
     </div>
 
@@ -94,8 +98,11 @@
       <p class="sf-copy">&copy; <?php echo date("Y"); ?> philemmons.net All Rights Reserved.</p>
       <p class="sf-copy">Survey Programming & Deployment</p>
     </div>
+
   </div>
+  
 </footer>
+
 <div id="sr-announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 <script src="js/navigation.js"></script>
 <script src="js/motion.js"></script>

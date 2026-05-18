@@ -108,14 +108,5 @@ include __DIR__ . '/includes/header.php';
     </section>
   </div>
 
-  <section class="cta-band" aria-labelledby="cta-heading">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h2 id="cta-heading">Ready to launch a better survey experience?</h2>
-        <p>Let's discuss your questionnaire, timeline, fielding goals, and business needs.</p>
-      </div>
-      <a class="btn-primary" href="inquiry.php">Send an Inquiry</a>
-    </div>
-  </section>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
