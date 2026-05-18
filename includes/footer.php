@@ -96,11 +96,10 @@
 
     <div class="sf-bottom">
       <p class="sf-copy">&copy; <?php echo date("Y"); ?> philemmons.net All Rights Reserved.</p>
-      <p class="sf-copy">Survey Programming & Deployment</p>
     </div>
 
   </div>
-  
+
 </footer>
 
 <div id="sr-announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
