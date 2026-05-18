@@ -1,6 +1,7 @@
 <style>
   .site-footer {
     background: var(--ink);
+    overflow-x: hidden;
   }
 
   .site-footer.cta-band {
@@ -83,10 +84,10 @@
 
   @media (max-width: 900px) {
     .site-footer .footer-shell {
-      width: 100%;
-      max-width: 100%;
-      min-width: 0;
-      margin: 0;
+      width: 80%;
+      max-width: 80%;
+      min-width: 80%;
+      margin: 0 auto;
       padding-left: max(1rem, env(safe-area-inset-left));
       padding-right: max(1rem, env(safe-area-inset-right));
     }
@@ -126,9 +127,10 @@
     }
 
     .site-footer .footer-shell {
-      width: 100%;
-      max-width: 100%;
-      min-width: 0;
+      width: 80%;
+      max-width: 80%;
+      min-width: 80%;
+      margin: 0 auto;
       padding-left: max(1rem, env(safe-area-inset-left));
       padding-right: max(1rem, env(safe-area-inset-right));
     }
