@@ -33,7 +33,7 @@ include __DIR__ . '/includes/header.php';
     <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
       <p class="section-number" aria-hidden="true">01</p>
       <h2 id="s1-heading">Professional Survey Programming</h2>
-      <p class="section-deck">Your research questions deserve more than a form builder. I program surveys in LimeSurvey with the logic and structure that serious data collection requires.</p>
+      <p class="section-deck">Your research questions deserve more than a form builder. Surveys are programmed in LimeSurvey with the logic and structure that serious data collection requires.</p>
       <ul class="feature-list" aria-label="Survey programming services">
         <li class="feature-card">
           <p class="feature-title">Advanced Branching & Skip Logic</p>
@@ -45,7 +45,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
-          <p class="feature-body">I've maintained up to five concurrently active, chained surveys in support of continuous research programs. If your study has multiple waves or rollover logic, I've built it before.</p>
+          <p class="feature-body">Up to five concurrently active, chained surveys have been maintained in support of continuous research programs. If a study has multiple waves or rollover logic, this workflow is already proven.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Custom Branding & Visual Design</p>
@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
     <section id="s2" class="section" aria-labelledby="s2-heading" data-reveal>
       <p class="section-number" aria-hidden="true">02</p>
       <h2 id="s2-heading">Accessible & High-Performance Design</h2>
-      <p class="section-deck">Surveys that exclude users — or load slowly — cost you responses. Every survey I build is tested for accessibility and optimized for performance before it goes live.</p>
+      <p class="section-deck">Surveys that exclude users, or load slowly, cost responses from panelist. Every survey is tested for accessibility and optimized for performance before launch date.</p>
       <ul class="feature-list" aria-label="Accessibility and performance services">
         <li class="feature-card">
           <p class="feature-title">WCAG 2.1 Compliance</p>
@@ -96,15 +96,15 @@ include __DIR__ . '/includes/header.php';
     <section id="s3" class="section" aria-labelledby="s3-heading" data-reveal>
       <p class="section-number" aria-hidden="true">03</p>
       <h2 id="s3-heading">Multilingual Deployment & Outreach</h2>
-      <p class="section-deck">Reaching a global or bilingual audience requires more than a translation file. I've built and managed the full end-to-end outreach pipeline for international research programs.</p>
+      <p class="section-deck">Reaching a global or bilingual audience requires more than a translation file. Full end-to-end outreach pipelines are built and managed for international research programs.</p>
       <ul class="feature-list" aria-label="Deployment and outreach services">
         <li class="feature-card">
           <p class="feature-title">Multilingual Survey Delivery</p>
-          <p class="feature-body">Surveys deployed in respondents' native languages across 130+ countries. I've managed the full translation workflow — from template standardization to final QA — cutting translation turnaround from three weeks to three days.</p>
+          <p class="feature-body">Surveys are deployed in respondents' native languages across 130+ countries. The full translation workflow — from template standardization to final QA — is managed while reducing translation turnaround from three weeks to three days.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Email Campaign Management via Mailgun</p>
-          <p class="feature-body">I've executed 16 to 25 targeted survey outreach campaigns per year using the Mailgun API, managing list segmentation, delivery, and bounce handling to maintain high deliverability to research panels.</p>
+          <p class="feature-body">Between 16 and 25 targeted survey outreach campaigns per year are executed using Mailgun API, with list segmentation, delivery, and bounce handling to maintain high deliverability to research panels.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Secure Data Collection</p>
@@ -112,7 +112,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Smooth Survey Launch</p>
-          <p class="feature-body">I manage all pre-launch testing and configuration so your survey goes live correctly the first time — with no broken logic, missing translations, or surprise formatting issues on launch day.</p>
+          <p class="feature-body">All pre-launch testing and configuration are managed so surveys go live correctly the first time — with no broken logic, missing translations, or surprise formatting issues on launch day.</p>
         </li>
       </ul>
       <ul class="tag-list" aria-label="Deployment tags">
@@ -127,11 +127,11 @@ include __DIR__ . '/includes/header.php';
     <section id="s4" class="section" aria-labelledby="s4-heading" data-reveal>
       <p class="section-number" aria-hidden="true">04</p>
       <h2 id="s4-heading">Real-Time Tracking & Data Reporting</h2>
-      <p class="section-deck">Data collection doesn't end at deployment. I provide the tracking and reporting infrastructure your team needs to monitor progress and act on results quickly.</p>
+      <p class="section-deck">Data collection does not end at deployment. Tracking and reporting infrastructure is provided so clients can monitor progress and act on results quickly.</p>
       <ul class="feature-list" aria-label="Reporting services">
         <li class="feature-card">
           <p class="feature-title">Daily Progress Monitoring</p>
-          <p class="feature-body">I've tracked survey fulfillment counts and completion rates daily throughout active campaigns — by geographic region and respondent segment — keeping research programs on schedule and on quota.</p>
+          <p class="feature-body">Survey fulfillment counts and completion rates are tracked daily throughout active campaigns, by geographic region and respondent segment, that keep research programs on schedule and on quota.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Shared Dashboards & Visualizations</p>
@@ -156,7 +156,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <section class="section" aria-labelledby="why-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">Why Work With Me</p>
+      <p class="section-number" aria-hidden="true">Why Work With This Service</p>
       <h2 id="why-heading">Grounded in real research operations</h2>
       <p class="section-deck">These are proven systems, not theory, built under real delivery pressure.</p>
       <ul class="icon-grid" aria-label="Differentiators">
@@ -184,7 +184,7 @@ include __DIR__ . '/includes/header.php';
     <div class="container cta-inner">
       <div class="cta-text">
         <h2 id="services-cta-heading">Need a survey built to exact specifications?</h2>
-        <p>Share your questionnaire and timeline, and I will outline the best deployment path.</p>
+        <p>Share your questionnaire and timeline to receive a clear deployment recommendation.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send an Inquiry</a>
     </div>

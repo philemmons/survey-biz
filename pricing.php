@@ -239,7 +239,7 @@ include __DIR__ . '/includes/header.php';
         </details>
 
         <details class="faq-item">
-          <summary>What do you need from me to provide a quote?</summary>
+          <summary>What information is needed to provide a quote?</summary>
           <div class="faq-answer">
             <p>A useful quote requires: the questionnaire draft or outline (even a rough one), the approximate question count and logic complexity, any language requirements, whether you need email deployment and outreach setup or just the programmed survey link, your target launch date, and any reporting or dashboard requirements.</p>
             <p>You don't need a polished specification, a working draft and a summary of what the study needs to do is sufficient to provide a meaningful estimate. Submit through the inquiry page and include as much of that information as you have.</p>
@@ -255,7 +255,7 @@ include __DIR__ . '/includes/header.php';
         </details>
 
         <details class="faq-item">
-          <summary>What happens if I need changes after launch?</summary>
+          <summary>What happens if changes are needed after launch?</summary>
           <div class="faq-answer">
             <p>Post-launch changes are handled as separate scope items and quoted accordingly. The nature of the change matters significantly: cosmetic adjustments (label wording, color, instruction text) are low effort. Logic changes after responses have been collected require careful handling to avoid data integrity issues or respondent experience inconsistencies.</p>
             <p>The standard practice is to clearly define revision scope before launch, including a designated QA window for consolidated feedback. This minimizes post launch change requests and keeps the study on its intended timeline.</p>
@@ -281,7 +281,7 @@ include __DIR__ . '/includes/header.php';
     <div class="container cta-inner">
       <div class="cta-text">
         <h2 id="pricing-cta-heading">Get a custom quote</h2>
-        <p>Tell me what your study requires and I will provide a clear, project-based estimate with no obligation.</p>
+        <p>Share study requirements to receive a clear, project-based estimate with no obligation.</p>
       </div>
       <a class="btn-primary" href="inquiry.php">Get a Custom Quote</a>
     </div>

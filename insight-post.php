@@ -148,10 +148,11 @@ include __DIR__ . '/includes/header.php';
     <section class="section" aria-label="Work with philemmons.net">
       <div class="notice-box">
         <h2>Ready to put this into practice?</h2>
-        <p class="section-deck">If you want help applying this approach to your next study, I can support programming, deployment, and launch QA end to end.</p>
+        <p class="section-deck">For teams applying this approach to a new study, programming, deployment, and launch QA support is available from end to end.</p>
         <p class="mt-4"><a href="inquiry.php" class="btn-primary">Start a Project</a></p>
       </div>
     </section>
   </div>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

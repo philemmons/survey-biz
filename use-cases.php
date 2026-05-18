@@ -24,7 +24,7 @@ include __DIR__ . '/includes/header.php';
         <article class="post-card" aria-labelledby="uc1-heading">
           <p class="tag">Market Research Firms</p>
           <h3 id="uc1-heading" class="mt-3">Market Research Firms</h3>
-          <p class="card-body-text mt-2">I support firms running complex studies with advanced branching logic, quota control, and panel flow management. Projects scale smoothly across languages and markets with disciplined programming standards. Multilingual deployment is paired with reliable campaign operations through Mailgun outreach pipelines. The result is cleaner execution from launch through export.</p>
+          <p class="card-body-text mt-2">This service supports firms running complex studies with advanced branching logic, quota control, and panel flow management. Projects scale smoothly across languages and markets with disciplined programming standards. Multilingual deployment is paired with reliable campaign operations through Mailgun outreach pipelines. The result is cleaner execution from launch through export.</p>
           <ul class="tag-list" aria-label="Market research tags">
             <li><span class="tag">LimeSurvey</span></li>
             <li><span class="tag">Branching Logic</span></li>
@@ -84,3 +84,4 @@ include __DIR__ . '/includes/header.php';
   </section>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

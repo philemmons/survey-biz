@@ -123,9 +123,10 @@ include __DIR__ . '/includes/header.php';
         <p class="section-number" aria-hidden="true">About Phillip</p>
         <h2 id="author-heading">Freelance survey programmer</h2>
         <p class="card-body-text">Focused on accessible, multilingual, and enterprise-ready deployment workflows.</p>
-        <p class="mt-4"><a href="inquiry.php" class="btn-primary">Work With Me</a></p>
+        <p class="mt-4"><a href="inquiry.php" class="btn-primary">Start a Project</a></p>
       </div>
     </section>
   </div>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

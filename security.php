@@ -39,14 +39,14 @@ include __DIR__ . '/includes/header.php';
     <div class="container">
       <p class="hero-eyebrow">Security</p>
       <h1 id="sec-hero-heading">Security and data practices</h1>
-      <p class="hero-sub">What to expect when your research data is in my hands.</p>
+      <p class="hero-sub">What to expect when research data is handled by this service.</p>
     </div>
   </section>
 
   <div class="container">
     <section class="section" aria-labelledby="practices-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Security Model</p>
-      <h2 id="practices-heading">How I protect your data</h2>
+      <h2 id="practices-heading">How your data is protected</h2>
       <ul class="icon-grid mt-4" aria-label="Security practices">
         <?php foreach ($practices as $practice_index => $practice): ?>
           <li class="icon-card" aria-labelledby="practice-<?= (int) $practice_index; ?>-heading">
@@ -57,10 +57,11 @@ include __DIR__ . '/includes/header.php';
       </ul>
 
       <div class="notice-box mt-5" role="note">
-        <p class="mb-3">Have specific compliance or data requirements for your study? Mention them in your inquiry and I will address them directly.</p>
+        <p class="mb-3">Have specific compliance or data requirements for your study? Mention them in your inquiry and they will be addressed directly.</p>
         <a href="inquiry.php" class="btn-primary">Send an Inquiry</a>
       </div>
     </section>
   </div>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

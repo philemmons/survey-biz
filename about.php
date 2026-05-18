@@ -47,9 +47,9 @@ include __DIR__ . '/includes/header.php';
         Survey systems should be precise, accessible, and operationally dependable from day one.
       </blockquote>
       <div class="stack-4 mt-5 measure">
-        <p>I built my freelance practice around real research production work where timelines are tight, specs evolve quickly, and launch quality matters. My background combines technical implementation with day-to-day delivery responsibility, so projects move from questionnaire to field with less friction.</p>
-        <p>I have supported enterprise-tested panel programs reaching 100000+ panel members across 80+ countries. That includes multilingual deployments, managed outreach pipelines, and field monitoring workflows that keep stakeholders informed in real time.</p>
-        <p>My approach is straightforward: accessible, clean code; stable survey logic; and direct client communication without handoff layers. You get an implementation partner who is accountable for what ships and responsive when priorities change.</p>
+        <p>This practice is built around real research production work where timelines are tight, specs evolve quickly, and launch quality matters. The business experience combines technical implementation with day-to-day delivery responsibility, so projects move from questionnaire to field with less friction.</p>
+        <p>Enterprise grade surveys have been completed across 100,000+ panelist in 130+ countries. This includes multilingual deployments, managed outreach pipelines, and field monitoring workflows that keep stakeholders informed in real time.</p>
+        <p>The approach is straightforward: accessible, clean code; stable survey logic; and direct client communication without handoff layers. Clients get an implementation partner that is accountable for what ships and responsive when priorities change.</p>
       </div>
     </section>
 

@@ -11,8 +11,8 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Survey Programming & Deployment</p>
-      <h1 id="hero-heading">Enterprise-grade surveys built to collect cleaner data, reach more respondents, and hold up at scale.</h1>
-      <p class="hero-sub">I've programmed and deployed surveys to a 100000-member international research panel across 80+ countries. Every survey I build carries that same operational discipline — accurate, accessible, and ready to perform on day one.</p>
+      <h1 id="hero-heading">Enterprise grade surveys built to collect cleaner data, reach more respondents, and hold up at scale.</h1>
+      <p class="hero-sub">Programmed and deployed surveys to a 100000+ member international research panels across 130+ countries. Every survey built carries the same operational discipline: accuracy, accessible, and gathering critical business data.</p>
 
       <div class="hero-actions mt-5">
         <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
@@ -40,11 +40,11 @@ include __DIR__ . '/includes/header.php';
         </div>
         <div class="proof-item">
           <dt class="proof-label">Campaigns per Year</dt>
-          <dd class="proof-num">16-25</dd>
+          <dd class="proof-num">16—25</dd>
         </div>
         <div class="proof-item">
           <dt class="proof-label">Multilingual Translation Turnaround</dt>
-          <dd class="proof-num">3-5 Days</dd>
+          <dd class="proof-num">3—5 Days</dd>
         </div>
       </dl>
     </div>
@@ -52,12 +52,12 @@ include __DIR__ . '/includes/header.php';
 
   <div class="container">
     <div class="intro" aria-label="Service overview" data-reveal>
-      <p class="intro-text">In a research environment where a poorly structured question, an inaccessible layout, or a slow-loading page can silently kill your response rate, the quality of your survey programming matters. I specialize in building surveys that remove every technical barrier between your questions and your data — across devices, languages, and audiences.</p>
+      <p class="intro-text">In a research environment where a poorly structured question, an inaccessible layout, or a slow-loading page can silently kill your response rate, the quality of your survey programming matters. This business specializes in building surveys that remove every technical barrier between your questions and your data — across devices, languages, and audiences.</p>
     </div>
 
     <section class="section" aria-labelledby="services-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Services Preview</p>
-      <h2 id="services-heading">What I can build for your team</h2>
+      <h2 id="services-heading">What this service can build for your team</h2>
       <p class="section-deck">Execution-ready components drawn from recurring enterprise delivery workflows.</p>
       <ul class="feature-list" aria-label="Services preview">
         <li class="feature-card">
@@ -84,25 +84,25 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <section class="section" aria-labelledby="why-heading" data-reveal>
-      <p class="section-number" aria-hidden="true">Why Work With Me</p>
+      <p class="section-number" aria-hidden="true">Why Work With This Service</p>
       <h2 id="why-heading">Grounded in real research operations</h2>
       <p class="section-deck">You get direct accountability, technical precision, and launch discipline on every project.</p>
       <ul class="icon-grid" aria-label="Key differentiators">
         <li class="icon-card">
           <h3>Direct Accountability, No Middlemen</h3>
-          <p class="card-body-text">You work directly with me — the person who builds and deploys your survey. No account managers relaying messages, no handoffs between teams.</p>
+          <p class="card-body-text">You work directly with the survey programmer and deployment lead. No account managers relaying messages and no handoffs between teams.</p>
         </li>
         <li class="icon-card">
           <h3>Enterprise-Tested at International Scale</h3>
-          <p class="card-body-text">I've programmed and deployed surveys to a 100000-member panel spanning 80+ countries. If your study is smaller than that, I have the capacity and the experience to handle it without issue.</p>
+          <p class="card-body-text">Surveys have been programmed and deployed to a 100000+ member panel spanning 130+ countries. Projects of smaller scope are handled with the same capacity and discipline.</p>
         </li>
         <li class="icon-card">
           <h3>Accessibility Built In, Not Bolted On</h3>
-          <p class="card-body-text">WCAG 2.1 compliance is part of every build — not an add-on. Every survey I deliver is tested for accessibility before it reaches a single respondent.</p>
+          <p class="card-body-text">WCAG 2.1 compliance is part of every build — not an add-on. Every survey is tested, and re-tested, for accessibility before it reaches a single respondent.</p>
         </li>
         <li class="icon-card">
           <h3>Competitive, Transparent Pricing</h3>
-          <p class="card-body-text">Get enterprise-quality survey programming without enterprise-agency overhead. Contact me for a custom quote based on your project scope and timeline.</p>
+          <p class="card-body-text">Get enterprise-quality survey programming without enterprise-agency overhead. Request a custom quote based on the clients project scope and timeline.</p>
         </li>
       </ul>
     </section>
@@ -112,7 +112,7 @@ include __DIR__ . '/includes/header.php';
     <div class="container cta-inner">
       <div class="cta-text">
         <h2 id="cta-heading">Ready to launch a better survey experience?</h2>
-        <p>Let's discuss your questionnaire, timeline, and fielding goals.</p>
+        <p>Review your questionnaire, timeline, fielding goals, and business needs.</p>
       </div>
       <a class="btn-primary" href="inquiry.php">Send an Inquiry</a>
     </div>

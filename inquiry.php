@@ -367,7 +367,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       </div>
       <div class="faq-list mt-4">
         <details class="faq-item">
-          <summary>How quickly can I receive a survey programming quote?</summary>
+          <summary>How quickly can a quote be provided?</summary>
           <div class="faq-answer">
             <p>Most inquiries receive a custom project-based quote within two business days. Complex studies that require clarifying questions before scoping may take slightly longer. All responses come directly, not an automated system or assistant.</p>
           </div>
@@ -391,7 +391,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           </div>
         </details>
         <details class="faq-item">
-          <summary>What do I need to submit an inquiry?</summary>
+          <summary>What is needed to submit an inquiry?</summary>
           <div class="faq-answer">
             <p>A rough questionnaire draft or project outline is enough. A polished specification is not required to receive a meaningful estimate. Helpful details include study type, approximate question count, languages needed, whether you need full email deployment and outreach or just the programmed survey link, your target launch date, and any reporting requirements. Include as much of this as you have available when submitting the form.</p>
           </div>
