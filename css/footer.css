@@ -185,7 +185,7 @@
   outline-offset: 2px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .sf-footer .sf-top {
     grid-template-columns: 1fr;
     gap: var(--space-6);
