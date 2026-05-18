@@ -38,6 +38,7 @@ if (!isset($canonical_url)) {
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/accessibility.css">
   <?php
