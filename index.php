@@ -12,8 +12,13 @@ include __DIR__ . '/includes/header.php';
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Survey Programming & Deployment</p>
       <h1 id="hero-heading">Enterprise-grade surveys built to collect cleaner data, reach more respondents, and hold up at scale.</h1>
-      <p class="hero-sub">I've programmed and deployed surveys to a 185,000-member international research panel across 80+ countries. Every survey I build carries that same operational discipline — accurate, accessible, and ready to perform on day one.</p>
-      <p class="mt-5"><a class="btn-primary" href="inquiry.php">Send an Inquiry</a></p>
+      <p class="hero-sub">I've programmed and deployed surveys to a 100000-member international research panel across 80+ countries. Every survey I build carries that same operational discipline — accurate, accessible, and ready to perform on day one.</p>
+
+      <div class="hero-actions mt-5">
+        <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
+        <a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a>
+      </div>
+
       <ul class="trust-row" aria-label="Trust markers">
         <li class="trust-marker">130+ Countries</li>
         <li class="trust-marker">Direct Operator Access</li>
@@ -27,7 +32,7 @@ include __DIR__ . '/includes/header.php';
       <dl class="proof-grid">
         <div class="proof-item">
           <dt class="proof-label">Panel Members</dt>
-          <dd class="proof-num" data-count-to="185" data-suffix=",000+">185,000+</dd>
+          <dd class="proof-num" data-count-to="185" data-suffix=",000+">100000+</dd>
         </div>
         <div class="proof-item">
           <dt class="proof-label">Countries Served</dt>
@@ -89,7 +94,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="icon-card">
           <h3>Enterprise-Tested at International Scale</h3>
-          <p class="card-body-text">I've programmed and deployed surveys to a 185,000-member panel spanning 80+ countries. If your study is smaller than that, I have the capacity and the experience to handle it without issue.</p>
+          <p class="card-body-text">I've programmed and deployed surveys to a 100000-member panel spanning 80+ countries. If your study is smaller than that, I have the capacity and the experience to handle it without issue.</p>
         </li>
         <li class="icon-card">
           <h3>Accessibility Built In, Not Bolted On</h3>

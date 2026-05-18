@@ -24,7 +24,6 @@
         <li><a class="site-nav-link" href="insights.php" <?= is_current_page('insights.php') ? 'aria-current="page"' : ''; ?>>Insights</a></li>
         <li><a class="site-nav-link" href="inquiry.php" <?= is_current_page('inquiry.php') ? 'aria-current="page"' : ''; ?>>Inquiry</a></li>
       </ul>
-      <a class="nav-inquiry" href="tel:<?= SITE_TEL; ?>"><?= SITE_PHONE; ?></a>
     </nav>
   </div>
 </header>

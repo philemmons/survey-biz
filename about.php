@@ -21,7 +21,7 @@ include __DIR__ . '/includes/header.php';
       <dl class="proof-grid">
         <div class="proof-item">
           <dt class="proof-label">Panel Members</dt>
-          <dd class="proof-num" data-count-to="185" data-suffix=",000+">185,000+</dd>
+          <dd class="proof-num" data-count-to="185" data-suffix=",000+">100000+</dd>
         </div>
         <div class="proof-item">
           <dt class="proof-label">Countries</dt>
@@ -48,7 +48,7 @@ include __DIR__ . '/includes/header.php';
       </blockquote>
       <div class="stack-4 mt-5 measure">
         <p>I built my freelance practice around real research production work where timelines are tight, specs evolve quickly, and launch quality matters. My background combines technical implementation with day-to-day delivery responsibility, so projects move from questionnaire to field with less friction.</p>
-        <p>I have supported enterprise-tested panel programs reaching 185,000+ panel members across 80+ countries. That includes multilingual deployments, managed outreach pipelines, and field monitoring workflows that keep stakeholders informed in real time.</p>
+        <p>I have supported enterprise-tested panel programs reaching 100000+ panel members across 80+ countries. That includes multilingual deployments, managed outreach pipelines, and field monitoring workflows that keep stakeholders informed in real time.</p>
         <p>My approach is straightforward: accessible, clean code; stable survey logic; and direct client communication without handoff layers. You get an implementation partner who is accountable for what ships and responsive when priorities change.</p>
       </div>
     </section>
