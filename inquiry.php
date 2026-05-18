@@ -169,7 +169,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
       <div class="hero-actions mt-4">
         <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
-        <a href="tel:+18312360849" class="phone-inline" aria-label="Call 831-236-0849">Phone: 831.236.0849</a>
+        <a href="tel:+18312360849" class="phone-inline" aria-label="Phone 831-236-0849">831.236.0849</a>
       </div>
     </div>
   </section>
@@ -179,19 +179,19 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       <div class="proof-grid">
         <div class="proof-item">
           <span class="proof-num">1-2 days</span>
-          <span class="proof-label">Typical quote turnaround</span>
+          <span class="proof-label">Typical Quote Turnaround</span>
         </div>
         <div class="proof-item">
           <span class="proof-num">Direct</span>
-          <span class="proof-label">No agency middle layer</span>
+          <span class="proof-label">No Agency Middle Layer</span>
         </div>
         <div class="proof-item">
           <span class="proof-num">185,000+</span>
-          <span class="proof-label">Panel members supported</span>
+          <span class="proof-label">Panel Members Supported</span>
         </div>
         <div class="proof-item">
           <span class="proof-num">130+</span>
-          <span class="proof-label">Countries served</span>
+          <span class="proof-label">Countries Served</span>
         </div>
       </div>
     </div>
@@ -199,46 +199,43 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
   <div class="container">
 
-    <section class="section" aria-labelledby="pull-quote-heading" data-reveal>
-      <div class="panel measure">
-        <h2 id="pull-quote-heading" class="card-title">Our Goal</h2>
-        <blockquote class="card-body-text">
-          Survey systems should be precise, accessible, and operationally dependable from day one. Every inquiry gets full attention, and every quote reflects the actual work your study requires rather than a generic package tier. -- Survey Programming Specialist
-        </blockquote>
-      </div>
+    <section class="section reveal is-visible" aria-labelledby="pull-quote-heading" data-reveal="">
+      <p class="section-number" aria-hidden="true">Survey Programming Specialist</p>
+      <h2 id="pull-quote-heading">Our Goal</h2>
+      <p class="section-deck">Survey systems should be precise, accessible, and operationally dependable from day one. Every inquiry gets full attention, and every quote reflects the actual work your study requires rather than a generic package tier.</p>
     </section>
 
 
     <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
       <div class="section-head">
-        <p class="section-number">Helpful to include</p>
-        <h2 id="helpful-include-heading">Details that strengthen your inquiry</h2>
-        <p class="section-deck">You do not need a polished specification to request a quote. A working draft plus context is enough, and the details below improve estimate accuracy when available.</p>
+        <p class="section-number">Helpful to Include</p>
+        <h2 id="helpful-include-heading">What information makes a strong survey programming inquiry</h2>
+        <p class="section-deck">You do not need a polished specification to submit an inquiry. A working draft and a summary of what the study needs to accomplish is enough to get started. The details below help narrow the estimate significantly when they are available. </p>
       </div>
       <div class="grid-3">
         <article class="panel">
-          <h3 class="card-title">Study type</h3>
-          <p class="card-body-text">Market research, academic, corporate, or customer experience context helps frame logic and reporting assumptions.</p>
+          <h3 class="card-title">Study Type</h3>
+          <p class="card-body-text">Market research, academic or institutional, corporate or HR, and customer experience are the most common study types. The category shapes assumptions about data handling, reporting structure, and the deployment approach that fits best. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Estimated question count</h3>
-          <p class="card-body-text">A rough range is enough and helps scope programming complexity and timeline realistically.</p>
+          <h3 class="card-title">Estimated Question Count</h3>
+          <p class="card-body-text">Total questionnaire length is the most direct cost driver, and an estimate is fine. Fewer than 25, 25 to 75, 75 to 150, or 150 and above are all useful brackets for scoping survey programming work. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Languages needed</h3>
-          <p class="card-body-text">Multilingual work expands setup and QA requirements across each locale and language variant.</p>
+          <h3 class="card-title">Languages Needed</h3>
+          <p class="card-body-text">Each additional language multiplies multilingual survey deployment effort through locale setup, translation string integration, and full QA across every language variant. Right-to-left scripts and non-Latin character encoding add further technical work. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Target launch date</h3>
-          <p class="card-body-text">Deadlines help prioritize scheduling and surface timing risks before implementation starts.</p>
+          <h3 class="card-title">Target Launch Date</h3>
+          <p class="card-body-text">Hard deadlines or target field windows help prioritize scheduling and surface any turnaround risks early. Compressed timelines are possible but may carry a scheduling adjustment that is better discussed before survey programming begins. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Reporting needs</h3>
-          <p class="card-body-text">Dashboards, exports, and post-field views can be scoped early so reporting requirements are covered in the quote.</p>
+          <h3 class="card-title">Reporting Needs</h3>
+          <p class="card-body-text">Real-time dashboards, cross-tab outputs, and stakeholder-facing reporting views are configured, not provided by default. Knowing what you need to see during and after fieldwork shapes post-launch survey support requirements significantly. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Platform or panel preference</h3>
-          <p class="card-body-text">Note existing platform constraints so the estimate reflects your current tooling and deployment workflow.</p>
+          <h3 class="card-title">Platform or Panel Preference</h3>
+          <p class="card-body-text">LimeSurvey is the primary survey platform, but if your organization already uses SurveyMonkey, Alchemer, Qualtrics, or another tool, that is worth noting at inquiry. Platform requirements shape scope and may affect overall project cost. </p>
         </article>
       </div>
     </section>
@@ -281,6 +278,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
           <div class="sr-only" aria-hidden="true">
             <label for="beeName">Sunflower Name</label>
+
             <input id="beeName" name="beeName" type="text" tabindex="-1" autocomplete="off" value="" style="display:none">
           </div>
 
@@ -289,18 +287,21 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
             <div class="form-row">
               <label class="form-label" for="name">Name <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only"> required</span></label>
+
               <input id="name" name="name" type="text" class="input" maxlength="<?= (int) $field_max_length_by_name['name']; ?>" value="<?= htmlspecialchars($get_submitted_value('name', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?>" autocomplete="name" placeholder="Your full name" required aria-describedby="name-error" <?= $get_invalid_attribute('name', $errors); ?>>
               <p id="name-error" class="field-error"><?= sanitize_input($errors['name'] ?? ''); ?></p>
             </div>
 
             <div class="form-row">
               <label class="form-label" for="email">Email <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only"> required</span></label>
+
               <input id="email" name="email" type="email" class="input" maxlength="<?= (int) $field_max_length_by_name['email']; ?>" value="<?= htmlspecialchars($get_submitted_value('email', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?>" autocomplete="email" inputmode="email" placeholder="you@organization.com" required aria-describedby="email-error" <?= $get_invalid_attribute('email', $errors); ?>>
               <p id="email-error" class="field-error"><?= sanitize_input($errors['email'] ?? ''); ?></p>
             </div>
 
             <div class="form-row">
               <label class="form-label" for="org">Organization</label>
+
               <input id="org" name="org" type="text" class="input" maxlength="<?= (int) $field_max_length_by_name['org']; ?>" value="<?= htmlspecialchars($get_submitted_value('org', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?>" autocomplete="organization" placeholder="Company, university, or firm" aria-describedby="org-error" <?= $get_invalid_attribute('org', $errors); ?>>
               <p id="org-error" class="field-error"><?= sanitize_input($errors['org'] ?? ''); ?></p>
             </div>
@@ -311,6 +312,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
             <div class="form-row">
               <label class="form-label" for="study_type">Study Type</label>
+
               <select id="study_type" name="study_type" class="select">
                 <option value="">-- Select a study type --</option>
                 <option value="Market Research" <?= $get_submitted_value('study_type', $submitted_form_values) === 'Market Research' ? 'selected' : ''; ?>>Market Research</option>
@@ -318,10 +320,12 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
                 <option value="Corporate or HR" <?= $get_submitted_value('study_type', $submitted_form_values) === 'Corporate or HR' ? 'selected' : ''; ?>>Corporate or HR</option>
                 <option value="Other" <?= $get_submitted_value('study_type', $submitted_form_values) === 'Other' ? 'selected' : ''; ?>>Other</option>
               </select>
+
             </div>
 
             <div class="form-row">
               <label class="form-label" for="num_questions">Estimated Question Count</label>
+
               <select id="num_questions" name="num_questions" class="select">
                 <option value="">-- Estimated question count --</option>
                 <option value="Fewer than 25" <?= $get_submitted_value('num_questions', $submitted_form_values) === 'Fewer than 25' ? 'selected' : ''; ?>>Fewer than 25</option>
@@ -329,27 +333,32 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
                 <option value="75-150" <?= $get_submitted_value('num_questions', $submitted_form_values) === '75-150' ? 'selected' : ''; ?>>75-150</option>
                 <option value="150+" <?= $get_submitted_value('num_questions', $submitted_form_values) === '150+' ? 'selected' : ''; ?>>150+</option>
               </select>
+
             </div>
 
             <div class="form-row">
               <label class="form-label" for="languages">Languages Needed</label>
+
               <input id="languages" name="languages" type="text" class="input" maxlength="<?= (int) $field_max_length_by_name['languages']; ?>" value="<?= htmlspecialchars($get_submitted_value('languages', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?>" placeholder="e.g. English, Spanish, French" autocomplete="off" aria-describedby="languages-error" <?= $get_invalid_attribute('languages', $errors); ?>>
               <p id="languages-error" class="field-error"><?= sanitize_input($errors['languages'] ?? ''); ?></p>
             </div>
 
             <div class="form-row">
               <label class="form-label" for="launch_date">Target Launch Date</label>
+
               <input id="launch_date" name="launch_date" type="date" min="<?= date('Y-m-d'); ?>" class="input" value="<?= htmlspecialchars($get_submitted_value('launch_date', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?>" autocomplete="off">
             </div>
 
             <div class="form-row">
               <label class="form-label" for="subject">Subject <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only"> required</span></label>
+
               <input id="subject" name="subject" type="text" class="input" maxlength="<?= (int) $field_max_length_by_name['subject']; ?>" value="<?= htmlspecialchars($get_submitted_value('subject', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?>" placeholder="Brief description of your inquiry" required aria-describedby="subject-error" <?= $get_invalid_attribute('subject', $errors); ?>>
               <p id="subject-error" class="field-error"><?= sanitize_input($errors['subject'] ?? ''); ?></p>
             </div>
 
             <div class="form-row">
               <label class="form-label" for="description">Project Description <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only"> required</span></label>
+
               <textarea id="description" name="description" rows="5" class="textarea" maxlength="<?= (int) $field_max_length_by_name['description']; ?>" placeholder="Describe your study, goals, logic complexity, platform preferences, and reporting needs." required aria-describedby="description-error" <?= $get_invalid_attribute('description', $errors); ?>><?= htmlspecialchars($get_submitted_value('description', $submitted_form_values), ENT_QUOTES, 'UTF-8'); ?></textarea>
               <p id="description-error" class="field-error"><?= sanitize_input($errors['description'] ?? ''); ?></p>
             </div>
@@ -362,7 +371,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           </div>
           <p class="form-help">Fields marked <span class="required-indicator" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
           <ul class="trust-row trust-row-light" aria-label="Inquiry trust markers">
-            <li class="trust-marker">Response within two business days</li>
+            <li class="trust-marker">Two business day response</li>
             <li class="trust-marker">No agency middle layer</li>
             <li class="trust-marker">Secure direct intake</li>
           </ul>
@@ -387,43 +396,43 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           <div class="section-head">
             <p class="section-number">Common questions</p>
             <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
-            <p class="section-deck">More pricing and scope guidance is also available on the <a href="pricing.php">Pricing page</a>.</p>
+            <p class="section-deck">These are the questions that come up most often before a first inquiry is submitted. More detail on pricing, platforms, and project scope is available on the <a href="pricing.php">Pricing page</a>.</p>
           </div>
           <div class="faq-list mt-4">
             <details class="faq-item">
               <summary>How quickly can I receive a survey programming quote?</summary>
               <div class="faq-answer">
-                <p>Most inquiries receive a custom project-based quote within two business days. Complex studies may require clarifying questions before final scoping.</p>
+                <p>Most inquiries receive a custom project-based quote within two business days. Complex studies that require clarifying questions before scoping may take slightly longer. All responses come directly, not an automated system or assistant.</p>
               </div>
             </details>
             <details class="faq-item">
               <summary>What survey platforms do you support?</summary>
               <div class="faq-answer">
-                <p>LimeSurvey is the primary platform. Phillip also supports Qualtrics, SurveyMonkey, Alchemer, and other platforms based on project requirements.</p>
+                <p>LimeSurvey is the primary platform. Other platforms are available depending on client requirements. Because LimeSurvey is open-source, it carries no per-response licensing fees, which directly reduces your project cost compared to enterprise platform alternatives. Platform preferences are best discussed at the inquiry stage so the quote reflects any platform-specific constraints.</p>
               </div>
             </details>
             <details class="faq-item">
               <summary>Do you program multilingual surveys?</summary>
               <div class="faq-answer">
-                <p>Yes. Multilingual deployment includes locale setup, translation integration, and QA across language variants to confirm consistent logic and display behavior.</p>
+                <p>Yes. Multilingual survey deployment includes locale setup, translation string integration, encoding verification for non-Latin scripts, and full QA across each language variant to confirm logic parity, display accuracy, and correct skip-pattern behavior. Translation content is provided by the client or a translation partner. What this service covers is the technical integration, QA, and deployment of translated content into a working, validated multilingual survey.</p>
               </div>
             </details>
             <details class="faq-item">
               <summary>How does project-based pricing compare to hourly billing?</summary>
               <div class="faq-answer">
-                <p>Project-based pricing ties scope to a clear deliverable and cost, reducing budget uncertainty compared with open-ended hourly billing.</p>
+                <p>Hourly billing transfers scope risk to the client. Every revision, clarification, or unexpected platform issue bills at the same rate with no ceiling. A project-based quote defines the deliverable and the price together. Changes to scope after the quote is accepted can be priced separately, but the base project has a known cost from the start. For research teams with fixed budgets per study, this predictability has direct operational value.</p>
               </div>
             </details>
             <details class="faq-item">
-              <summary>What information do I need to submit an inquiry?</summary>
+              <summary>What do I need to submit an inquiry?</summary>
               <div class="faq-answer">
-                <p>A rough questionnaire draft or project outline is enough. Helpful details include study type, estimated question count, languages, launch date, and reporting requirements.</p>
+                <p>A rough questionnaire draft or project outline is enough. A polished specification is not required to receive a meaningful estimate. Helpful details include study type, approximate question count, languages needed, whether you need full email deployment and outreach or just the programmed survey link, your target launch date, and any reporting requirements. Include as much of this as you have available when submitting the form.</p>
               </div>
             </details>
             <details class="faq-item">
               <summary>Are surveys built to WCAG 2.1 accessibility standards?</summary>
               <div class="faq-answer">
-                <p>Yes. Accessibility is included from the start with keyboard-friendly patterns, screen-reader compatibility, and mobile-responsive behavior.</p>
+                <p>Yes. WCAG 2.1 compliance is built into every survey from the start rather than added after development is complete. This includes accessible interaction patterns, keyboard navigation, screen reader compatibility, and mobile-responsive layouts. Every survey is tested for accessibility before fielding begins, not just reviewed against a checklist.</p>
               </div>
             </details>
           </div>
