@@ -901,15 +901,6 @@ legend.form-label {
   grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
 }
 
-.inquiry-sidebar,
-.inquiry-sidebar .card-title,
-.inquiry-sidebar .card-body-text,
-.inquiry-sidebar li,
-.inquiry-sidebar p,
-.inquiry-sidebar a {
-  font-size: 12px;
-}
-
 /* Breadcrumb and accordion */
 .breadcrumb {
   align-items: center;
