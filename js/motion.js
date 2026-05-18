@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
           revealObserver.unobserve(entry.target);
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.15 }
+      { rootMargin: "0px 0px -2% 0px", threshold: 0.08 }
     );
 
     revealItems.forEach(function (item) {
