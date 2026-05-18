@@ -53,14 +53,14 @@ include __DIR__ . '/includes/header.php';
       <p class="section-deck">Scope is priced from delivery reality, not package tiers. Each factor below maps to real work: scripting hours, QA cycles, deployment tasks, and post-launch support. Understanding them helps you scope your project before submitting an inquiry.</p>
 
       <div class="panel mt-4" style="transition-delay: 0ms;">
-        <p class="card-title mb-3">Jump to a Section</p>
+        <p class="card-title mb-3">Read a Quote Factor</p>
         <ul class="tag-list">
-          <li><a class="tag" href="#s1-heading">Question Count & Section Depth</a></li>
+          <li><a class="tag" href="#s1-heading">Question Count &amp; Section Depth</a></li>
           <li><a class="tag" href="#s2-heading">Logic Complexity</a></li>
-          <li><a class="tag" href="#s3-heading">Languages Required</a></li>
-          <li><a class="tag" href="#s4-heading">Deployment & Outreach Scope</a></li>
-          <li><a class="tag" href="#s5-heading">Reporting & Dashboard Setup</a></li>
-          <li><a class="tag" href="#s6-heading">Timeline & Turnaround</a></li>
+          <li><a class="tag" href="#s3-heading">Deployment &amp; Outreach Scope</a></li>
+          <li><a class="tag" href="#s4-heading">Languages Required</a></li>
+          <li><a class="tag" href="#s5-heading">Reporting &amp; Dashboard Setup</a></li>
+          <li><a class="tag" href="#s6-heading">Timeline &amp; Turnaround</a></li>
         </ul>
       </div>
 
@@ -140,7 +140,7 @@ include __DIR__ . '/includes/header.php';
       <div class="pricing-factor-list mt-4" id='s1-heading' aria-labelledby="s1-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">01</p>
-          <p class="feature-title" >Question Count & Section Depth</p>
+          <p class="feature-title">Question Count & Section Depth</p>
           <p class="card-body-text">Total questionnaire length is the most straightforward cost driver. Each question requires scripting, input-type configuration, validation rules, and QA verification. Section depth — how questions are organized into blocks, rotations, or randomized sets — multiplies that work. A 20 question survey with flat structure and a 20 question survey with block randomization, carry forward answer pipes, and custom display templates are very different builds.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Agency-produced online surveys with 400 respondents start around $5,000 to $15,000 and professional programming labor typically represents the largest time component of that cost before fieldwork begins.</p>
         </div>
@@ -155,16 +155,7 @@ include __DIR__ . '/includes/header.php';
         </div>
       </div>
 
-      <div class="pricing-factor-list mt-4"  id='s3-heading' aria-labelledby="s3-heading" data-reveal>
-        <div class="panel pricing-factor">
-          <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
-          <p class="feature-title">Languages Required</p>
-          <p class="card-body-text">Each additional language multiplies deployment effort in three ways: locale setup within the platform, translation integration (mapping translated strings to question IDs accurately), and QA across every language variant to confirm display, encoding, and skip logic parity. Right-to-left language support and character encoding for non-Latin scripts add further technical considerations. A three language study is not three times the work of a single-language study, but it is meaningfully more.</p>
-          <p class="pricing-factor-note"><strong>Market context:</strong> Multi-market research studies running across several countries can run $150,000 or more, at the agency level — localization and field logistics account for a large share of that premium. Direct programming dramatically reduces this overhead.</p>
-        </div>
-      </div>
-
-      <div class="pricing-factor-list mt-4" id='s4-heading' aria-labelledby="s4-heading" data-reveal>
+      <div class="pricing-factor-list mt-4" id='s3-heading' aria-labelledby="s4-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">04</p>
           <p class="feature-title">Deployment & Outreach Scope</p>
@@ -173,10 +164,19 @@ include __DIR__ . '/includes/header.php';
         </div>
       </div>
 
+      <div class="pricing-factor-list mt-4" id='s4-heading' aria-labelledby="s3-heading" data-reveal>
+        <div class="panel pricing-factor">
+          <p class="section-number pricing-factor-number" aria-hidden="true">03</p>
+          <p class="feature-title">Languages Required</p>
+          <p class="card-body-text">Each additional language multiplies deployment effort in three ways: locale setup within the platform, translation integration (mapping translated strings to question IDs accurately), and QA across every language variant to confirm display, encoding, and skip logic parity. Right-to-left language support and character encoding for non-Latin scripts add further technical considerations. A three language study is not three times the work of a single-language study, but it is meaningfully more.</p>
+          <p class="pricing-factor-note"><strong>Market context:</strong> Multi-market research studies running across several countries can run $150,000 or more, at the agency level — localization and field logistics account for a large share of that premium. Direct programming dramatically reduces this overhead.</p>
+        </div>
+      </div>
+
       <div class="pricing-factor-list mt-4" id='s5-heading' aria-labelledby="s5-heading" data-reveal>
         <div class="panel pricing-factor">
           <p class="section-number pricing-factor-number" aria-hidden="true">05</p>
-          <p class="feature-title" >Reporting & Dashboard Setup</p>
+          <p class="feature-title">Reporting & Dashboard Setup</p>
           <p class="card-body-text">ata collection is the means; insight is the end. Real-time progress dashboards, response-rate monitoring, automated cross-tab outputs, and stakeholder-facing reporting views are not defaults — they are configured. The complexity of what you need to see during and after field shapes post-launch support requirements significantly. Simple CSV export is trivial. A live dashboard with filtered views by segment, wave, or quota status is a separate scope item.</p>
           <p class="pricing-factor-note"><strong>Market context:</strong> Strategic reports with visualizations and recommendations from research agencies run $3,000 to $10,000+ as a standalone deliverable. Building clarity into the platform from the start reduces that downstream cost.</p>
         </div>
