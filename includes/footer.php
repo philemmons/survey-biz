@@ -1,8 +1,65 @@
+<style>
+  .site-footer {
+    background: var(--ink);
+    position: relative;
+  }
+
+  .site-footer::before {
+    background:
+      radial-gradient(
+        circle at 85% 15%,
+        rgba(91, 164, 224, 0.2),
+        transparent 38%
+      ),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size:
+      auto,
+      24px 24px,
+      24px 24px;
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .site-footer .container {
+    max-width: 70%;
+    min-width: 70%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-footer .footer-wordmark {
+    letter-spacing: 0.12em;
+  }
+
+  .site-footer .footer-links li + li {
+    margin-top: 0;
+  }
+
+  .site-footer .footer-links a {
+    min-height: 34px;
+  }
+
+  .site-footer .footer-links a:hover,
+  .site-footer .footer-links a:focus-visible {
+    color: var(--white);
+  }
+
+  @media (max-width: 900px) {
+    .site-footer .container {
+      max-width: 92%;
+      min-width: 92%;
+    }
+  }
+</style>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <span class="footer-wordmark">Phil Emmons</span>
+        <span class="footer-wordmark">philemmons.net</span>
         <p class="footer-descriptor">Survey Programming &amp; Deployment</p>
         <p class="footer-summary">Cleaner data. More respondents.<br>Built to hold up at scale.</p>
         <a class="btn-primary footer-cta" href="inquiry.php">Send Inquiry</a>
@@ -68,7 +125,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; <?= date('Y'); ?> survey.philemmons.net</p>
+      <p class="footer-copy">&copy; <?= date('Y'); ?> survey.philemmons.net All Rights Reserved</p>
       <p class="footer-copy">Survey Programming &amp; Deployment</p>
     </div>
   </div>
