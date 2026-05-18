@@ -22,15 +22,15 @@ if (!isset($canonical_url)) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#0f1923">
-  <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | Phillip Emmons</title>
+  <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | Survey</title>
   <meta name="description" content="<?= htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8'); ?>">
   <link rel="canonical" href="<?= htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
 
-  <meta property="og:title" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | Phillip Emmons">
+  <meta property="og:title" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | Survey">
   <meta property="og:description" content="<?= htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8'); ?>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
-  <meta property="og:site_name" content="Phillip Emmons - Survey Programming">
+  <meta property="og:site_name" content="Phillip Emmons - Survey Programming and Deployment">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/manifest.json">

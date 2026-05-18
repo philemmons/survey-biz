@@ -311,10 +311,10 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
         <aside class="panel stack-4 inquiry-sidebar" aria-label="What to expect after submitting">
           <div>
             <h3 class="card-title">What to expect</h3>
-            <p class="card-body-text mt-2">After submitting, Phillip reviews your inquiry personally and responds with a tailored estimate based on your actual requirements. This is not an automated system and there is no routing queue between your message and a direct reply.</p>
+            <p class="card-body-text mt-2">After submitting, your inquiry is personally reviewed and responds with a tailored estimate based on your actual requirements. This is not an automated system and there is no routing queue between your message and a direct reply.</p>
           </div>
           <ul class="stack-3">
-            <li><strong>Personal response:</strong> Phillip reads every inquiry and replies directly.</li>
+            <li><strong>Personal response:</strong> Every inquiry is read and replies directly.</li>
             <li><strong>No commitment required:</strong> A quote is an estimate with no obligation to proceed.</li>
             <li><strong>Two business day target:</strong> Complex studies may require a clarifying question before final pricing.</li>
             <li><strong>Tailored pricing:</strong> Quotes are based on your actual study scope, not a package minimum.</li>
