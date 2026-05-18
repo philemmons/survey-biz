@@ -175,30 +175,6 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
   </section>
 
   
-  <section class="proof-strip" aria-label="Key figures">
-    <div class="container">
-      <div class="proof-grid">
-        <div class="proof-item">
-          <span class="proof-num">1-2 days</span>
-          <span class="proof-label">Typical Quote Turnaround</span>
-        </div>
-        <div class="proof-item">
-          <span class="proof-num">Direct</span>
-          <span class="proof-label">No Agency Middle Layer</span>
-        </div>
-        <div class="proof-item">
-          <span class="proof-num">185,000+</span>
-          <span class="proof-label">Panel Members Supported</span>
-        </div>
-        <div class="proof-item">
-          <span class="proof-num">130+</span>
-          <span class="proof-label">Countries Served</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <div class="container">
 
     <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
