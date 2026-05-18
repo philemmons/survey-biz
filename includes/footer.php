@@ -1,26 +1,10 @@
 <style>
   .site-footer {
     background: var(--ink);
-    position: relative;
   }
 
-  .site-footer::before {
-    background:
-      radial-gradient(
-        circle at 85% 15%,
-        rgba(91, 164, 224, 0.2),
-        transparent 38%
-      ),
-      linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size:
-      auto,
-      24px 24px,
-      24px 24px;
-    content: "";
-    inset: 0;
-    pointer-events: none;
-    position: absolute;
+  .site-footer.cta-band {
+    padding: var(--space-10) 0 var(--space-6);
   }
 
   .site-footer .container {
@@ -55,7 +39,7 @@
   }
 </style>
 
-<footer class="site-footer">
+<footer class="site-footer cta-band">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
