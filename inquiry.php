@@ -165,7 +165,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Inquiry</p>
       <h1 id="inquiry-hero-heading">Request a custom survey programming quote</h1>
-      <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps and pricing tailored to your actual requirements. Not a package tier built around the average project. </p>
+      <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps, and pricing tailored to your actual requirements. Not a generic package tier built around your project. </p>
 
       <div class="hero-actions mt-4">
         <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
@@ -174,6 +174,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     </div>
   </section>
 
+  
   <section class="proof-strip" aria-label="Key figures">
     <div class="container">
       <div class="proof-grid">
@@ -197,14 +198,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     </div>
   </section>
 
+
   <div class="container">
-
-    <section class="section reveal is-visible" aria-labelledby="pull-quote-heading" data-reveal="">
-      <p class="section-number" aria-hidden="true">Survey Programming Specialist</p>
-      <h2 id="pull-quote-heading">Our Goal</h2>
-      <p class="section-deck">Survey systems should be precise, accessible, and operationally dependable from day one. Every inquiry gets full attention, and every quote reflects the actual work your study requires rather than a generic package tier.</p>
-    </section>
-
 
     <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
       <div class="section-head">
