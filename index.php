@@ -11,7 +11,7 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Survey Programming & Deployment</p>
-       <h1 id="hero-heading">Enterprise-Grade Surveys Built To Collect Cleaner Data, Reach More Respondents, And Hold Up At Scale.</h1>
+       <h1 id="hero-heading">Enterprise-Grade Surveys Built To Collect Cleaner Data, Reach More Respondents, And Hold Up At Scale</h1>
       <p class="hero-sub">Programmed and deployed surveys to a 100000+ member international research panels across 130+ countries. Every survey built carries the same operational discipline: accuracy, accessible, and gathering critical business data for clients.</p>
 
       <div class="hero-actions mt-5">

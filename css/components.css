@@ -652,13 +652,14 @@
 .btn-secondary {
   background: var(--white);
   border-color: #c0d9f0;
-  box-shadow: 0 4px 10px rgba(15, 25, 35, 0.08);
+  box-shadow: 0 8px 18px rgba(90, 126, 161, 0.22);
   color: var(--accent);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
   background: var(--accent-lt);
+  box-shadow: 0 10px 22px rgba(78, 110, 142, 0.3);
   color: #154d87;
   text-decoration: underline;
 }
@@ -669,7 +670,9 @@
 }
 
 .cta-band .btn-primary::after,
-.hero .btn-primary::after {
+.hero .btn-primary::after,
+.cta-band .btn-secondary::after,
+.hero .btn-secondary::after {
   content: " ->";
   display: inline-block;
   transition: transform var(--transition-fast);
@@ -678,7 +681,11 @@
 .cta-band .btn-primary:hover::after,
 .cta-band .btn-primary:focus-visible::after,
 .hero .btn-primary:hover::after,
-.hero .btn-primary:focus-visible::after {
+.hero .btn-primary:focus-visible::after,
+.cta-band .btn-secondary:hover::after,
+.cta-band .btn-secondary:focus-visible::after,
+.hero .btn-secondary:hover::after,
+.hero .btn-secondary:focus-visible::after {
   transform: translateX(2px);
 }
 
