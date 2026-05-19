@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: auto;
-  padding: var(--space-3) 0;
+  padding: var(--space-4);
 }
 
 .site-name {
@@ -590,7 +590,7 @@
 /* CTA and buttons */
 .cta-band {
   background: var(--ink);
-  padding: var(--space-5) 0;
+  padding: var(--space-4);
   position: relative;
 }
 

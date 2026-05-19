@@ -1,7 +1,7 @@
 .sf-footer .sf-inner {
   position: relative;
   z-index: 1;
-  max-width: none;
+  max-width: fit-content;
   width: 100%;
 }
 
