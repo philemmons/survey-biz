@@ -18,6 +18,12 @@ include __DIR__ . '/includes/header.php';
         <br><br>
         <strong>Survey programming</strong> sits at the intersection of research design and technical execution. The cost of a project reflects genuine scope — not package tiers built around the average project, and not hourly uncertainty that expands without limit.
       </p>
+
+      <div class="hero-actions mt-5">
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        <a href="services.php" class="btn-secondary">View Services</a>
+      </div>
+
     </div>
   </section>
 
@@ -136,17 +142,17 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
-  <section class="cta-band" aria-labelledby="pricing-cta-heading">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h2 id="pricing-cta-heading" class="cta-title-single-line">Need a survey build for your research team?</h2>
-        <p>Share your project details and get guidance on scope, timing, and survey build complexity.</p>
+    <section class="cta-band" aria-labelledby="pricing-cta-heading">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2 id="pricing-cta-heading" class="cta-title-single-line">Need a survey build for your research team?</h2>
+          <p>Share your project details and get guidance on scope, timing, and survey build complexity.</p>
+        </div>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
       </div>
-      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-    </div>
-  </section>
+    </section>
 
-  
+
     <section class="section">
 
       <div class="pricing-factor-list mt-4" id='s1-heading' aria-labelledby="s1-heading" data-reveal>

@@ -76,6 +76,12 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow" aria-hidden="true">Insights</p>
       <h1 id="insight-heading">Resources and insights</h1>
       <p class="hero-sub">Practical guidance on survey programming, accessibility, and research operations from real delivery work.</p>
+
+      <div class="hero-actions mt-5">
+        <a href="services.php" class="btn-secondary">View Services</a>
+        <a href="pricing.php" class="btn-secondary">View Pricing</a>
+      </div>
+
     </div>
   </section>
 

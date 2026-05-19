@@ -13,10 +13,12 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow">Service Framework</p>
       <h1 id="services-hero-heading">Custom Survey Design & Data Collection</h1>
       <p class="hero-sub">End-to-end survey programming services built for accessibility, speed, international reach, and reporting clarity.</p>
+      
       <div class="hero-actions mt-5">
         <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
         <a href="pricing.php" class="btn-secondary">View Pricing</a>
       </div>
+      
     </div>
   </section>
 

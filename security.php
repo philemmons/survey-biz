@@ -40,6 +40,12 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow">Security</p>
       <h1 id="sec-hero-heading">Security and data practices</h1>
       <p class="hero-sub">What to expect when research data is handled by this service.</p>
+
+      <div class="hero-actions mt-5">
+        <a href="services.php" class="btn-secondary">View Services</a>
+        <a href="pricing.php" class="btn-secondary">View Pricing</a>
+      </div>
+
     </div>
   </section>
 

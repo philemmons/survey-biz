@@ -168,9 +168,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps, and pricing tailored to your actual requirements. Not a generic package tier built around your project. </p>
 
       <div class="hero-actions mt-5">
-        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
         <a href="services.php" class="btn-secondary">View Services</a>
-        <a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a>
+        <a href="pricing.php" class="btn-secondary">View Pricing</a>
       </div>
 
     </div>

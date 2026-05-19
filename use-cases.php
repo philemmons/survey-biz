@@ -15,8 +15,8 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-sub">From institutional studies to global enterprise campaigns, each engagement is structured for quality, accessibility, and dependable field performance.</p>
 
       <div class="hero-actions mt-5">
-        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
         <a href="services.php" class="btn-secondary">View Services</a>
+        <a href="pricing.php" class="btn-secondary">View Pricing</a>
       </div>
 
     </div>
