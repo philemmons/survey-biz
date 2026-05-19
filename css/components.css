@@ -929,7 +929,7 @@ legend.form-label {
   border: 1px solid var(--accent);
   border-radius: var(--radius-3);
   padding: var(--space-4);
-  margin: var(--space-2) var(--space-4);
+  margin: 0 var(--space-4);
 }
 
 .feature-card a,
