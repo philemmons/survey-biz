@@ -67,7 +67,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="security-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="security-cta-heading" class="cta-title-single-line">Have compliance or data requirements for your study?</h2>
+        <h2 id="security-cta-heading">Have compliance or data requirements for your study?</h2>
         <p>Include them in your inquiry for direct review.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>

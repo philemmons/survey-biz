@@ -84,7 +84,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="use-cases-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="use-cases-cta-heading" class="cta-title-single-line">Turn your use case into a launch-ready plan</h2>
+        <h2 id="use-cases-cta-heading">Turn your use case into a launch-ready plan</h2>
         <p>Move from requirements and constraints to a practical survey build with direct technical guidance.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>

@@ -294,7 +294,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="pricing-cta-bottom-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="pricing-cta-bottom-heading" class="cta-title-single-line">Ready to scope your project with confidence?</h2>
+        <h2 id="pricing-cta-bottom-heading">Ready to scope your project with confidence?</h2>
         <p>Share your project details and get guidance on scope, timing, and survey build complexity.</p>
       </div>
       <a class="btn-primary" href="inquiry.php">Send An Inquiry</a>
