@@ -638,23 +638,14 @@
 .btn-secondary {
   border: 1px solid transparent;
   border-radius: var(--radius-2);
-  display: inline-block;
+  display: inline-block; 
   font-size: var(--fs-button);
   font-weight: 600;
-  min-height: 44px;
   padding: 0.85rem 2rem;
-  position: relative;
-  text-align: center;
   text-decoration: none;
-  transition:
-    background var(--transition-base),
-    color var(--transition-base),
-    border-color var(--transition-base),
-    transform var(--transition-fast),
-    box-shadow var(--transition-base);
-  max-width: 100%;
-  white-space: normal;
-  overflow-wrap: anywhere;
+  transition:  background 0.2s, transform 0.1s;
+  white-space: nowrap;
+
 }
 
 .btn-primary {
