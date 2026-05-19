@@ -100,10 +100,10 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
-    <section class="cta-band" aria-labelledby="services-inline-cta-heading">
+    <section class="cta-band" aria-labelledby="services-inline-cta-action">
       <div class="container cta-inner">
         <div class="cta-text">
-          <h2 id="services-inline-cta-heading">Looking for expert help with survey programming, seamless deployment, and cleaner research data?</h2>
+          <p id="services-inline-cta-action">Looking for expert help with survey programming, seamless deployment, and cleaner research data?</p>
         </div>
         <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
       </div>
