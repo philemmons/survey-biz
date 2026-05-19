@@ -250,7 +250,7 @@
 .proof-strip {
   background: var(--stat-bg);
   border-top: 1px solid var(--proof-border);
-  padding: var(--space-9) 0;
+  padding: 0 0 var(--space-6) 0;
   position: relative;
 }
 
@@ -274,6 +274,7 @@
   display: grid;
   gap: 0;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  align-items: end;
 }
 
 .proof-item {
