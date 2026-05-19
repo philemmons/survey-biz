@@ -610,6 +610,7 @@
 }
 
 .container .cta-title-single-line {
+  font-size: clamp(var(--fs-120), 2vw, var(--fs-160));
   max-inline-size: 100%;
   white-space: nowrap;
 }
