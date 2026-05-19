@@ -29,7 +29,7 @@ include __DIR__ . '/includes/header.php';
 
   <section class="proof-strip" aria-label="Key pricing metrics">
     <div class="container">
-      <dl class="proof-grid">
+      <dl class="proof-grid proof-grid-start">
         <div class="proof-item">
 
           <dt class="proof-num">$30&mdash;$80</dt>

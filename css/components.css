@@ -287,6 +287,10 @@
   align-items: end;
 }
 
+.proof-grid-start{
+  align-items: start;
+}
+
 .proof-item {
   border-right: 0;
   border-top: 1px solid var(--proof-border);
