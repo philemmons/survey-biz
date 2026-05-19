@@ -30,7 +30,7 @@
 
 .wp2-paper__header h2 {
   color: #0f263b;
-  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+  font-size: 1.8rem;
   letter-spacing: 0.01em;
   line-height: 1.2;
   margin: 0 0 0.65rem;
@@ -38,7 +38,7 @@
 
 .wp2-paper__subtitle {
   color: var(--wp2-muted);
-  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
+  font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -50,7 +50,7 @@
 .wp2-paper__section h3 {
   border-left: 3px solid var(--wp2-accent);
   color: #12385a;
-  font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.45rem);
+  font-size: 1.3rem;
   line-height: 1.35;
   margin: 0 0 0.9rem;
   padding-left: 0.75rem;
