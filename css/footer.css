@@ -165,7 +165,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .sf-footer .sf-inner {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
