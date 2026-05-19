@@ -156,7 +156,7 @@
 
 @media (max-width: 43.75rem) {
   .sf-footer .sf-top {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-6);
   }
 
@@ -223,12 +223,6 @@
     align-items: center;
     flex-direction: column;
     gap: 0.35rem;
-  }
-}
-
-@media (min-width: 75rem) {
-  .sf-footer .sf-top {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
 }
 
