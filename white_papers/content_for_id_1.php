@@ -1,12 +1,12 @@
 <article class="wp1-paper" aria-labelledby="wp1-paper-title">
   <header class="wp1-paper__header">
     <p class="wp1-paper__kicker">WCAG 2.1 and Survey Response Rates | White Paper</p>
-    <h2 id="wp1-paper-title">The Real Impact of WCAG 2.1 on Survey Response Rates</h2>
+     <h2 id="wp1-paper-title">The Real Impact Of WCAG 2.1 On Survey Response Rates</h2>
     <p class="wp1-paper__subtitle">Why Accessibility Boosts Participation, Data Quality, and User Trust</p>
   </header>
 
   <section class="wp1-paper__section" aria-labelledby="wp1-introduction-title">
-    <h3 id="wp1-introduction-title">Introduction</h3>
+     <h3 id="wp1-introduction-title">Introduction</h3>
     <p>
       When survey response rates disappoint, teams typically reach for the same set of remedies:
       shorter questionnaires, more compelling subject lines, or a bigger incentive. These tactics
@@ -28,7 +28,7 @@
     </p>
 
     <aside class="wp1-callout wp1-callout--note" role="note" aria-labelledby="wp1-note-title">
-      <h3 id="wp1-note-title">Note</h3>
+       <h3 id="wp1-note-title">Note</h3>
       <p>
         WCAG 2.2 became the current W3C Recommendation in October 2023, adding nine new success
         criteria. WCAG 2.1 remains widely cited in U.S. law, procurement policy, and institutional
@@ -39,7 +39,7 @@
   </section>
 
   <section class="wp1-paper__section" aria-labelledby="wp1-rates-title">
-    <h3 id="wp1-rates-title">What We Know About Survey Response Rates</h3>
+     <h3 id="wp1-rates-title">What We Know About Survey Response Rates</h3>
     <p>
       Response rates for public online surveys typically fall in the 20&ndash;30% range. Internal
       employee surveys tend to fare better, largely because respondents believe their answers will
@@ -59,7 +59,7 @@
   </section>
 
   <section class="wp1-paper__section" aria-labelledby="wp1-quality-title">
-    <h3 id="wp1-quality-title">How Accessibility Drives Completion and Data Quality</h3>
+     <h3 id="wp1-quality-title">How Accessibility Drives Completion And Data Quality</h3>
     <p>
       Accessible surveys remove friction at every step. When question text renders clearly,
       interactive controls are keyboard-navigable, error messages are descriptive, and the layout
@@ -77,7 +77,7 @@
     </p>
 
     <aside class="wp1-callout wp1-callout--cite" role="note" aria-labelledby="wp1-citation-note-title">
-      <h3 id="wp1-citation-note-title">Citation notes</h3>
+       <h3 id="wp1-citation-note-title">Citation Notes</h3>
       <p>
         The Suppan et al. paper (PMC11276369) specifically examines invitation delivery methods
         &mdash; personal email vs. generic link &mdash; rather than interface accessibility features.
@@ -104,7 +104,7 @@
   </section>
 
   <section class="wp1-paper__section" aria-labelledby="wp1-work-title">
-    <h3 id="wp1-work-title">What Genuine Accessibility Work Looks Like</h3>
+     <h3 id="wp1-work-title">What Genuine Accessibility Work Looks Like</h3>
     <p>
       Building a WCAG-compliant survey takes more than an afternoon and more than a single tool.
       Automated accessibility checkers catch a meaningful share of technical violations &mdash;
@@ -128,7 +128,7 @@
   </section>
 
   <section class="wp1-paper__section" aria-labelledby="wp1-risk-title">
-    <h3 id="wp1-risk-title">Legal and Reputational Considerations</h3>
+     <h3 id="wp1-risk-title">Legal And Reputational Considerations</h3>
     <p>
       WCAG 2.1 AA is the baseline referenced by the Americans with Disabilities Act (ADA), Section
       508 of the Rehabilitation Act, federal procurement guidelines, and most major university
@@ -145,7 +145,7 @@
   </section>
 
   <section class="wp1-paper__section" aria-labelledby="wp1-conclusion-title">
-    <h3 id="wp1-conclusion-title">Conclusion</h3>
+     <h3 id="wp1-conclusion-title">Conclusion</h3>
     <p>
       Accessible surveys are not a specialized subcategory of good survey design. They are good
       survey design. The practical benefits &mdash; higher completion rates, more representative
@@ -166,7 +166,7 @@
   </section>
 
   <footer class="wp1-paper__footer" aria-labelledby="wp1-works-cited-title">
-    <h3 id="wp1-works-cited-title">Works Cited</h3>
+     <h3 id="wp1-works-cited-title">Works Cited</h3>
     <ul class="wp1-works-cited-list">
       <li>
         American Association for Public Opinion Research. "Response Rates &mdash; An Overview." AAPOR,
@@ -207,3 +207,4 @@
     </ul>
   </footer>
 </article>
+

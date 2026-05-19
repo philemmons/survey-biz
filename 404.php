@@ -17,10 +17,11 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="not-found-heading">
     <div class="container">
       <p class="hero-eyebrow">404</p>
-      <h1 id="not-found-heading">Page not found</h1>
+       <h1 id="not-found-heading">Page Not Found</h1>
       <p class="hero-sub">The page you are looking for does not exist.</p>
       <p class="mt-5"><a class="btn-primary" href="index.php">Back to Home</a></p>
     </div>
   </section>
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

@@ -164,7 +164,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
   <section class="hero" aria-labelledby="inquiry-hero-heading">
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Inquiry</p>
-      <h1 id="inquiry-hero-heading">Request a custom survey programming quote</h1>
+       <h1 id="inquiry-hero-heading">Request A Custom Survey Programming Quote</h1>
       <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps, and pricing tailored to your actual requirements. Not a generic package tier built around your project. </p>
 
       <div class="hero-actions mt-5">
@@ -181,13 +181,13 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     <section class="section" id="inquiry-form" data-reveal>
       <div class="section-head">
         <p class="section-number">Inquiry form</p>
-        <h2 id="inquiry-form-heading">Request a custom survey programming quote</h2>
+         <h2 id="inquiry-form-heading">Request A Custom Survey Programming Quote</h2>
         <p class="section-deck">Use this form to describe your study and request a project-based estimate. You will receive a direct personal response within two business days.</p>
       </div>
 
       <div class="split split-main split-start">
         <form method="POST" action="" novalidate aria-labelledby="form-heading" class="form-shell">
-          <h3 id="form-heading" class="sr-only">Inquiry Form</h3>
+           <h3 id="form-heading" class="sr-only">Inquiry Form</h3>
           <p id="form-intro" class="form-help mt-2">Include the details you already have. A polished specification is not required for a meaningful quote.</p>
 
           <?php if ($status_message !== ''): ?>
@@ -311,7 +311,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
 
         <aside class="panel stack-4 inquiry-sidebar" aria-label="What to expect after submitting">
           <div>
-            <h3 class="card-title">What to expect</h3>
+             <h3 class="card-title">What To Expect</h3>
             <p class="card-body-text mt-2">After submitting, your inquiry is personally reviewed and responds with a tailored estimate based on your actual requirements. This is not an automated system and there is no routing queue between your message and a direct reply.</p>
           </div>
           <ul class="stack-3">
@@ -330,30 +330,30 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     <section class="section" aria-labelledby="helpful-include-heading" data-reveal>
       <div class="section-head">
         <p class="section-number">Helpful to Include</p>
-        <h2 id="helpful-include-heading">What information makes a strong survey programming inquiry</h2>
+         <h2 id="helpful-include-heading">What Information Makes A Strong Survey Programming Inquiry</h2>
         <p class="section-deck">You do not need a polished specification to submit an inquiry. A working draft and a summary of what the study needs to accomplish is enough to get started. The details below help narrow the estimate significantly when they are available. </p>
       </div>
       <div class="grid-3">
         <article class="panel">
-          <h3 class="card-title">Study Type</h3>
+           <h3 class="card-title">Study Type</h3>
           <p class="card-body-text">Market research, academic or institutional, corporate or HR, and customer experience are the most common study types. The category shapes assumptions about data handling, reporting structure, and the deployment approach that fits best. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Estimated Question Count</h3>
+           <h3 class="card-title">Estimated Question Count</h3>
           <p class="card-body-text">Total questionnaire length is the most direct cost driver, and an estimate is fine. Fewer than 25, 25 to 75, 75 to 150, or 150 and above are all useful brackets for scoping survey programming work. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Languages Needed</h3>
+           <h3 class="card-title">Languages Needed</h3>
           <p class="card-body-text">Each additional language multiplies multilingual survey deployment effort through locale setup, translation string integration, and full QA across every language variant. Right-to-left scripts and non-Latin character encoding add further technical work. </p>
         </article>
       </div>
       <div class="grid-2 mt-2">
         <article class="panel">
-          <h3 class="card-title">Target Launch Date</h3>
+           <h3 class="card-title">Target Launch Date</h3>
           <p class="card-body-text">Hard deadlines or target field windows help prioritize scheduling and surface any turnaround risks early. Compressed timelines are possible but may carry a scheduling adjustment that is better discussed before survey programming begins. </p>
         </article>
         <article class="panel">
-          <h3 class="card-title">Reporting Needs</h3>
+           <h3 class="card-title">Reporting Needs</h3>
           <p class="card-body-text">Real-time dashboards, cross-tab outputs, and stakeholder-facing reporting views are configured, not provided by default. Knowing what you need to see during and after fieldwork shapes post-launch survey support requirements significantly. </p>
         </article>
       </div>
@@ -363,7 +363,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
     <section class="section" aria-labelledby="faq-heading" data-reveal>
       <div class="section-head">
         <p class="section-number">Common questions</p>
-        <h2 id="faq-heading">Frequently asked questions about survey programming quotes</h2>
+         <h2 id="faq-heading">Frequently Asked Questions About Survey Programming Quotes</h2>
         <p class="section-deck">These are the questions that come up most often before a first inquiry is submitted. More detail on pricing, platforms, and project scope is available on the <a href="pricing.php">Pricing page</a>.</p>
       </div>
       <div class="faq-list mt-4">

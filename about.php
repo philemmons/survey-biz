@@ -11,7 +11,7 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="about-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">About</p>
-      <h1 id="about-hero-heading">Ready to plan your next survey?</h1>
+       <h1 id="about-hero-heading">Ready To Plan Your Next Survey?</h1>
       <p class="hero-sub">Share your timeline and project scope for a direct response. Hands-on survey programming and deployment experience shaped by enterprise-scale fieldwork demands.</p>
 
       <div class="hero-actions mt-5">
@@ -48,7 +48,7 @@ include __DIR__ . '/includes/header.php';
   <div class="container">
     <section class="section" aria-labelledby="bio-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Background</p>
-      <h2 id="bio-heading">About Phillip</h2>
+       <h2 id="bio-heading">About Phillip</h2>
       <blockquote class="intro-text measure">
         Survey systems should be precise, accessible, and operationally dependable from day one.
       </blockquote>
@@ -61,18 +61,18 @@ include __DIR__ . '/includes/header.php';
 
     <section class="section" aria-labelledby="values-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Values</p>
-      <h2 id="values-heading">Core values</h2>
+       <h2 id="values-heading">Core Values</h2>
       <ul class="icon-grid mt-4" aria-label="Core values list">
         <li class="icon-card">
-          <h3>Direct Accountability</h3>
+           <h3>Direct Accountability</h3>
           <p class="card-body-text">You collaborate directly with the person implementing your survey logic and deployment workflow.</p>
         </li>
         <li class="icon-card">
-          <h3>Accessibility First</h3>
+           <h3>Accessibility First</h3>
           <p class="card-body-text">WCAG-aware practices are integrated from the beginning, not retrofitted after development.</p>
         </li>
         <li class="icon-card">
-          <h3>Clean, Reliable Code</h3>
+           <h3>Clean, Reliable Code</h3>
           <p class="card-body-text">Maintainable templates and tested logic reduce launch risk and simplify ongoing updates.</p>
         </li>
       </ul>
@@ -84,7 +84,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="about-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="about-cta-heading">Need a reliable survey build partner?</h2>
+         <h2 id="about-cta-heading">Need A Reliable Survey Build Partner?</h2>
         <p>If your project needs technical reliability and clean deployment, send an inquiry.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>

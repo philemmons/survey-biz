@@ -11,7 +11,7 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="services-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">Service Framework</p>
-      <h1 id="services-hero-heading">Custom Survey Design & Data Collection</h1>
+       <h1 id="services-hero-heading">Custom Survey Design & Data Collection</h1>
       <p class="hero-sub">End-to-end survey programming services built for accessibility, speed, international reach, and reporting clarity.</p>
       
       <div class="hero-actions mt-5">
@@ -38,7 +38,7 @@ include __DIR__ . '/includes/header.php';
 
     <section id="s1" class="section" aria-labelledby="s1-heading" data-reveal>
       <p class="section-number" aria-hidden="true">01</p>
-      <h2 id="s1-heading">Professional Survey Programming</h2>
+       <h2 id="s1-heading">Professional Survey Programming</h2>
       <p class="section-deck">Your research questions deserve more than a form builder. Surveys are programmed in LimeSurvey with the logic and structure that serious data collection requires.</p>
       <ul class="feature-list" aria-label="Survey programming services">
         <li class="feature-card">
@@ -47,7 +47,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions — selected and structured to match your research objectives, not forced into a one-size template.</p>
+          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions Ã¢â‚¬â€ selected and structured to match your research objectives, not forced into a one-size template.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
@@ -70,12 +70,12 @@ include __DIR__ . '/includes/header.php';
 
     <section id="s2" class="section" aria-labelledby="s2-heading" data-reveal>
       <p class="section-number" aria-hidden="true">02</p>
-      <h2 id="s2-heading">Accessible & High-Performance Design</h2>
+       <h2 id="s2-heading">Accessible & High-Performance Design</h2>
       <p class="section-deck">Surveys that exclude users, or load slowly, cost responses from panelist. Every survey is tested for accessibility and optimized for performance before launch date.</p>
       <ul class="feature-list" aria-label="Accessibility and performance services">
         <li class="feature-card">
           <p class="feature-title">WCAG 2.1 Compliance</p>
-          <p class="feature-body">Surveys are verified against WCAG 2.1 guidelines through both automated and manual testing — covering keyboard navigation, screen reader compatibility, color contrast, and focus management — ensuring participation is open to users with disabilities.</p>
+          <p class="feature-body">Surveys are verified against WCAG 2.1 guidelines through both automated and manual testing Ã¢â‚¬â€ covering keyboard navigation, screen reader compatibility, color contrast, and focus management Ã¢â‚¬â€ ensuring participation is open to users with disabilities.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Mobile-Responsive Layouts</p>
@@ -87,7 +87,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Clean, Reliable Code</p>
-          <p class="feature-body">Surveys are built to industry best practices — no plugin bloat, no fragile dependencies. Reliable code means predictable behavior on every submission, and zero data loss from technical failures.</p>
+          <p class="feature-body">Surveys are built to industry best practices Ã¢â‚¬â€ no plugin bloat, no fragile dependencies. Reliable code means predictable behavior on every submission, and zero data loss from technical failures.</p>
         </li>
       </ul>
       <ul class="tag-list" aria-label="Accessibility tags">
@@ -112,12 +112,12 @@ include __DIR__ . '/includes/header.php';
 
     <section id="s3" class="section" aria-labelledby="s3-heading" data-reveal>
       <p class="section-number" aria-hidden="true">03</p>
-      <h2 id="s3-heading">Multilingual Deployment & Outreach</h2>
+       <h2 id="s3-heading">Multilingual Deployment & Outreach</h2>
       <p class="section-deck">Reaching a global or bilingual audience requires more than a translation file. Full end-to-end outreach pipelines are built and managed for international research programs.</p>
       <ul class="feature-list" aria-label="Deployment and outreach services">
         <li class="feature-card">
           <p class="feature-title">Multilingual Survey Delivery</p>
-          <p class="feature-body">Surveys are deployed in respondents' native languages across 130+ countries. The full translation workflow — from template standardization to final QA — is managed while reducing translation turnaround from three weeks to three days.</p>
+          <p class="feature-body">Surveys are deployed in respondents' native languages across 130+ countries. The full translation workflow Ã¢â‚¬â€ from template standardization to final QA Ã¢â‚¬â€ is managed while reducing translation turnaround from three weeks to three days.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Email Campaign Management via Mailgun</p>
@@ -129,7 +129,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Smooth Survey Launch</p>
-          <p class="feature-body">All pre-launch testing and configuration are managed so surveys go live correctly the first time — with no broken logic, missing translations, or surprise formatting issues on launch day.</p>
+          <p class="feature-body">All pre-launch testing and configuration are managed so surveys go live correctly the first time Ã¢â‚¬â€ with no broken logic, missing translations, or surprise formatting issues on launch day.</p>
         </li>
       </ul>
       <ul class="tag-list" aria-label="Deployment tags">
@@ -143,7 +143,7 @@ include __DIR__ . '/includes/header.php';
 
     <section id="s4" class="section" aria-labelledby="s4-heading" data-reveal>
       <p class="section-number" aria-hidden="true">04</p>
-      <h2 id="s4-heading">Real-Time Tracking & Data Reporting</h2>
+       <h2 id="s4-heading">Real-Time Tracking & Data Reporting</h2>
       <p class="section-deck">Data collection does not end at deployment. Tracking and reporting infrastructure is provided so clients can monitor progress and act on results quickly.</p>
       <ul class="feature-list" aria-label="Reporting services">
         <li class="feature-card">
@@ -156,7 +156,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Segmented Performance Analysis</p>
-          <p class="feature-body">Completion and fulfillment data broken out by region, developer type, or other relevant segments — giving you the detail needed to manage field quotas and adjust outreach mid-campaign.</p>
+          <p class="feature-body">Completion and fulfillment data broken out by region, developer type, or other relevant segments Ã¢â‚¬â€ giving you the detail needed to manage field quotas and adjust outreach mid-campaign.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Flexible Data Export</p>
@@ -174,23 +174,23 @@ include __DIR__ . '/includes/header.php';
 
     <section class="section" aria-labelledby="why-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Why Work With This Service</p>
-      <h2 id="why-heading">Grounded in real research operations</h2>
+       <h2 id="why-heading">Grounded In Real Research Operations</h2>
       <p class="section-deck">These are proven systems, not theory, built under real delivery pressure.</p>
       <ul class="icon-grid" aria-label="Differentiators">
         <li class="icon-card">
-          <h3>Direct Accountability</h3>
+           <h3>Direct Accountability</h3>
           <p class="card-body-text">You work directly with the developer responsible for implementation quality and delivery.</p>
         </li>
         <li class="icon-card">
-          <h3>International Scale</h3>
+           <h3>International Scale</h3>
           <p class="card-body-text">Processes and tooling prepared for multilingual, multi-region research initiatives.</p>
         </li>
         <li class="icon-card">
-          <h3>Accessibility Built In</h3>
+           <h3>Accessibility Built In</h3>
           <p class="card-body-text">Inclusive interaction patterns are integrated throughout planning, build, and QA.</p>
         </li>
         <li class="icon-card">
-          <h3>Transparent Pricing</h3>
+           <h3>Transparent Pricing</h3>
           <p class="card-body-text">Project scope, timelines, and pricing are communicated clearly from the start.</p>
         </li>
       </ul>
@@ -200,7 +200,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="services-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="services-cta-heading">Need survey programming, deployment support, or cleaner research data?</h2>
+         <h2 id="services-cta-heading">Need Survey Programming, Deployment Support, Or Cleaner Research Data?</h2>
         <p>Share your questionnaire and timeline to get a clear deployment recommendation.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>

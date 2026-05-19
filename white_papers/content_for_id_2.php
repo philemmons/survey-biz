@@ -1,12 +1,12 @@
 <article class="wp2-paper" aria-labelledby="wp2-paper-title">
   <header class="wp2-paper__header">
     <p class="wp2-paper__kicker">Multilingual Survey Development | White Paper</p>
-    <h2 id="wp2-paper-title">How to Cut Multilingual Survey Turnaround from Weeks to Days</h2>
+     <h2 id="wp2-paper-title">How To Cut Multilingual Survey Turnaround From Weeks To Days</h2>
     <p class="wp2-paper__subtitle">A practical deployment workflow for translation QA, launch sequencing, and rapid multi-country field readiness</p>
   </header>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-introduction-title">
-    <h3 id="wp2-introduction-title">Introduction</h3>
+     <h3 id="wp2-introduction-title">Introduction</h3>
     <p>
       Multilingual surveys often slow down because translation, programming, and quality
       assurance are treated as separate stages instead of a coordinated deployment workflow.
@@ -30,7 +30,7 @@
   </section>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-slowdown-title">
-    <h3 id="wp2-slowdown-title">Why Multilingual Projects Slow Down</h3>
+     <h3 id="wp2-slowdown-title">Why Multilingual Projects Slow Down</h3>
     <p>
       Many multilingual survey delays are operationally predictable. Teams frequently finalize
       the English questionnaire too late, leaving translation overlays, testing, and QA compressed
@@ -50,7 +50,7 @@
   </section>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-workflow-title">
-    <h3 id="wp2-workflow-title">The Deployment Workflow</h3>
+     <h3 id="wp2-workflow-title">The Deployment Workflow</h3>
     <p>
       The third stage is parallel programming and translation overlay. Modern survey platforms
       such as LimeSurvey support multilingual language layers that allow translators and
@@ -60,7 +60,7 @@
   </section>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-qa-title">
-    <h3 id="wp2-qa-title">Translation QA that Saves Time</h3>
+     <h3 id="wp2-qa-title">Translation QA That Saves Time</h3>
     <p>
       Translation QA becomes more effective when it prioritizes operational risk instead of
       reviewing every issue equally. High-risk areas include quotas, hidden variables, validation
@@ -76,7 +76,7 @@
   </section>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-launch-title">
-    <h3 id="wp2-launch-title">Launch Sequencing for Multi-Country Studies</h3>
+     <h3 id="wp2-launch-title">Launch Sequencing For Multi-Country Studies</h3>
     <p>
       Controlled launch sequencing reduces operational risk in large international studies.
       Launching all countries simultaneously may appear efficient, but a single translation or
@@ -91,7 +91,7 @@
   </section>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-accessibility-title">
-    <h3 id="wp2-accessibility-title">Accessibility and Deployment Stability</h3>
+     <h3 id="wp2-accessibility-title">Accessibility And Deployment Stability</h3>
     <p>
       Accessibility becomes operationally important in multilingual surveys because translated
       interfaces create additional usability stress. Text expansion, language switching, and
@@ -108,7 +108,7 @@
   </section>
 
   <section class="wp2-paper__section" aria-labelledby="wp2-conclusion-title">
-    <h3 id="wp2-conclusion-title">Conclusion</h3>
+     <h3 id="wp2-conclusion-title">Conclusion</h3>
     <p>
       Reducing multilingual survey turnaround from weeks to days depends less on working
       faster and more on removing avoidable operational bottlenecks. Stable source
@@ -124,7 +124,7 @@
   </section>
 
   <footer class="wp2-paper__footer" aria-labelledby="wp2-works-cited-title">
-    <h3 id="wp2-works-cited-title">Works Cited</h3>
+     <h3 id="wp2-works-cited-title">Works Cited</h3>
     <ul class="wp2-works-cited-list">
       <li>
         Cross-Cultural Survey Guidelines. "Guidelines for Best Practice in Cross-Cultural Surveys."
@@ -160,3 +160,4 @@
     </ul>
   </footer>
 </article>
+

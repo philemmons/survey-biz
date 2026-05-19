@@ -38,7 +38,7 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="sec-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">Security</p>
-      <h1 id="sec-hero-heading">Security and data practices</h1>
+       <h1 id="sec-hero-heading">Security And Data Practices</h1>
       <p class="hero-sub">What to expect when research data is handled by this service.</p>
 
       <div class="hero-actions mt-5">
@@ -52,7 +52,7 @@ include __DIR__ . '/includes/header.php';
   <div class="container">
     <section class="section" aria-labelledby="practices-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Security Model</p>
-      <h2 id="practices-heading">How your data is protected</h2>
+       <h2 id="practices-heading">How Your Data Is Protected</h2>
       <ul class="icon-grid mt-4" aria-label="Security practices">
         <?php foreach ($practices as $practice_index => $practice): ?>
           <li class="icon-card" aria-labelledby="practice-<?= (int) $practice_index; ?>-heading">
@@ -67,7 +67,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="security-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="security-cta-heading">Have compliance or data requirements for your study?</h2>
+         <h2 id="security-cta-heading">Have Compliance Or Data Requirements For Your Study?</h2>
         <p>Include them in your inquiry for direct review.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>

@@ -11,7 +11,7 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="privacy-hero-heading">
     <div class="container">
       <p class="hero-eyebrow">Trust</p>
-      <h1 id="privacy-hero-heading">Privacy Policy</h1>
+       <h1 id="privacy-hero-heading">Privacy Policy</h1>
       <p class="hero-sub">How business and project information is handled for inquiries and survey delivery support.</p>
     </div>
   </section>
@@ -19,7 +19,7 @@ include __DIR__ . '/includes/header.php';
   <div class="container">
     <section class="section" aria-labelledby="privacy-overview-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Overview</p>
-      <h2 id="privacy-overview-heading">Practical privacy approach</h2>
+       <h2 id="privacy-overview-heading">Practical Privacy Approach</h2>
       <p class="section-deck">Effective date: May 18, 2026</p>
       <div class="stack-4 mt-4 measure">
         <p>This website is used to explain services and receive business inquiries related to survey programming and deployment. Information is handled in ways that support communication, proposal planning, and project delivery.</p>
@@ -29,7 +29,7 @@ include __DIR__ . '/includes/header.php';
 
     <section class="section" aria-labelledby="privacy-collect-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Information Collected</p>
-      <h2 id="privacy-collect-heading">What information may be collected</h2>
+       <h2 id="privacy-collect-heading">What Information May Be Collected</h2>
       <div class="stack-4 measure">
         <p>When you submit an inquiry or communicate about services, details may include your name, business email, organization, project scope, timeline, and message content.</p>
         <p>During active engagements, client-provided survey materials, deployment notes, and respondent workflow instructions may also be handled according to project requirements.</p>
@@ -39,7 +39,7 @@ include __DIR__ . '/includes/header.php';
 
     <section class="section" aria-labelledby="privacy-use-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Use and Access</p>
-      <h2 id="privacy-use-heading">How information is used</h2>
+       <h2 id="privacy-use-heading">How Information Is Used</h2>
       <div class="stack-4 measure">
         <p>Submitted information is used to respond to requests, prepare scope and pricing guidance, coordinate delivery steps, and maintain project communication.</p>
         <p>Access to inquiry and project details is limited to what is needed to complete service work and support ongoing client communication.</p>
@@ -49,7 +49,7 @@ include __DIR__ . '/includes/header.php';
 
     <section class="section" aria-labelledby="privacy-questions-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Questions</p>
-      <h2 id="privacy-questions-heading">Privacy questions and requests</h2>
+       <h2 id="privacy-questions-heading">Privacy Questions And Requests</h2>
       <div class="notice-box stack-4 measure" role="note">
         <p>If you have privacy questions about a project, include the relevant details through the <a href="inquiry.php">Inquiry page</a> so the request can be reviewed and answered directly.</p>
         <p>You can also review related service information on <a href="services.php">Services</a> and data handling context on <a href="security.php">Security</a>.</p>
@@ -60,3 +60,4 @@ include __DIR__ . '/includes/header.php';
 </main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

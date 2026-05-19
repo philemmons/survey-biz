@@ -74,7 +74,7 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="insight-heading">
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Insights</p>
-      <h1 id="insight-heading">Resources and insights</h1>
+       <h1 id="insight-heading">Resources And Insights</h1>
       <p class="hero-sub">Practical guidance on survey programming, accessibility, and research operations from real delivery work.</p>
 
       <div class="hero-actions mt-5">
@@ -97,7 +97,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <section class="section" aria-labelledby="posts-heading" data-reveal>
-      <h2 id="posts-heading" class="sr-only">Articles</h2>
+       <h2 id="posts-heading" class="sr-only">Articles</h2>
       <?php if ($filtered_posts !== []): ?>
         <div class="post-grid">
           <?php foreach ($filtered_posts as $post): ?>
@@ -130,7 +130,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="insights-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="insights-cta-heading">Need help turning these survey practices into a working deployment?</h2>
+         <h2 id="insights-cta-heading">Need Help Turning These Survey Practices Into A Working Deployment?</h2>
         <p>Get practical support for programming, QA, and launch workflows tailored to your project.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>

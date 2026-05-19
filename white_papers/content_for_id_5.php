@@ -1,12 +1,12 @@
 <article class="wp5-paper" aria-labelledby="wp5-paper-title">
   <header class="wp5-paper__header">
     <p class="wp5-paper__kicker">Survey Programming as a Data Quality Discipline | White Paper</p>
-    <h2 id="wp5-paper-title">Survey Programming as a Data Quality Discipline</h2>
+     <h2 id="wp5-paper-title">Survey Programming As A Data Quality Discipline</h2>
     <p class="wp5-paper__subtitle">What It Is, Why It Matters, and How to Evaluate It</p>
   </header>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-introduction-title">
-    <h3 id="wp5-introduction-title">Introduction</h3>
+     <h3 id="wp5-introduction-title">Introduction</h3>
     <p>
       Somewhere in the middle of a research cycle, after the questionnaire has been finalized, the
       sample sourced, and the launch window locked in, and a survey programmer sits down and
@@ -48,7 +48,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-importance-title">
-    <h3 id="wp5-importance-title">Why Survey Programming Quality Matters More Than Ever</h3>
+     <h3 id="wp5-importance-title">Why Survey Programming Quality Matters More Than Ever</h3>
     <p>
       Online survey research has become the default mode for a wide range of organizations &mdash;
       academic teams, market research agencies, health researchers, government offices,
@@ -95,7 +95,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-method-title">
-    <h3 id="wp5-method-title">Research Understanding and Methodological Competence</h3>
+     <h3 id="wp5-method-title">Research Understanding And Methodological Competence</h3>
     <p>
       The most common hiring mistake in survey programming is conflating platform familiarity
       with methodological competence. Someone who has spent years in Qualtrics or Decipher or
@@ -127,7 +127,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-qa-title">
-    <h3 id="wp5-qa-title">Pre-Launch Testing and Quality Assurance</h3>
+     <h3 id="wp5-qa-title">Pre-Launch Testing And Quality Assurance</h3>
     <p>
       Ask a survey programmer to walk you through their testing process. A capable professional
       will describe a systematic, repeatable workflow. A platform user will tell you they &ldquo;click
@@ -157,7 +157,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-ops-title">
-    <h3 id="wp5-ops-title">Communication and Operational Discipline</h3>
+     <h3 id="wp5-ops-title">Communication And Operational Discipline</h3>
     <p>
       Technical competence and communication competence are separate things, and you need
       both. A programmer who builds clean logic but goes quiet when a revision request touches
@@ -184,7 +184,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-mobile-title">
-    <h3 id="wp5-mobile-title">Mobile First Design and Deployment</h3>
+     <h3 id="wp5-mobile-title">Mobile First Design And Deployment</h3>
     <p>
       If your survey is reaching a general population, a significant portion of your respondents are
       completing it on a phone. That share has grown consistently for a decade and shows
@@ -218,7 +218,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-accessibility-title">
-    <h3 id="wp5-accessibility-title">Accessibility and Legal Compliance</h3>
+     <h3 id="wp5-accessibility-title">Accessibility And Legal Compliance</h3>
     <p>
       Accessibility is not a niche concern. It is a legal requirement for public sector organizations,
       academic institutions, healthcare entities, and an increasingly expected standard across the
@@ -252,7 +252,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-multilingual-title">
-    <h3 id="wp5-multilingual-title">Multilingual Deployment</h3>
+     <h3 id="wp5-multilingual-title">Multilingual Deployment</h3>
     <p>
       Running a multilingual survey is not the same as running a survey with translated text. The
       programming requirements are different in ways that catch organizations off guard. For
@@ -279,7 +279,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-export-title">
-    <h3 id="wp5-export-title">Data Export Architecture and Downstream Readiness</h3>
+     <h3 id="wp5-export-title">Data Export Architecture And Downstream Readiness</h3>
     <p>
       The survey ends when the last respondent submits. The dataset does not end there. What the
       programmer built during the deployment phase determines whether an analyst opens a
@@ -308,7 +308,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-warning-signs-title">
-    <h3 id="wp5-warning-signs-title">Warning Signs When Evaluating Survey Programmers</h3>
+     <h3 id="wp5-warning-signs-title">Warning Signs When Evaluating Survey Programmers</h3>
     <p>
       The following patterns appear consistently in post mortems of failed or compromised survey
       deployments. None of them is subtle in retrospect, but they are easy to miss during a vendor
@@ -334,7 +334,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-questions-title">
-    <h3 id="wp5-questions-title">Questions That Reveal Technical Competence</h3>
+     <h3 id="wp5-questions-title">Questions That Reveal Technical Competence</h3>
     <p>
       The following questions distinguish professional survey programmers from platform users.
       A technically competent programmer will answer each with specificity and evidence. Vague,
@@ -362,7 +362,7 @@
   </section>
 
   <section class="wp5-paper__section" aria-labelledby="wp5-conclusion-title">
-    <h3 id="wp5-conclusion-title">Conclusion</h3>
+     <h3 id="wp5-conclusion-title">Conclusion</h3>
     <p>
       Selecting a survey programmer is a decision about the integrity of the research. The person
       who builds the instrument determines whether respondents reach the right questions,
@@ -388,7 +388,7 @@
   </section>
 
   <footer class="wp5-paper__footer" aria-labelledby="wp5-works-cited-title">
-    <h3 id="wp5-works-cited-title">Works Cited</h3>
+     <h3 id="wp5-works-cited-title">Works Cited</h3>
     <ul class="wp5-works-cited-list">
       <li>
         American Association for Public Opinion Research. &ldquo;Best Practices for Survey Research.&rdquo;
@@ -437,3 +437,4 @@
     </ul>
   </footer>
 </article>
+
