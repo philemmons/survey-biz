@@ -989,7 +989,7 @@ legend.form-label {
 
 .trust-marker::before {
   color: #8ac0ee;
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   line-height: 1;
 }
 
@@ -1248,5 +1248,25 @@ section[id],
 
   .footer-nav {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 678px) {
+  .proof-grid {
+    grid-template-columns: repeat(2, minmax(160px, 220px));
+    justify-content: center;
+  }
+
+  .proof-grid .proof-item {
+    border-top: 0;
+    border-right: 0;
+  }
+
+  .proof-grid .proof-item:nth-child(odd) {
+    border-right: 1px solid var(--proof-border);
+  }
+
+  .proof-grid .proof-item:nth-child(n + 3) {
+    border-top: 1px solid var(--proof-border);
   }
 }

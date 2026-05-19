@@ -62,17 +62,18 @@ h4 {
   letter-spacing: 0.2rem;
 }
 
+/* Shared heading scale: fluid for major display text, token-driven elsewhere. */
 h1 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-hero);
   line-height: var(--lh-tight);
 }
 
 h2 {
-  font-size: var(--fs-165);
+  font-size: clamp(1.5rem, 0.95rem + 2.9vw, 3rem);
 }
 
 h3 {
-  font-size: var(--fs-100);
+  font-size: var(--font-size-lg);
 }
 
 p,

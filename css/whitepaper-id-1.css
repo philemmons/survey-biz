@@ -1,4 +1,4 @@
-﻿.wp1-paper {
+.wp1-paper {
   --wp1-bg: #ffffff;
   --wp1-text: #1a2b3c;
   --wp1-muted: #42586d;
@@ -10,6 +10,12 @@
   --wp1-warn-border: #d28b2f;
   --wp1-cite-bg: #f4f8f2;
   --wp1-cite-border: #6ea178;
+  --wp1-font-size-kicker: var(--font-size-sm);
+  --wp1-font-size-title: clamp(1.5rem, 1.05rem + 2.4vw, 3rem);
+  --wp1-font-size-subtitle: var(--font-size-lg);
+  --wp1-font-size-section-title: var(--font-size-xl);
+  --wp1-font-size-body: var(--font-size-base);
+  --wp1-font-size-emphasis: var(--font-size-sm);
 
   background: var(--wp1-bg);
   color: var(--wp1-text);
@@ -25,7 +31,7 @@
 
 .wp1-paper__kicker {
   color: var(--wp1-muted);
-  font-size: 0.85rem;
+  font-size: var(--wp1-font-size-kicker);
   font-weight: 600;
   letter-spacing: 0.05em;
   margin-bottom: 0.8rem;
@@ -34,7 +40,7 @@
 
 .wp1-paper__header h2 {
   color: #0f263b;
-  font-size: 1.8rem;
+  font-size: var(--wp1-font-size-title);
   letter-spacing: 0.01em;
   line-height: 1.2;
   margin: 0 0 0.65rem;
@@ -42,7 +48,7 @@
 
 .wp1-paper__subtitle {
   color: var(--wp1-muted);
-  font-size: 1.1rem;
+  font-size: var(--wp1-font-size-subtitle);
   line-height: 1.6;
   margin: 0;
 }
@@ -54,7 +60,7 @@
 .wp1-paper__section h3 {
   border-left: 3px solid var(--wp1-accent);
   color: #12385a;
-  font-size: 1.3rem;
+  font-size: var(--wp1-font-size-section-title);
   line-height: 1.35;
   margin: 0 0 0.9rem;
   padding-left: 0.75rem;
@@ -63,7 +69,7 @@
 .wp1-paper p,
 .wp1-paper li,
 .wp1-paper blockquote {
-  font-size: 1rem;
+  font-size: var(--wp1-font-size-body);
   line-height: 1.75;
 }
 
@@ -97,7 +103,7 @@
 
 .wp1-callout h3 {
   border-left: 0;
-  font-size: 1rem;
+  font-size: var(--wp1-font-size-body);
   margin: 0 0 0.55rem;
   padding-left: 0;
 }
@@ -145,7 +151,7 @@
 }
 
 .wp1-pull-quote p {
-  font-size: 1.03rem;
+  font-size: var(--wp1-font-size-emphasis);
   margin: 0;
 }
 
@@ -166,7 +172,7 @@
 }
 
 .wp1-works-cited-list li {
-  font-size: 0.96rem;
+  font-size: var(--wp1-font-size-body);
   margin: 0 0 0.95rem;
   padding-left: 1.5rem;
   text-indent: -1.5rem;
@@ -210,18 +216,14 @@
     margin-bottom: 1.6rem;
   }
 
+  /* Keep body text at 1rem+ on smaller screens; only tighten leading. */
   .wp1-paper p,
   .wp1-paper li,
   .wp1-paper blockquote {
-    font-size: 0.98rem;
     line-height: 1.68;
   }
 
   .wp1-checklist {
     padding: 0.9rem 0.9rem 0.9rem 1.35rem;
-  }
-
-  .wp1-works-cited-list li {
-    font-size: 0.93rem;
   }
 }
