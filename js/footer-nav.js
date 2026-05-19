@@ -1,6 +1,4 @@
 (function () {
-  return;
-
   var footer = document.querySelector(".sf-footer");
   if (!footer) {
     return;

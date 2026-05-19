@@ -1,14 +1,14 @@
 .sf-footer .sf-inner {
   position: relative;
   z-index: 1;
-  max-width: fit-content;
+  max-width: none;
   width: 100%;
 }
 
 .sf-footer .sf-top {
   display: grid;
-  gap: var(--space-6);
-  grid-template-columns: 1fr;
+  gap: 2.25rem;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr) minmax(0, 1fr);
 }
 
 .sf-footer .sf-brand,
@@ -47,13 +47,13 @@
 
 .sf-footer .sf-nav {
   display: grid;
-  gap: 0;
-  grid-template-columns: 1fr;
+  gap: var(--space-4) var(--space-5);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .sf-footer .sf-col {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  padding-top: 0.15rem;
+  border-top: 0;
+  padding-top: 0;
 }
 
 .sf-footer .sf-nav-toggle {
@@ -61,11 +61,11 @@
   background: transparent;
   border: 0;
   color: inherit;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   justify-content: space-between;
-  min-height: 44px;
-  padding: 0.2rem 0;
+  min-height: auto;
+  padding: 0;
   text-align: left;
   width: 100%;
 }
@@ -81,7 +81,7 @@
 
 .sf-footer .sf-nav-indicator {
   color: #9cb9d3;
-  display: inline-block;
+  display: none;
   font-size: var(--fs-body);
   line-height: 1;
   transform-origin: center;
@@ -152,8 +152,10 @@
 .sf-footer .sf-bottom {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: space-between;
   padding-top: var(--space-4);
 }
 
@@ -169,68 +171,4 @@
 .sf-footer .sf-contact-list a:focus-visible {
   outline: 2px solid #9bd0ff;
   outline-offset: 2px;
-}
-
-.sf-footer.sf-footer-ready .sf-nav-panel {
-  margin-top: 0;
-}
-
-.sf-footer.sf-footer-ready .sf-nav-panel[hidden] {
-  display: none;
-}
-
-@media (min-width: 36rem) {
-  .sf-footer .sf-nav {
-    gap: var(--space-4) var(--space-5);
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sf-footer .sf-col {
-    border-top: 0;
-    padding-top: 0;
-  }
-}
-
-@media (min-width: 75rem) {
-  .sf-footer .sf-top {
-    gap: 2.25rem;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr) minmax(0, 1fr);
-  }
-
-  .sf-footer .sf-brand {
-    order: 1;
-  }
-
-  .sf-footer .sf-nav {
-    order: 2;
-    gap: var(--space-4) var(--space-5);
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .sf-footer .sf-contact {
-    order: 3;
-  }
-
-  .sf-footer .sf-col {
-    border-top: 0;
-    padding-top: 0;
-  }
-
-  .sf-footer .sf-nav-toggle {
-    cursor: default;
-    min-height: auto;
-    padding: 0;
-  }
-
-  .sf-footer .sf-nav-indicator {
-    display: none;
-  }
-
-  .sf-footer .sf-bottom {
-    align-items: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    justify-content: space-between;
-  }
 }
