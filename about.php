@@ -13,7 +13,6 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow">About</p>
       <h1 id="about-hero-heading">Ready to plan your next survey?</h1>
       <p class="hero-sub">Share your timeline and project scope for a direct response. Hands-on survey programming and deployment experience shaped by enterprise-scale fieldwork demands.</p>
-      <a class="btn-primary mt-4" href="inquiry.php">Start a Project</a>
     </div>
   </section>
 
@@ -72,6 +71,14 @@ include __DIR__ . '/includes/header.php';
         </li>
       </ul>
       <p class="section-deck mt-4">Based in Marina, CA. Working with clients everywhere.</p>
+    </section>
+
+    <section class="section" aria-labelledby="about-cta-heading" data-reveal>
+      <div class="notice-box" role="note">
+        <h2 id="about-cta-heading">Need a reliable survey build partner?</h2>
+        <p class="section-deck mt-2">If your project needs technical reliability and clean deployment, send an inquiry.</p>
+        <p class="mt-4"><a class="btn-primary" href="inquiry.php">Send An Inquiry</a></p>
+      </div>
     </section>
   </div>
 

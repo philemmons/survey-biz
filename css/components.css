@@ -86,6 +86,10 @@
   padding-left: 0;
 }
 
+.site-nav-cta-item {
+  margin-left: var(--space-2);
+}
+
 .site-nav-link {
   border-radius: var(--radius-2);
   color: var(--header-link);
@@ -138,6 +142,10 @@
 .nav-inquiry:hover,
 .nav-inquiry:focus-visible {
   color: var(--white);
+}
+
+.site-nav-cta {
+  padding: 0.6rem 1rem;
 }
 
 /* Hero */
@@ -1165,6 +1173,17 @@ section[id],
     display: block;
     margin: 0;
     padding-left: 0;
+  }
+
+  .site-nav-cta-item {
+    margin-left: 0;
+    margin-top: var(--space-2);
+    width: 100%;
+  }
+
+  .site-nav-cta {
+    display: block;
+    width: 100%;
   }
 
   .proof-item {

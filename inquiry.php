@@ -166,11 +166,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       <p class="hero-eyebrow" aria-hidden="true">Inquiry</p>
       <h1 id="inquiry-hero-heading">Request a custom survey programming quote</h1>
       <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps, and pricing tailored to your actual requirements. Not a generic package tier built around your project. </p>
-
-      <div class="hero-actions mt-5">
-        <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
-        <a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a>
-      </div>
+      <p class="mt-5"><a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a></p>
     </div>
   </section>
 
@@ -300,7 +296,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
             </div>
           </fieldset>
 
-          <button type="submit" name="submit" value="submit" class="btn-primary w-full">Send Inquiry</button>
+          <button type="submit" name="submit" value="submit" class="btn-primary w-full">Send Project Details</button>
           <button type="reset" id="reset-button" class="btn-secondary w-full mt-2" name="reset" value="reset" onclick="return resetFields();" aria-labelledby="reset-button reset-note">Reset Form</button>
           <div class="sr-only" id="reset-note" role="alert" aria-live="assertive" aria-atomic="true">
             <p>(A pop up will confirm your reset form)</p>

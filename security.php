@@ -57,8 +57,8 @@ include __DIR__ . '/includes/header.php';
       </ul>
 
       <div class="notice-box mt-5" role="note">
-        <p class="mb-3">Have specific compliance or data requirements for your study? Mention them in your inquiry and they will be addressed directly.</p>
-        <a href="inquiry.php" class="btn-primary">Send an Inquiry</a>
+        <p class="mb-3">Have compliance or data requirements for your study? Include them in your inquiry for direct review.</p>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry About a Secure Survey Build</a>
       </div>
     </section>
   </div>

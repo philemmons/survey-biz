@@ -20,6 +20,10 @@ include __DIR__ . '/includes/header.php';
       <p class="section-number" aria-hidden="true">Who This Fits</p>
       <h2 id="uc-cards-heading">Built for distinct delivery environments</h2>
       <p class="section-deck">Each use case is supported by the same canonical engineering and accessibility baseline.</p>
+      <div class="notice-box mt-4" role="note">
+        <p class="mb-3">Have a survey workflow that needs to hold up under real field conditions?</p>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+      </div>
       <div class="post-grid">
         <article class="post-card" aria-labelledby="uc1-heading">
           <p class="tag">Market Research Firms</p>
@@ -72,6 +76,16 @@ include __DIR__ . '/includes/header.php';
       </div>
     </section>
   </div>
+
+  <section class="cta-band" aria-labelledby="use-cases-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="use-cases-cta-heading">Turn your use case into a launch-ready plan</h2>
+        <p>Move from requirements and constraints to a practical survey build with direct technical guidance.</p>
+      </div>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+    </div>
+  </section>
 
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>

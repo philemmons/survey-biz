@@ -13,6 +13,10 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow">Service Framework</p>
       <h1 id="services-hero-heading">Custom Survey Design & Data Collection</h1>
       <p class="hero-sub">End-to-end survey programming services built for accessibility, speed, international reach, and reporting clarity.</p>
+      <div class="hero-actions mt-5">
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        <a href="pricing.php" class="btn-secondary">View Pricing</a>
+      </div>
     </div>
   </section>
 
@@ -91,6 +95,10 @@ include __DIR__ . '/includes/header.php';
         <li><span class="tag">Keyboard Navigation</span></li>
         <li><span class="tag">Screen Reader Compatible</span></li>
       </ul>
+      <div class="notice-box mt-5" role="note">
+        <p class="mb-3">Need survey programming, deployment support, or cleaner research data?</p>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+      </div>
     </section>
 
     <section id="s3" class="section" aria-labelledby="s3-heading" data-reveal>
@@ -183,10 +191,10 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="services-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="services-cta-heading">Need a survey built to exact specifications?</h2>
-        <p>Share your questionnaire and timeline to receive a clear deployment recommendation.</p>
+        <h2 id="services-cta-heading">Need survey programming, deployment support, or cleaner research data?</h2>
+        <p>Share your questionnaire and timeline to get a clear deployment recommendation.</p>
       </div>
-      <a href="inquiry.php" class="btn-primary">Send an Inquiry</a>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
     </div>
   </section>
 </main>

@@ -136,13 +136,16 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
-  <section class="cta-band" aria-labelledby="pricing-cta-heading">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h2 id="pricing-cta-heading">Need a survey build for your research audience?</h2>
-        <p>Share study requirements to receive a clear, project-based estimate with no obligation.</p>
+  <section class="section" aria-labelledby="pricing-cta-heading" data-reveal>
+    <div class="container">
+      <div class="notice-box" role="note">
+        <h2 id="pricing-cta-heading">Need a survey build for your research team?</h2>
+        <p class="section-deck mt-2">Share your project details and get guidance on scope, timing, and survey build complexity.</p>
+        <div class="hero-actions mt-4">
+          <a class="btn-primary" href="inquiry.php">Send An Inquiry</a>
+          <a class="btn-secondary" href="services.php">View Services</a>
+        </div>
       </div>
-      <a class="btn-primary" href="inquiry.php">Get a Custom Quote</a>
     </div>
   </section>
 
@@ -285,6 +288,16 @@ include __DIR__ . '/includes/header.php';
     </section>
 
   </div>
+
+  <section class="cta-band" aria-labelledby="pricing-cta-bottom-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="pricing-cta-bottom-heading">Ready to scope your project with confidence?</h2>
+        <p>Share your project details and get guidance on scope, timing, and survey build complexity.</p>
+      </div>
+      <a class="btn-primary" href="inquiry.php">Send An Inquiry</a>
+    </div>
+  </section>
 </main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>

@@ -118,6 +118,14 @@ include __DIR__ . '/includes/header.php';
       <?php endif; ?>
     </section>
 
+    <section class="section" aria-labelledby="insights-cta-heading" data-reveal>
+      <div class="notice-box" role="note">
+        <h2 id="insights-cta-heading">Need help turning these survey practices into a working deployment?</h2>
+        <p class="section-deck mt-2">Get practical support for programming, QA, and launch workflows tailored to your project.</p>
+        <p class="mt-4"><a class="btn-primary" href="inquiry.php">Send An Inquiry</a></p>
+      </div>
+    </section>
+
   </div>
 </main>
 

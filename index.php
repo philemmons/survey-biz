@@ -11,11 +11,12 @@ include __DIR__ . '/includes/header.php';
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <p class="hero-eyebrow" aria-hidden="true">Survey Programming & Deployment</p>
-      <h1 id="hero-heading">Enterprise grade surveys built to collect cleaner data, reach more respondents, and hold up at scale.</h1>
+      <h1 id="hero-heading">Enterprise-grade surveys built to collect cleaner data, reach more respondents, and hold up at scale.</h1>
       <p class="hero-sub">Programmed and deployed surveys to a 100000+ member international research panels across 130+ countries. Every survey built carries the same operational discipline: accuracy, accessible, and gathering critical business data for clients.</p>
 
       <div class="hero-actions mt-5">
-        <a href="#inquiry-form" class="btn-primary">Send an Inquiry</a>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        <a href="services.php" class="btn-secondary">View Services</a>
         <a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a>
       </div>
 
@@ -107,6 +108,16 @@ include __DIR__ . '/includes/header.php';
       </ul>
     </section>
   </div>
+
+  <section class="cta-band" aria-labelledby="home-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="home-cta-heading">Ready to move from planning to launch?</h2>
+        <p>Share your project details for clear guidance on scope, timing, and deployment.</p>
+      </div>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+    </div>
+  </section>
 
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
