@@ -603,15 +603,16 @@
   margin-bottom: 0.4rem;
 }
 
-.cta-title-single-line {
+.container .cta-title-single-line {
   font-size: clamp(var(--fs-120), 2vw, var(--fs-160));
   max-inline-size: 100%;
   white-space: nowrap;
 }
 
 @media (max-width: 1180px) {
-  .cta-title-single-line {
+  .container .cta-title-single-line {
     white-space: normal;
+    text-wrap: balance;
   }
 }
 
@@ -1210,10 +1211,6 @@ section[id],
   .cta-inner {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .cta-title-single-line {
-    white-space: normal;
   }
 
   .split-main {
