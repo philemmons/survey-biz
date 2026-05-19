@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'Use Cases';
 $meta_description = 'Survey programming use cases for market research firms, academic and institutional research, corporate and HR teams, and international studies.';
@@ -12,6 +13,12 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow">Use Cases</p>
       <h1 id="uc-hero-heading">The right fit for your research program</h1>
       <p class="hero-sub">From institutional studies to global enterprise campaigns, each engagement is structured for quality, accessibility, and dependable field performance.</p>
+
+      <div class="hero-actions mt-5">
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        <a href="services.php" class="btn-secondary">View Services</a>
+      </div>
+
     </div>
   </section>
 
@@ -20,10 +27,7 @@ include __DIR__ . '/includes/header.php';
       <p class="section-number" aria-hidden="true">Who This Fits</p>
       <h2 id="uc-cards-heading">Built for distinct delivery environments</h2>
       <p class="section-deck">Each use case is supported by the same canonical engineering and accessibility baseline.</p>
-      <div class="notice-box mt-4" role="note">
-        <p class="mb-3">Have a survey workflow that needs to hold up under real field conditions?</p>
-        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-      </div>
+
       <div class="post-grid">
         <article class="post-card" aria-labelledby="uc1-heading">
           <p class="tag">Market Research Firms</p>
@@ -80,7 +84,7 @@ include __DIR__ . '/includes/header.php';
   <section class="cta-band" aria-labelledby="use-cases-cta-heading">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2 id="use-cases-cta-heading">Turn your use case into a launch-ready plan</h2>
+        <h2 id="use-cases-cta-heading" class="cta-title-single-line">Turn your use case into a launch-ready plan</h2>
         <p>Move from requirements and constraints to a practical survey build with direct technical guidance.</p>
       </div>
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
@@ -89,4 +93,3 @@ include __DIR__ . '/includes/header.php';
 
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
-
