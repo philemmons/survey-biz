@@ -56,10 +56,14 @@ include __DIR__ . '/includes/header.php';
         <?php endforeach; ?>
       </ul>
 
-      <div class="notice-box mt-5" role="note">
-        <p class="mb-3">Have compliance or data requirements for your study? Include them in your inquiry for direct review.</p>
-        <a href="inquiry.php" class="btn-primary">Send An Inquiry About a Secure Survey Build</a>
-      </div>
+      <section class="cta-band" aria-labelledby="security-cta-heading">
+        <div class="container cta-inner">
+          <div class="cta-text">
+            <h2 id="security-cta-heading">Have compliance or data requirements for your study? Include them in your inquiry for direct review.</h2>
+          </div>
+          <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        </div>
+      </section>
     </section>
   </div>
 </main>

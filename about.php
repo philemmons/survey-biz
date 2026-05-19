@@ -74,11 +74,15 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <section class="section" aria-labelledby="about-cta-heading" data-reveal>
-      <div class="notice-box" role="note">
-        <h2 id="about-cta-heading">Need a reliable survey build partner?</h2>
-        <p class="section-deck mt-2">If your project needs technical reliability and clean deployment, send an inquiry.</p>
-        <p class="mt-4"><a class="btn-primary" href="inquiry.php">Send An Inquiry</a></p>
-      </div>
+      <section class="cta-band" aria-labelledby="about-cta-heading">
+        <div class="container cta-inner">
+          <div class="cta-text">
+            <h2 id="about-cta-heading">Need a reliable survey build partner?</h2>
+            <p>If your project needs technical reliability and clean deployment, send an inquiry.</p>
+          </div>
+          <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        </div>
+      </section>
     </section>
   </div>
 

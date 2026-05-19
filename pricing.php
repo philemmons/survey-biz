@@ -136,16 +136,13 @@ include __DIR__ . '/includes/header.php';
     </section>
 
 
-  <section class="section" aria-labelledby="pricing-cta-heading" data-reveal>
-    <div class="container">
-      <div class="notice-box" role="note">
+  <section class="cta-band" aria-labelledby="pricing-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
         <h2 id="pricing-cta-heading">Need a survey build for your research team?</h2>
-        <p class="section-deck mt-2">Share your project details and get guidance on scope, timing, and survey build complexity.</p>
-        <div class="hero-actions mt-4">
-          <a class="btn-primary" href="inquiry.php">Send An Inquiry</a>
-          <a class="btn-secondary" href="services.php">View Services</a>
-        </div>
+        <p>Share your project details and get guidance on scope, timing, and survey build complexity.</p>
       </div>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
     </div>
   </section>
 
