@@ -594,7 +594,13 @@
   display: flex;
   gap: var(--space-4);
   justify-content: space-between;
+  min-width: 0;
   padding-inline: var(--space-6);
+}
+
+.cta-text {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .cta-text h2 {
@@ -603,19 +609,16 @@
   margin-bottom: 0.4rem;
 }
 
-.cta-title-single-line {
+.container .cta-title-single-line {
   font-size: clamp(var(--fs-120), 2vw, var(--fs-160));
   max-inline-size: 100%;
   white-space: nowrap;
 }
 
-.container .cta-title-single-line{
-  
-}
-
 @media (max-width: 1180px) {
-.cta-title-single-line {
+  .container .cta-title-single-line {
     white-space: normal;
+    text-wrap: balance;
   }
 }
 
