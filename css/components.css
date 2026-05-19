@@ -609,14 +609,14 @@
   margin-bottom: 0.4rem;
 }
 
-.container .cta-title-single-line {
+.cta-title-single-line {
   font-size: clamp(var(--fs-120), 2vw, var(--fs-160));
   max-inline-size: 100%;
   white-space: nowrap;
 }
 
 @media (max-width: 1180px) {
-  .container .cta-title-single-line {
+  .cta-title-single-line {
     white-space: normal;
     text-wrap: balance;
   }

@@ -145,8 +145,7 @@ include __DIR__ . '/includes/header.php';
     <section class="cta-band" aria-labelledby="pricing-cta-heading">
       <div class="container cta-inner">
         <div class="cta-text">
-          <h2 id="pricing-cta-heading" class="cta-title-single-line">Need a survey build for your research team?</h2>
-          <p>Share your project details and get guidance on scope, timing, and survey build complexity.</p>
+          <p>Share your project details and get expert guidance on scope, timing, and build complexity for your research team's survey.</p>
         </div>
         <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
       </div>
