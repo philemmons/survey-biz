@@ -103,7 +103,7 @@ include __DIR__ . '/includes/header.php';
     <section class="cta-band" aria-labelledby="services-inline-cta-heading">
       <div class="container cta-inner">
         <div class="cta-text">
-          <h2 id="services-inline-cta-heading">Need survey programming, deployment support, or cleaner research data?</h2>
+          <h2 id="services-inline-cta-heading">Looking for expert help with survey programming, seamless deployment, and cleaner research data?</h2>
         </div>
         <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
       </div>
