@@ -87,7 +87,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 0.95rem + 2.9vw, 3rem);
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -123,4 +123,22 @@ textarea {
   overflow-x: auto;
   overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 48rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  h2 {
+    font-size: 3rem;
+  }
 }

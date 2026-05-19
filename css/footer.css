@@ -179,7 +179,7 @@
   display: none;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
   .sf-footer .sf-nav {
     gap: var(--space-4) var(--space-5);
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -191,7 +191,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .sf-footer .sf-top {
     gap: 2.25rem;
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr) minmax(0, 1fr);

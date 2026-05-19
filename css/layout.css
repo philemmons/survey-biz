@@ -113,7 +113,7 @@
   text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr 1fr;
@@ -124,7 +124,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .section {
     padding: var(--space-14) 0;
   }
@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .grid-3,
   .grid-4 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

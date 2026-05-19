@@ -7,7 +7,7 @@
   --wp5-note-bg: #f1f7fd;
   --wp5-note-border: #7fb0dd;
   --wp5-font-size-kicker: var(--font-size-sm);
-  --wp5-font-size-title: clamp(1.5rem, 1.05rem + 2.4vw, 3rem);
+  --wp5-font-size-title: 1.5rem;
   --wp5-font-size-subtitle: var(--font-size-lg);
   --wp5-font-size-section-title: var(--font-size-xl);
   --wp5-font-size-body: var(--font-size-base);
@@ -193,13 +193,11 @@
   overscroll-behavior-x: contain;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 40.0625rem) {
   .wp5-paper {
-    max-width: 76ch;
+    --wp5-font-size-title: 2.25rem;
   }
-}
 
-@media (min-width: 641px) {
   .wp5-paper__section {
     margin-bottom: 2rem;
   }
@@ -213,5 +211,12 @@
   .wp5-checklist,
   .wp5-question-list {
     padding: 1rem 1rem 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 56.3125rem) {
+  .wp5-paper {
+    --wp5-font-size-title: 3rem;
+    max-width: 76ch;
   }
 }

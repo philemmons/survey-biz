@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.getElementById("nav-toggle");
   const primaryNavigation = document.getElementById("primary-nav");
   const announcementRegion = document.getElementById("sr-announcements");
-  const mobileViewportQuery = window.matchMedia("(max-width: 991.98px)");
+  const mobileViewportQuery = window.matchMedia("(max-width: 61.99875rem)");
 
   /**
    * Pushes short status updates to an aria-live region.

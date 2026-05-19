@@ -11,7 +11,7 @@
   --wp1-cite-bg: #f4f8f2;
   --wp1-cite-border: #6ea178;
   --wp1-font-size-kicker: var(--font-size-sm);
-  --wp1-font-size-title: clamp(1.5rem, 1.05rem + 2.4vw, 3rem);
+  --wp1-font-size-title: 1.5rem;
   --wp1-font-size-subtitle: var(--font-size-lg);
   --wp1-font-size-section-title: var(--font-size-xl);
   --wp1-font-size-body: var(--font-size-base);
@@ -208,13 +208,11 @@
   overscroll-behavior-x: contain;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 40.0625rem) {
   .wp1-paper {
-    max-width: 76ch;
+    --wp1-font-size-title: 2.25rem;
   }
-}
 
-@media (min-width: 641px) {
   .wp1-paper__section {
     margin-bottom: 2rem;
   }
@@ -227,5 +225,12 @@
 
   .wp1-checklist {
     padding: 1rem 1rem 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 56.3125rem) {
+  .wp1-paper {
+    --wp1-font-size-title: 3rem;
+    max-width: 76ch;
   }
 }
