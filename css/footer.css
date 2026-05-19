@@ -44,37 +44,6 @@
   max-width: 32ch;
 }
 
-.sf-footer .sf-cta {
-  align-items: center;
-  background: var(--accent);
-  border: 1px solid transparent;
-  border-radius: var(--radius-2);
-  color: var(--white);
-  display: inline-flex;
-  font-size: var(--fs-95);
-  font-weight: 600;
-  justify-content: center;
-  margin-top: var(--space-4);
-  min-height: 44px;
-  padding: 0.75rem 1.4rem;
-  text-decoration: none;
-  transition:
-    background var(--transition-base),
-    transform var(--transition-fast),
-    box-shadow var(--transition-base);
-}
-
-.sf-footer .sf-cta:hover,
-.sf-footer .sf-cta:focus-visible {
-  background: #154d87;
-  color: var(--white);
-  text-decoration: none;
-}
-
-.sf-footer .sf-cta:active {
-  transform: translateY(1px);
-}
-
 .sf-footer .sf-nav {
   display: grid;
   gap: var(--space-4) var(--space-5);
@@ -180,8 +149,7 @@
 
 .sf-footer .sf-nav-toggle:focus-visible,
 .sf-footer .sf-nav-panel a:focus-visible,
-.sf-footer .sf-contact-list a:focus-visible,
-.sf-footer .sf-cta:focus-visible {
+.sf-footer .sf-contact-list a:focus-visible {
   outline: 2px solid #9bd0ff;
   outline-offset: 2px;
 }
@@ -219,10 +187,6 @@
     order: 3;
     grid-template-columns: 1fr;
     gap: 0;
-  }
-
-  .sf-footer .sf-cta {
-    width: 100%;
   }
 
   .sf-footer .sf-col {
