@@ -88,7 +88,7 @@
             <a href="mailto:<?= CONTACT_EMAIL; ?>"><?= CONTACT_EMAIL; ?></a>
           </li>
         </ul>
-        <p class="sf-support">Cleaner data. More respondents. Built to hold up at scale.</p>
+        <p class="sf-support">Cleaner data. More respondents.<br>Built to hold up at scale.</p>
       </div>
     </div>
 
