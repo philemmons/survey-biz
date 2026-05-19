@@ -301,8 +301,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
             </div>
           </fieldset>
 
-          <button type="submit" name="submit" value="submit" class="btn-primary w-full">Send Project Details</button>
-          <button type="reset" id="reset-button" class="btn-secondary w-full mt-2" name="reset" value="reset" onclick="return resetFields();" aria-labelledby="reset-button reset-note">Reset Form</button>
+          <button type="submit" name="submit" value="submit" class="btn-primary">Send Project Details</button>
+          <button type="reset" id="reset-button" class="btn-secondary mt-2" name="reset" value="reset" onclick="return resetFields();" aria-labelledby="reset-button reset-note">Reset Form</button>
           <div class="sr-only" id="reset-note" role="alert" aria-live="assertive" aria-atomic="true">
             <p>(A pop up will confirm your reset form)</p>
           </div>

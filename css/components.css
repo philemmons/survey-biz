@@ -239,15 +239,10 @@
 
 .hero-actions {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   flex-direction: column;
   gap: var(--space-3);
   max-width: 100%;
-}
-
-.hero-actions .btn-primary,
-.hero-actions .btn-secondary {
-  width: 100%;
 }
 
 .phone-inline {
@@ -696,23 +691,22 @@
   transform: translateY(1px);
 }
 
-.cta-band .btn-primary::after,
-.hero .btn-primary::after,
-.cta-band .btn-secondary::after,
-.hero .btn-secondary::after {
+.btn-primary::after {
   content: " ->";
   display: inline-block;
   transition: transform var(--transition-fast);
 }
 
-.cta-band .btn-primary:hover::after,
-.cta-band .btn-primary:focus-visible::after,
-.hero .btn-primary:hover::after,
-.hero .btn-primary:focus-visible::after,
-.cta-band .btn-secondary:hover::after,
-.cta-band .btn-secondary:focus-visible::after,
-.hero .btn-secondary:hover::after,
-.hero .btn-secondary:focus-visible::after {
+.btn-secondary::after {
+  content: " ->";
+  display: inline-block;
+  transition: transform var(--transition-fast);
+}
+
+.btn-primary:hover::after,
+.btn-primary:focus-visible::after,
+.btn-secondary:hover::after,
+.btn-secondary:focus-visible::after {
   transform: translateX(2px);
 }
 
@@ -1193,11 +1187,6 @@ section[id],
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--space-5);
-  }
-
-  .hero-actions .btn-primary,
-  .hero-actions .btn-secondary {
-    width: auto;
   }
 
   .proof-grid {
