@@ -1,7 +1,7 @@
 .sf-footer .sf-inner {
   position: relative;
   z-index: 1;
-  max-width: 80% !important;
+  max-width: clamp(20rem, 92vw, 80rem);
 }
 
 .sf-footer .sf-top {
