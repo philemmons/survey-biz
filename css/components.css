@@ -3,7 +3,7 @@
   background: var(--accent);
   border-radius: 0 0 var(--radius-2) var(--radius-2);
   color: var(--white) !important;
-  font-size: var(--fs-90);
+  font-size: var(--fs-skip-link);
   left: 1rem;
   padding: 0.6rem 1rem;
   position: absolute;
@@ -51,7 +51,7 @@
 .site-name {
   color: var(--white);
   font-family: var(--serif);
-  font-size: var(--fs-125);
+  font-size: var(--fs-site-name);
   letter-spacing: 0.01em;
   text-decoration: none;
 }
@@ -68,7 +68,7 @@
   border-radius: var(--radius-2);
   color: var(--white);
   display: none;
-  font-size: var(--fs-90);
+  font-size: var(--fs-header-link);
   font-weight: 600;
   min-height: 44px;
   padding: 0.5rem 0.75rem;
@@ -101,7 +101,7 @@
   border-radius: var(--radius-2);
   color: var(--header-link);
   display: block;
-  font-size: var(--fs-90);
+  font-size: var(--fs-header-link);
   font-weight: 500;
   min-height: 44px;
   position: relative;
@@ -139,7 +139,7 @@
   align-items: center;
   color: var(--header-link);
   display: block;
-  font-size: var(--fs-90);
+  font-size: var(--fs-header-link);
   font-weight: 500;
   margin-left: 0;
   min-height: 44px;
@@ -203,7 +203,7 @@
 
 .hero-eyebrow {
   color: var(--header-link);
-  font-size: var(--fs-80);
+  font-size: var(--fs-hero-eyebrow);
   font-weight: 600;
   letter-spacing: 0.15em;
   margin-bottom: var(--space-4);
@@ -218,7 +218,7 @@
 
 .hero-sub {
   color: var(--hero-sub);
-  font-size: var(--fs-110);
+  font-size: var(--fs-hero-sub);
   line-height: var(--lh-copy);
   max-width: 580px;
   position: relative;
@@ -315,7 +315,7 @@
 .proof-label {
   color: var(--proof-label);
   display: block;
-  font-size: var(--fs-80);
+  font-size: var(--fs-proof-label);
   line-height: 1.4;
   margin-top: 0.3rem;
 }
@@ -324,7 +324,7 @@
   color: var(--proof-num);
   display: block;
   font-family: var(--serif);
-  font-size: var(--fs-200);
+  font-size: var(--fs-proof-num);
   line-height: 1;
 }
 
@@ -336,7 +336,7 @@
 .intro-text {
   border-left: 3px solid var(--accent);
   color: var(--ink-muted);
-  font-size: var(--fs-108);
+  font-size: var(--fs-intro);
   line-height: var(--lh-loose);
   max-width: var(--measure);
   padding-left: var(--space-5);
@@ -405,7 +405,7 @@
 .feature-title,
 .card-title {
   color: var(--ink);
-  font-size: var(--fs-110);
+  font-size: var(--fs-card-title);
   font-weight: 600;
   line-height: 1.35;
   margin-bottom: 0.35rem;
@@ -414,7 +414,7 @@
 .feature-body,
 .card-body-text {
   color: var(--ink-muted);
-  font-size: var(--fs-95);
+  font-size: var(--fs-card-body);
   line-height: 1.6;
 }
 
@@ -438,7 +438,7 @@
   border-radius: var(--radius-1);
   color: var(--tag-text);
   display: inline-flex;
-  font-size: var(--fs-80);
+  font-size: var(--fs-tag);
   font-weight: 500;
   min-height: 44px;
   padding: 0.45rem 0.75rem;
@@ -472,7 +472,7 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
   color: #184a7d;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: var(--fs-why-icon);
   height: 2rem;
   justify-content: center;
   margin-bottom: 0.75rem;
@@ -630,13 +630,13 @@
 
 .cta-text h2 {
   color: var(--white);
-  font-size: var(--fs-160);
+  font-size: var(--fs-cta-title);
   margin-bottom: 0.4rem;
 }
 
 .cta-text p {
   color: var(--proof-label);
-  font-size: var(--fs-95);
+  font-size: var(--fs-cta-body);
 }
 
 .btn-primary,
@@ -644,7 +644,7 @@
   border: 1px solid transparent;
   border-radius: var(--radius-2);
   display: inline-block;
-  font-size: var(--fs-95);
+  font-size: var(--fs-button);
   font-weight: 600;
   min-height: 44px;
   padding: 0.85rem 2rem;
@@ -735,7 +735,7 @@
 .footer-wordmark {
   color: var(--white);
   font-family: var(--serif);
-  font-size: var(--fs-115);
+  font-size: var(--fs-footer-wordmark);
   font-weight: 600;
   letter-spacing: 0.03em;
   line-height: 1.25;
@@ -744,7 +744,7 @@
 
 .footer-descriptor {
   color: #8ac0ee;
-  font-size: var(--fs-80);
+  font-size: var(--fs-footer);
   font-weight: 600;
   letter-spacing: 0.12em;
   margin-top: var(--space-1);
@@ -767,7 +767,7 @@
 
 .footer-group-heading {
   color: var(--white);
-  font-size: var(--fs-80);
+  font-size: var(--fs-footer);
   font-weight: 600;
   letter-spacing: 0.08em;
   margin-bottom: var(--space-2);
@@ -788,7 +788,7 @@
   align-items: center;
   color: #9cb9d3;
   display: inline-flex;
-  font-size: var(--fs-87);
+  font-size: var(--fs-footer);
   min-height: 44px;
   text-underline-offset: 0.16em;
   text-decoration: underline;
@@ -823,7 +823,7 @@
 
 .footer-support-line {
   color: #b8cfe3;
-  font-size: var(--fs-87);
+  font-size: var(--fs-footer);
   line-height: 1.6;
   margin-top: var(--space-3);
 }
@@ -843,7 +843,7 @@
 
 .footer-copy {
   color: #9cb9d3;
-  font-size: var(--fs-80);
+  font-size: var(--fs-footer);
   margin: 0;
 }
 

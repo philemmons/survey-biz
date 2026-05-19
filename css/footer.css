@@ -82,7 +82,7 @@
 .sf-footer .sf-nav-indicator {
   color: #9cb9d3;
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   line-height: 1;
   transform-origin: center;
 }

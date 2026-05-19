@@ -41,7 +41,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-size: var(--fs-75);
+  font-size: var(--fs-section-number);
   font-weight: 600;
   letter-spacing: 0.12em;
   margin-bottom: 0.4rem;
@@ -57,7 +57,7 @@
 
 .section-deck {
   color: var(--ink-muted);
-  font-size: var(--fs-95);
+  font-size: var(--fs-section-deck);
   margin-top: var(--space-2);
   max-width: 600px;
 }

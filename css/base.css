@@ -23,7 +23,7 @@ body {
     linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
   color: var(--ink);
   font-family: var(--sans);
-  font-size: var(--fs-100);
+  font-size: var(--fs-body);
   line-height: var(--lh-base);
 }
 
@@ -82,16 +82,16 @@ h4 {
 
 /* Shared heading scale: fluid for major display text, token-driven elsewhere. */
 h1 {
-  font-size: var(--font-size-hero);
+  font-size: var(--fs-hero-title);
   line-height: var(--lh-tight);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--fs-section-title);
 }
 
 h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--fs-hero-sub);
 }
 
 p,
@@ -101,7 +101,7 @@ input,
 select,
 textarea,
 button {
-  font-size: var(--fs-100);
+  font-size: var(--fs-body);
 }
 
 ul,
@@ -123,22 +123,4 @@ textarea {
   overflow-x: auto;
   overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
-}
-
-@media (min-width: 48rem) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 62rem) {
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 75rem) {
-  h2 {
-    font-size: 3rem;
-  }
 }
