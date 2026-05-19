@@ -629,20 +629,9 @@
   margin-bottom: 0.4rem;
 }
 
-.cta-text > p:first-child {
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: var(--fs-cta-title);
-  letter-spacing: 0.2rem;
-  line-height: var(--lh-heading);
-  margin: 0 0 0.4rem;
-  text-wrap: balance;
-}
-
 .cta-text p {
   color: var(--proof-label);
   font-size: var(--fs-cta-body);
-  margin: 0;
 }
 
 .btn-primary,
