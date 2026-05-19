@@ -9,8 +9,7 @@
       type="button"
       aria-controls="primary-nav"
       aria-expanded="false"
-      aria-label="Open primary navigation"
-    >
+      aria-label="Open primary navigation">
       Menu
     </button>
 
@@ -22,7 +21,7 @@
         <li><a class="site-nav-link" href="pricing.php" <?= is_current_page('pricing.php') ? 'aria-current="page"' : ''; ?>>Pricing</a></li>
         <li><a class="site-nav-link" href="about.php" <?= is_current_page('about.php') ? 'aria-current="page"' : ''; ?>>About</a></li>
         <li><a class="site-nav-link" href="insights.php" <?= is_current_page('insights.php') ? 'aria-current="page"' : ''; ?>>Insights</a></li>
-        <li class="site-nav-cta-item"><a class="btn-primary site-nav-cta" href="inquiry.php" <?= is_current_page('inquiry.php') ? 'aria-current="page"' : ''; ?>>Send An Inquiry</a></li>
+        <li><a class="site-nav-link" href="inquiry.php" <?= is_current_page('inquiry.php') ? 'aria-current="page"' : ''; ?>>Send An Inquiry</a></li>
       </ul>
     </nav>
   </div>
