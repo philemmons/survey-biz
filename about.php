@@ -73,17 +73,18 @@ include __DIR__ . '/includes/header.php';
       <p class="section-deck mt-4">Based in Marina, CA. Working with clients everywhere.</p>
     </section>
 
-    <section class="cta-band" aria-labelledby="about-cta-heading">
-      <div class="container cta-inner">
-        <div class="cta-text">
-          <h2 id="about-cta-heading" class="cta-title-single-line">Need a reliable survey build partner?</h2>
-          <p>If your project needs technical reliability and clean deployment, send an inquiry.</p>
-        </div>
-        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-      </div>
-    </section>
-
   </div>
 
+  <section class="cta-band" aria-labelledby="about-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="about-cta-heading" class="cta-title-single-line">Need a reliable survey build partner?</h2>
+        <p>If your project needs technical reliability and clean deployment, send an inquiry.</p>
+      </div>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+    </div>
+  </section>
+
 </main>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>

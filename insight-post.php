@@ -140,23 +140,20 @@ include __DIR__ . '/includes/header.php';
             include $content_filepath;
           }
           ?>
-
         </div>
       </div>
     </section>
-
-    <section class="section" aria-label="Work with philemmons.net">
-      <section class="cta-band" aria-labelledby="insight-post-cta-heading">
-        <div class="container cta-inner">
-          <div class="cta-text">
-            <h2 id="insight-post-cta-heading">Need help applying this to a live survey project?</h2>
-            <p>Apply this approach to your next study with end-to-end programming, deployment, and launch QA support.</p>
-          </div>
-          <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-        </div>
-      </section>
-    </section>
   </div>
+
+  <section class="cta-band" aria-labelledby="insight-post-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="insight-post-cta-heading">Need help applying this to a live survey project?</h2>
+        <p>Apply this approach to your next study with end-to-end programming, deployment, and launch QA support.</p>
+      </div>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+    </div>
+  </section>
+
 </main>
 <?php include __DIR__ . '/includes/footer.php'; ?>
-

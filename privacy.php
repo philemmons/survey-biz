@@ -56,5 +56,7 @@ include __DIR__ . '/includes/header.php';
       </div>
     </section>
   </div>
+  
 </main>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>

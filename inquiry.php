@@ -172,7 +172,7 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
         <a href="services.php" class="btn-secondary">View Services</a>
         <a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a>
       </div>
-      
+
     </div>
   </section>
 
@@ -406,8 +406,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
         </details>
       </div>
     </section>
-
   </div>
 
 </main>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>

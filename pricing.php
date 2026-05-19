@@ -295,6 +295,7 @@ include __DIR__ . '/includes/header.php';
       <a class="btn-primary" href="inquiry.php">Send An Inquiry</a>
     </div>
   </section>
+
 </main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>

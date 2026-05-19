@@ -119,17 +119,18 @@ include __DIR__ . '/includes/header.php';
       <?php endif; ?>
     </section>
 
-    <section class="cta-band" aria-labelledby="insights-cta-heading">
-      <div class="container cta-inner">
-        <div class="cta-text">
-          <h2 id="insights-cta-heading">Need help turning these survey practices into a working deployment?</h2>
-          <p>Get practical support for programming, QA, and launch workflows tailored to your project.</p>
-        </div>
-        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-      </div>
-    </section>
-
   </div>
+
+  <section class="cta-band" aria-labelledby="insights-cta-heading">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 id="insights-cta-heading">Need help turning these survey practices into a working deployment?</h2>
+        <p>Get practical support for programming, QA, and launch workflows tailored to your project.</p>
+      </div>
+      <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+    </div>
+  </section>
+
 </main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>

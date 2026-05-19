@@ -97,7 +97,7 @@ include __DIR__ . '/includes/header.php';
       </ul>
     </section>
 
-    
+
     <section class="cta-band" aria-labelledby="services-inline-cta-heading">
       <div class="container cta-inner">
         <div class="cta-text">
@@ -204,5 +204,7 @@ include __DIR__ . '/includes/header.php';
       <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
     </div>
   </section>
+  
 </main>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>
