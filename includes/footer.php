@@ -6,7 +6,7 @@
       <div class="sf-brand">
         <span class="sf-wordmark">philemmons.net</span>
         <p class="sf-descriptor">Ready to launch a better survey experience?</p>
-        <p class="sf-tagline"><a class="sf-contact-list" href="/inquiry.php">Let's discuss your questionnaire, timeline, fielding goals, and business needs.</a></p>
+        <a class="sf-contact-list mt-4" href="/inquiry.php">Let's discuss your questionnaire, timeline, fielding goals, and business needs.</a>
       </div>
 
       <nav class="sf-nav" aria-label="Footer navigation">
