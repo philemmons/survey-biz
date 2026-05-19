@@ -95,15 +95,18 @@ include __DIR__ . '/includes/header.php';
         <li><span class="tag">Keyboard Navigation</span></li>
         <li><span class="tag">Screen Reader Compatible</span></li>
       </ul>
-      <section class="cta-band" aria-labelledby="services-inline-cta-heading">
-        <div class="container cta-inner">
-          <div class="cta-text">
-            <h2 id="services-inline-cta-heading">Need survey programming, deployment support, or cleaner research data?</h2>
-          </div>
-          <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-        </div>
-      </section>
     </section>
+
+    
+    <section class="cta-band" aria-labelledby="services-inline-cta-heading">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2 id="services-inline-cta-heading">Need survey programming, deployment support, or cleaner research data?</h2>
+        </div>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+      </div>
+    </section>
+
 
     <section id="s3" class="section" aria-labelledby="s3-heading" data-reveal>
       <p class="section-number" aria-hidden="true">03</p>

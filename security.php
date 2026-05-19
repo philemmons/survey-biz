@@ -55,17 +55,21 @@ include __DIR__ . '/includes/header.php';
           </li>
         <?php endforeach; ?>
       </ul>
-
-      <section class="cta-band" aria-labelledby="security-cta-heading">
-        <div class="container cta-inner">
-          <div class="cta-text">
-            <h2 id="security-cta-heading">Have compliance or data requirements for your study? Include them in your inquiry for direct review.</h2>
-          </div>
-          <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
-        </div>
-      </section>
     </section>
-  </div>
-</main>
-<?php include __DIR__ . '/includes/footer.php'; ?>
 
+
+    <section class="cta-band" aria-labelledby="security-cta-heading">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2 id="security-cta-heading">Have compliance or data requirements for your study?</h2>
+          <p>Include them in your inquiry for direct review.</p>
+        </div>
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+      </div>
+    </section>
+
+  </div>
+  
+</main>
+
+<?php include __DIR__ . '/includes/footer.php'; ?>

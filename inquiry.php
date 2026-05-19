@@ -166,7 +166,13 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
       <p class="hero-eyebrow" aria-hidden="true">Inquiry</p>
       <h1 id="inquiry-hero-heading">Request a custom survey programming quote</h1>
       <p class="hero-sub">Explain your study and receive a project-based estimate, usually within two business days. A direct personal response with next steps, and pricing tailored to your actual requirements. Not a generic package tier built around your project. </p>
-      <p class="mt-5"><a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a></p>
+
+      <div class="hero-actions mt-5">
+        <a href="inquiry.php" class="btn-primary">Send An Inquiry</a>
+        <a href="services.php" class="btn-secondary">View Services</a>
+        <a href="tel:<?= SITE_TEL; ?>" class="phone-inline" aria-label="Phone <?= SITE_PHONE; ?>"><?= SITE_PHONE; ?></a>
+      </div>
+      
     </div>
   </section>
 
@@ -341,8 +347,8 @@ $get_invalid_attribute = static function (string $field_name, array $errors): st
           <h3 class="card-title">Languages Needed</h3>
           <p class="card-body-text">Each additional language multiplies multilingual survey deployment effort through locale setup, translation string integration, and full QA across every language variant. Right-to-left scripts and non-Latin character encoding add further technical work. </p>
         </article>
-                </div>
-                 <div class="grid-2 mt-2">
+      </div>
+      <div class="grid-2 mt-2">
         <article class="panel">
           <h3 class="card-title">Target Launch Date</h3>
           <p class="card-body-text">Hard deadlines or target field windows help prioritize scheduling and surface any turnaround risks early. Compressed timelines are possible but may carry a scheduling adjustment that is better discussed before survey programming begins. </p>
