@@ -11,7 +11,7 @@
     return;
   }
 
-  var mobileQuery = window.matchMedia("(max-width: 1200px)");
+  var mobileQuery = window.matchMedia("(max-width: 1199.98px)");
   var wasMobile = false;
 
   function getPanel(button) {

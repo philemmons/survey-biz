@@ -27,6 +27,20 @@ body {
   line-height: var(--lh-base);
 }
 
+/* Prevent long content tokens from forcing page-level horizontal scroll. */
+p,
+li,
+dd,
+dt,
+.card-body-text,
+.section-deck,
+.hero-sub,
+.form-help,
+.field-error,
+.alert {
+  overflow-wrap: anywhere;
+}
+
 main {
   display: block;
 }
@@ -35,6 +49,10 @@ img,
 svg {
   display: block;
   max-width: 100%;
+}
+
+img {
+  height: auto;
 }
 
 a {
@@ -97,4 +115,12 @@ select,
 textarea {
   color: inherit;
   font: inherit;
+}
+
+/* Isolate any intentional horizontal scrolling to specific data wrappers only. */
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
 }

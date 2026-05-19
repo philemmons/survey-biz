@@ -20,7 +20,7 @@
   background: var(--wp1-bg);
   color: var(--wp1-text);
   margin: 0 auto;
-  max-width: 76ch;
+  max-width: 100%;
 }
 
 .wp1-paper__header {
@@ -54,7 +54,7 @@
 }
 
 .wp1-paper__section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .wp1-paper__section h3 {
@@ -70,7 +70,7 @@
 .wp1-paper li,
 .wp1-paper blockquote {
   font-size: var(--wp1-font-size-body);
-  line-height: 1.75;
+  line-height: 1.68;
 }
 
 .wp1-paper p {
@@ -80,6 +80,7 @@
 
 .wp1-paper a {
   color: #114a82;
+  overflow-wrap: anywhere;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.15em;
 }
@@ -132,7 +133,7 @@
   border: 1px solid var(--wp1-border);
   border-radius: 0.5rem;
   margin: 0 0 1rem;
-  padding: 1rem 1rem 1rem 1.5rem;
+  padding: 0.9rem 0.9rem 0.9rem 1.35rem;
 }
 
 .wp1-checklist li {
@@ -202,28 +203,29 @@
 }
 
 .wp1-paper .wp1-table-wrap {
+  max-width: 100%;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 901px) {
   .wp1-paper {
-    max-width: 100%;
+    max-width: 76ch;
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 641px) {
   .wp1-paper__section {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
   }
 
-  /* Keep body text at 1rem+ on smaller screens; only tighten leading. */
   .wp1-paper p,
   .wp1-paper li,
   .wp1-paper blockquote {
-    line-height: 1.68;
+    line-height: 1.75;
   }
 
   .wp1-checklist {
-    padding: 0.9rem 0.9rem 0.9rem 1.35rem;
+    padding: 1rem 1rem 1rem 1.5rem;
   }
 }
