@@ -41,11 +41,11 @@ include __DIR__ . '/includes/header.php';
         </div>
         <div class="proof-item">
           <dt class="proof-label">Campaigns per Year</dt>
-          <dd class="proof-num">16Ã¢â‚¬â€25</dd>
+          <dd class="proof-num">16&mdash;25</dd>
         </div>
         <div class="proof-item">
           <dt class="proof-label">Multilingual Translation Turnaround</dt>
-          <dd class="proof-num">3Ã¢â‚¬â€5 Days</dd>
+          <dd class="proof-num">3&mdash;5 Days</dd>
         </div>
       </dl>
     </div>
@@ -53,7 +53,7 @@ include __DIR__ . '/includes/header.php';
 
   <div class="container">
     <div class="intro" aria-label="Service overview" data-reveal>
-      <p class="intro-text">In a research environment where a poorly structured question, an inaccessible layout, or a slow-loading page can silently kill your response rate, the quality of your survey programming matters. This business specializes in building surveys that remove every technical barrier between your questions and your data Ã¢â‚¬â€ across devices, languages, and audiences.</p>
+      <p class="intro-text">In a research environment where a poorly structured question, an inaccessible layout, or a slow-loading page can silently kill your response rate, the quality of your survey programming matters. This business specializes in building surveys that remove every technical barrier between your questions and your data &mdash; across devices, languages, and audiences.</p>
     </div>
 
     <section class="section" aria-labelledby="services-heading" data-reveal>
@@ -99,7 +99,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="icon-card">
            <h3>Accessibility Built In, Not Bolted On</h3>
-          <p class="card-body-text">WCAG 2.1 compliance is part of every build Ã¢â‚¬â€ not an add-on. Every survey is tested, and re-tested, for accessibility before it reaches a single respondent.</p>
+          <p class="card-body-text">WCAG 2.1 compliance is part of every build &mdash; not an add-on. Every survey is tested, and re-tested, for accessibility before it reaches a single respondent.</p>
         </li>
         <li class="icon-card">
            <h3>Competitive, Transparent Pricing</h3>

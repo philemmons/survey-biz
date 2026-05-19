@@ -47,7 +47,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Multi-Format Question Design</p>
-          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions Ã¢â‚¬â€ selected and structured to match your research objectives, not forced into a one-size template.</p>
+          <p class="feature-body">Likert scales, multiple-choice, matrix grids, open-ended, and ranking questions &mdash; selected and structured to match your research objectives, not forced into a one-size template.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Multi-Phase & Daisy-Chained Surveys</p>
@@ -75,7 +75,7 @@ include __DIR__ . '/includes/header.php';
       <ul class="feature-list" aria-label="Accessibility and performance services">
         <li class="feature-card">
           <p class="feature-title">WCAG 2.1 Compliance</p>
-          <p class="feature-body">Surveys are verified against WCAG 2.1 guidelines through both automated and manual testing Ã¢â‚¬â€ covering keyboard navigation, screen reader compatibility, color contrast, and focus management Ã¢â‚¬â€ ensuring participation is open to users with disabilities.</p>
+          <p class="feature-body">Surveys are verified against WCAG 2.1 guidelines through both automated and manual testing &mdash; covering keyboard navigation, screen reader compatibility, color contrast, and focus management &mdash; ensuring participation is open to users with disabilities.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Mobile-Responsive Layouts</p>
@@ -87,7 +87,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Clean, Reliable Code</p>
-          <p class="feature-body">Surveys are built to industry best practices Ã¢â‚¬â€ no plugin bloat, no fragile dependencies. Reliable code means predictable behavior on every submission, and zero data loss from technical failures.</p>
+          <p class="feature-body">Surveys are built to industry best practices &mdash; no plugin bloat, no fragile dependencies. Reliable code means predictable behavior on every submission, and zero data loss from technical failures.</p>
         </li>
       </ul>
       <ul class="tag-list" aria-label="Accessibility tags">
@@ -117,7 +117,7 @@ include __DIR__ . '/includes/header.php';
       <ul class="feature-list" aria-label="Deployment and outreach services">
         <li class="feature-card">
           <p class="feature-title">Multilingual Survey Delivery</p>
-          <p class="feature-body">Surveys are deployed in respondents' native languages across 130+ countries. The full translation workflow Ã¢â‚¬â€ from template standardization to final QA Ã¢â‚¬â€ is managed while reducing translation turnaround from three weeks to three days.</p>
+          <p class="feature-body">Surveys are deployed in respondents' native languages across 130+ countries. The full translation workflow &mdash; from template standardization to final QA &mdash; is managed while reducing translation turnaround from three weeks to three days.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Email Campaign Management via Mailgun</p>
@@ -129,7 +129,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Smooth Survey Launch</p>
-          <p class="feature-body">All pre-launch testing and configuration are managed so surveys go live correctly the first time Ã¢â‚¬â€ with no broken logic, missing translations, or surprise formatting issues on launch day.</p>
+          <p class="feature-body">All pre-launch testing and configuration are managed so surveys go live correctly the first time &mdash; with no broken logic, missing translations, or surprise formatting issues on launch day.</p>
         </li>
       </ul>
       <ul class="tag-list" aria-label="Deployment tags">
@@ -156,7 +156,7 @@ include __DIR__ . '/includes/header.php';
         </li>
         <li class="feature-card">
           <p class="feature-title">Segmented Performance Analysis</p>
-          <p class="feature-body">Completion and fulfillment data broken out by region, developer type, or other relevant segments Ã¢â‚¬â€ giving you the detail needed to manage field quotas and adjust outreach mid-campaign.</p>
+          <p class="feature-body">Completion and fulfillment data broken out by region, developer type, or other relevant segments &mdash; giving you the detail needed to manage field quotas and adjust outreach mid-campaign.</p>
         </li>
         <li class="feature-card">
           <p class="feature-title">Flexible Data Export</p>
