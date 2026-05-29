@@ -1176,6 +1176,19 @@ section[id],
   display: block;
 }
 
+@media (max-width: 61.99875rem) {
+  .site-header .site-nav,
+  .site-header .site-nav-list,
+  .site-header .site-nav-list > li {
+    text-align: left;
+  }
+
+  .site-header .site-nav-link {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
 @media (min-width: 36rem) {
   .hero-actions {
     align-items: center;
