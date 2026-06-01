@@ -1218,7 +1218,7 @@ section[id],
     border-right: 1px solid var(--proof-border);
   }
 
-  .proof-grid .proof-item:nth-child(even) {
+  .proof-grid .proof-item:nth-child(2n) {
     border-right: 0;
   }
 
@@ -1303,12 +1303,12 @@ section[id],
     border-right: 1px solid var(--proof-border);
   }
 
-  .proof-grid .proof-item:nth-child(4n) {
-    border-right: 0;
+  .proof-grid .proof-item:nth-child(2n) {
+    border-right: 1px solid var(--proof-border);
   }
 
-  .proof-grid .proof-item:nth-child(n + 5) {
-    border-top: 1px solid var(--proof-border);
+  .proof-grid .proof-item:nth-child(4n) {
+    border-right: 0;
   }
 
   .split-main {
