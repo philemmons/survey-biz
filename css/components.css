@@ -506,7 +506,13 @@
 .pricing-range {
   display: grid;
   gap: var(--space-3);
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 520px) {
+  .pricing-range {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pricing-range-item {
