@@ -1307,6 +1307,10 @@ section[id],
     border-right: 0;
   }
 
+  .proof-grid .proof-item:nth-child(n + 5) {
+    border-top: 1px solid var(--proof-border);
+  }
+
   .split-main {
     grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
   }
