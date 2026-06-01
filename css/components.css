@@ -1303,6 +1303,10 @@ section[id],
     border-right: 1px solid var(--proof-border);
   }
 
+  .proof-grid .proof-item:nth-child(n + 3) {
+    border-top: 0;
+  }
+
   .proof-grid .proof-item:nth-child(2n) {
     border-right: 1px solid var(--proof-border);
   }
