@@ -39,7 +39,7 @@ include __DIR__ . '/includes/header.php';
         </div>
         <div class="proof-item">
           <dt class="proof-label">Translation Turnaround</dt>
-          <dd class="proof-num">3-Week to 3-Day</dd>
+          <dd class="proof-num">3 Weeks to 3 Days</dd>
         </div>
       </dl>
     </div>
