@@ -15,22 +15,22 @@ include __DIR__ . '/includes/header.php';
     </div>
   </section>
 
-  <section class="proof-strip about-proof-strip" aria-label="Practice highlights">
+  <section class="proof-strip" aria-label="Practice highlights">
     <div class="container">
-      <dl class="proof-grid about-stat-grid">
-        <div class="proof-item about-stat">
+      <dl class="proof-grid">
+        <div class="proof-item">
           <dt class="proof-num" data-count-to="100" data-suffix=",000+">100,000+</dt>
           <dd class="proof-label">Panel Members Reached</dd>
         </div>
-        <div class="proof-item about-stat">
+        <div class="proof-item">
           <dt class="proof-num" data-count-to="130" data-suffix="+">130+</dt>
           <dd class="proof-label">Countries Served</dd>
         </div>
-        <div class="proof-item about-stat">
+        <div class="proof-item">
           <dt class="proof-num" data-count-to="5" data-suffix="+">5+</dt>
           <dd class="proof-label">Concurrent Surveys Managed</dd>
         </div>
-        <div class="proof-item about-stat">
+        <div class="proof-item">
           <dt class="proof-num">3&ndash;5 Days</dt>
           <dd class="proof-label">Multilingual Turnaround</dd>
         </div>
