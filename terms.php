@@ -20,7 +20,7 @@ include __DIR__ . '/includes/header.php';
     <section class="section" aria-labelledby="terms-acceptance-heading" data-reveal>
       <p class="section-number" aria-hidden="true">Acceptance</p>
        <h2 id="terms-acceptance-heading">Acceptance Of Terms</h2>
-      <p class="section-deck">Effective date: May 18, 2026</p>
+      <p class="section-deck">Effective date: June 7th, 2026</p>
       <div class="stack-4 mt-4 measure">
         <p>By accessing or using this website, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, you should not use or access this site.</p>
         <p>These terms apply to all visitors and anyone who submits an inquiry or engages with content on this site.</p>
