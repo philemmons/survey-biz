@@ -34,11 +34,11 @@ include __DIR__ . '/includes/header.php';
           <dd class="proof-label">Countries</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num" data-count-to="5">5</dt>
+          <dt class="proof-num" data-count-to="5">2&mdash;5+</dt>
           <dd class="proof-label">Concurrent Surveys Managed</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">3 to 5 Days</dt>
+          <dt class="proof-num">3&mdash;Days</dt>
           <dd class="proof-label">Translation Turnaround</dd>
 
         </div>
