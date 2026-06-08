@@ -32,20 +32,20 @@ include __DIR__ . '/includes/header.php';
     <div class="container">
       <dl class="proof-grid">
         <div class="proof-item">
-          <dt class="proof-label">Panel Members</dt>
-          <dd class="proof-num" data-count-to="100" data-suffix=",000+">100000+</dd>
+          <dt class="proof-num" data-count-to="100" data-suffix=",000+">100000+</dt>
+          <dd class="proof-label">Panel Members</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-label">Countries Served</dt>
-          <dd class="proof-num" data-count-to="130" data-suffix="+">130+</dd>
+          <dt class="proof-num" data-count-to="130" data-suffix="+">130+</dt>
+          <dd class="proof-label">Countries Served</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-label">Campaigns per Year</dt>
-          <dd class="proof-num">16&mdash;25</dd>
+          <dt class="proof-num">16&mdash;25</dt>
+          <dd class="proof-label">Campaigns per Year</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-label">Multilingual Translation Turnaround</dt>
-          <dd class="proof-num">3&mdash;5 Days</dd>
+          <dt class="proof-num">3&mdash;5 Days</dt>
+          <dd class="proof-label">Multilingual Translation Turnaround</dd>
         </div>
       </dl>
     </div>

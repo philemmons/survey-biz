@@ -31,7 +31,6 @@ include __DIR__ . '/includes/header.php';
     <div class="container">
       <dl class="proof-grid proof-grid-start">
         <div class="proof-item">
-
           <dt class="proof-num">$30&mdash;$80</dt>
           <dd class="proof-label">Typical hourly range for Qualtrics / platform specialists on Upwork in 2026</dd>
         </div>

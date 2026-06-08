@@ -28,6 +28,8 @@ $posts = [
     'content_filepath' => __DIR__ . '/white_papers/content_for_id_2.php',
     'pdf_filepath' => './pdf/Multilingual_Survey_Turnaround_2026.pdf',
   ],
+  
+  /*
   [
     'id' => 3,
     'slug' => 'mobile-first-survey-design',
@@ -52,6 +54,8 @@ $posts = [
     'pdf_filepath' => './pdf/WCAG_21_Survey_Response_Rates_2026.pdf',
 
   ],
+  */
+
   [
     'id' => 5,
     'slug' => 'hiring-survey-programmer',
