@@ -38,7 +38,7 @@ include __DIR__ . '/includes/header.php';
           <dd class="proof-label">Concurrent Surveys Managed</dd>
         </div>
         <div class="proof-item">
-          <dt class="proof-num">3&mdash;5Days</dt>
+          <dt class="proof-num">3&mdash;5 Days</dt>
           <dd class="proof-label">Translation Turnaround</dd>
 
         </div>
