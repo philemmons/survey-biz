@@ -24,6 +24,7 @@ $posts = [
     'read_time' => '5 min',
     'date' => '2026-05-15',
   ],
+  /*
   [
     'id' => 3,
     'slug' => 'mobile-first-survey-design',
@@ -42,6 +43,7 @@ $posts = [
     'read_time' => '7 min',
     'date' => '2025-12-10',
   ],
+  */
   [
     'id' => 5,
     'slug' => 'hiring-survey-programmer',

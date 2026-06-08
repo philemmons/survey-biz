@@ -285,7 +285,7 @@
   gap: 0;
   grid-auto-rows: 1fr; /* Forces all cards in a row to have equal height */
   grid-template-columns: 1fr;
-  align-items: end;
+  align-items: start;
 }
 
 .proof-grid-start{
