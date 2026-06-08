@@ -2,7 +2,7 @@
 
 declare(strict_types=1); /* BEWARE THE BOM */
 $page_title = 'Survey Programming & Deployment';
-$meta_description = 'Professional survey programming and deployment by Phillip Emmons - WCAG 2.1 compliant, mobile-responsive, multilingual. Based in central CA.';
+$meta_description = 'Professional survey programming and deployment by Phillip Emmons - WCAG 2.1 compliant, mobile-responsive, multilingual. Based in Monterey Bay, CA.';
 $current_page = basename(__FILE__);
 include __DIR__ . '/includes/head.php';
 include __DIR__ . '/includes/header.php';

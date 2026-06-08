@@ -115,9 +115,9 @@ function get_site_page_metadata(string $page_filename): array
             'canonical_path' => '/accessibility.php',
         ],
         'security.php' => [
-            'page_title' => 'Security & Data Practices',
-            'document_title' => 'Security & Data Practices | Survey Research Data Handling',
-            'meta_description' => 'See how Phillip Emmons protects research data with access controls, anonymization practices, clean code, and WCAG-aware survey delivery.',
+            'page_title' => 'Data Security Policy',
+            'document_title' => 'Data Security Policy | LimeSurvey Hosting And Survey Data Safeguards',
+            'meta_description' => 'Review Phillip Emmons data security practices for LimeSurvey deployments, encryption, access control, data minimization, incident response, and California privacy alignment.',
             'og_type' => 'website',
             'canonical_path' => '/security.php',
         ],
