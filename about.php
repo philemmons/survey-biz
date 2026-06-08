@@ -12,22 +12,27 @@ include __DIR__ . '/includes/header.php';
       <p class="hero-eyebrow">About Phillip Emmons</p>
       <h1 id="about-hero-heading">Survey Programmer,<br><em>Deployment Specialist</em></h1>
       <p class="hero-sub">Enterprise-grade survey programming and fielding from a single accountable operator. No handoffs. No account managers. Direct access to the person building your survey from day one.</p>
-      <dl class="about-stat-grid" aria-label="Practice highlights">
-        <div class="about-stat">
-          <dt>100,000+</dt>
-          <dd>Panel Members Reached</dd>
+    </div>
+  </section>
+
+  <section class="proof-strip about-proof-strip" aria-label="Practice highlights">
+    <div class="container">
+      <dl class="proof-grid about-stat-grid">
+        <div class="proof-item about-stat">
+          <dt class="proof-num" data-count-to="100" data-suffix=",000+">100,000+</dt>
+          <dd class="proof-label">Panel Members Reached</dd>
         </div>
-        <div class="about-stat">
-          <dt>130+</dt>
-          <dd>Countries Served</dd>
+        <div class="proof-item about-stat">
+          <dt class="proof-num" data-count-to="130" data-suffix="+">130+</dt>
+          <dd class="proof-label">Countries Served</dd>
         </div>
-        <div class="about-stat">
-          <dt>5+</dt>
-          <dd>Concurrent Surveys Managed</dd>
+        <div class="proof-item about-stat">
+          <dt class="proof-num" data-count-to="5" data-suffix="+">5+</dt>
+          <dd class="proof-label">Concurrent Surveys Managed</dd>
         </div>
-        <div class="about-stat">
-          <dt>3&ndash;5 Days</dt>
-          <dd>Multilingual Turnaround</dd>
+        <div class="proof-item about-stat">
+          <dt class="proof-num">3&ndash;5 Days</dt>
+          <dd class="proof-label">Multilingual Turnaround</dd>
         </div>
       </dl>
     </div>
@@ -149,11 +154,6 @@ include __DIR__ . '/includes/header.php';
         <a href="/services.php" class="btn-secondary">View Services</a>
         <a href="/pricing.php" class="btn-secondary">View Pricing</a>
       </div>
-      <address class="about-contact-row" aria-label="Contact options">
-        <a href="tel:+18312360849">831.236.0849</a>
-        <a href="mailto:philemmons.now@gmail.com">philemmons.now@gmail.com</a>
-        <a href="/inquiry.php">Inquiry Form</a>
-      </address>
     </div>
   </section>
 </main>

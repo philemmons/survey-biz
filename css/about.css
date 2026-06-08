@@ -20,31 +20,20 @@
 }
 
 .about-stat-grid {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  display: grid;
-  gap: var(--space-5);
   grid-template-columns: 1fr;
-  margin-top: var(--space-8);
-  padding-top: var(--space-7);
 }
 
 .about-stat {
   min-width: 0;
 }
 
-.about-stat dt {
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: var(--fs-proof-num);
-  line-height: 1;
+.about-stat .proof-num {
+  color: #22c99a;
 }
 
-.about-stat dd {
+.about-stat .proof-label {
   color: var(--proof-label);
-  font-size: var(--fs-proof-label);
   letter-spacing: 0.08em;
-  line-height: 1.4;
-  margin-top: var(--space-2);
   text-transform: uppercase;
 }
 
