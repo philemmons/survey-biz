@@ -3,17 +3,20 @@ declare(strict_types=1); /* BEWARE THE BOM */
 
 require_once __DIR__ . '/../config.php';
 require_once __DIR__ . '/functions.php';
-$page_title = $page_title ?? 'Survey Programming';
-$meta_description = $meta_description ?? 'Freelance survey programming services for research teams.';
-if (!isset($canonical_url)) {
-    $request_path = (string) parse_url((string) ($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_PATH);
-    if ($request_path === '' || $request_path === '/index' || $request_path === '/index.php') {
-        $request_path = '/';
-    } elseif (str_ends_with($request_path, '.php')) {
-        $request_path = substr($request_path, 0, -4);
-    }
-    $canonical_url = rtrim(SITE_URL, '/') . ($request_path === '/' ? '/' : $request_path);
-}
+$seo_metadata = resolve_site_metadata([
+    'page_title' => $page_title ?? null,
+    'document_title' => $document_title ?? null,
+    'meta_description' => $meta_description ?? null,
+    'canonical_url' => $canonical_url ?? null,
+    'og_title' => $og_title ?? null,
+    'og_type' => $og_type ?? null,
+], $current_page ?? null);
+$page_title = $seo_metadata['page_title'];
+$document_title = $seo_metadata['document_title'];
+$meta_description = $seo_metadata['meta_description'];
+$canonical_url = $seo_metadata['canonical_url'];
+$og_title = $seo_metadata['og_title'];
+$og_type = $seo_metadata['og_type'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +25,13 @@ if (!isset($canonical_url)) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#0f1923">
-  <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | Survey</title>
+  <title><?= htmlspecialchars($document_title, ENT_QUOTES, 'UTF-8'); ?></title>
   <meta name="description" content="<?= htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8'); ?>">
   <link rel="canonical" href="<?= htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
 
-  <meta property="og:title" content="<?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | Survey">
+  <meta property="og:title" content="<?= htmlspecialchars($og_title, ENT_QUOTES, 'UTF-8'); ?>">
   <meta property="og:description" content="<?= htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8'); ?>">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="<?= htmlspecialchars($og_type, ENT_QUOTES, 'UTF-8'); ?>">
   <meta property="og:url" content="<?= htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
   <meta property="og:site_name" content="Phillip Emmons - Survey Programming and Deployment">
 

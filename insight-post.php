@@ -82,7 +82,9 @@ if ($selected_post === null) {
 
 $page_title = $selected_post['title'];
 $meta_description = $selected_post['excerpt'];
-$canonical_url = rtrim(SITE_URL, '/') . '/insight-post?slug=' . urlencode((string) $selected_post['slug']);
+$document_title = $selected_post['title'] . ' | Survey Programming Insight';
+$og_type = 'article';
+$canonical_url = rtrim(SITE_URL, '/') . '/insight-post.php?slug=' . urlencode((string) $selected_post['slug']);
 $current_page = 'insights.php';
 $page_stylesheets = [];
 if ((int) ($selected_post['id'] ?? 0) === 1) {
