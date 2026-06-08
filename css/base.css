@@ -117,10 +117,3 @@ textarea {
   font: inherit;
 }
 
-/* Isolate any intentional horizontal scrolling to specific data wrappers only. */
-.table-responsive {
-  max-width: 100%;
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  -webkit-overflow-scrolling: touch;
-}

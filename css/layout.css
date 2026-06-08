@@ -97,6 +97,14 @@
   min-width: 0;
 }
 
+.split-start {
+  align-items: start;
+}
+
+.split-main {
+  grid-template-columns: 1fr;
+}
+
 .stack-3 > * + * {
   margin-top: var(--space-3);
 }
@@ -132,6 +140,12 @@
   .split,
   .grid-4 {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 62rem) {
+  .split-main {
+    grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
   }
 }
 

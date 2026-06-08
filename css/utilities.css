@@ -19,6 +19,13 @@
   width: 100%;
 }
 
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
 .mt-2 {
   margin-top: var(--space-2);
 }
