@@ -48,7 +48,7 @@ include __DIR__ . '/includes/header.php';
         </blockquote>
         <p>This practice was shaped inside real research operations: environments where timelines are tight, specifications evolve mid-campaign, and launch quality directly affects data integrity. The work combines deep technical implementation with full delivery accountability, so projects move from questionnaire design to field without unnecessary friction or miscommunication.</p>
         <p>Surveys have been programmed and deployed to a 100,000+ member international research panel spanning 130+ countries. That work includes multilingual deployments with full translation pipeline management, sustained outreach via Mailgun API across 16&ndash;25 campaigns per year, and real-time field monitoring that keeps stakeholders informed throughout active data collection.</p>
-        <p>Based in Marina, CA, working with research teams, market research agencies, and enterprise clients everywhere.</p>
+        <p>Based in central CA, working with research teams, market research agencies, and enterprise clients everywhere.</p>
       </div>
 
       <aside class="snapshot-card" aria-labelledby="snapshot-heading">
@@ -82,7 +82,7 @@ include __DIR__ . '/includes/header.php';
         </div>
         <div class="snapshot-row">
           <span class="snapshot-label">Location</span>
-          <p class="snapshot-value">Marina, CA, serving clients across North America, Europe, and globally via remote engagement.</p>
+          <p class="snapshot-value">Central CA, serving clients across North America, Europe, and globally via remote engagement.</p>
         </div>
       </aside>
     </div>
@@ -134,7 +134,7 @@ include __DIR__ . '/includes/header.php';
         </article>
         <article class="about-faq-item">
           <h3>Where is this service based, and does location matter for delivery?</h3>
-          <p>Based in Marina, CA. Clients are served remotely across North America, Europe, and globally, so location has no impact on delivery quality. All communication, file handoff, and reporting uses standard remote collaboration tools. For projects requiring real-time coordination during active field periods, time zone alignment is discussed during scoping.</p>
+          <p>Based in central CA. Clients are served remotely across North America, Europe, and globally, so location has no impact on delivery quality. All communication, file handoff, and reporting uses standard remote collaboration tools. For projects requiring real-time coordination during active field periods, time zone alignment is discussed during scoping.</p>
         </article>
         <article class="about-faq-item">
           <h3>Where can I find details on services, pricing, and turnaround?</h3>
